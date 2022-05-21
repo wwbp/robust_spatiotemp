@@ -3,7 +3,7 @@
 # Check params
 if [ $# -ne 5 ]
 then
-    echo "./lexiconExtractAndScoresh INPUT MESSAGE_FIELD GROUP_ID WEIGHTS LEXICON"
+    echo "./lexiconExtractAndScore.sh INPUT MESSAGE_FIELD GROUP_ID WEIGHTS LEXICON"
     exit 1
 fi
 
