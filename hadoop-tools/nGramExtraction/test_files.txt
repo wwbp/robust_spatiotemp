@@ -1,0 +1,6 @@
+/localdata/twitter10pct_cnty/part3/tweets.2011-02-23.cnty
+/localdata/twitter10pct_cnty/part3/tweets.2011-02-24.cnty
+/localdata/twitter10pct_cnty/part3/tweets.2011-02-25.cnty
+/localdata/twitter10pct_cnty/part3/tweets.2011-02-26.cnty
+/localdata/twitter10pct_cnty/part3/tweets.2011-02-27.cnty
+/localdata/twitter10pct_cnty/part3/tweets.2011-02-28.cnty
