@@ -16,13 +16,16 @@ This system is currently built around aggregation to the account (user) level an
     - Further details can be found in: Characterizing [Geographic Variation in Well-Being Using Tweets](https://www.researchgate.net/publication/282330246_Characterizing_Geographic_Variation_in_Well-Being_Using_Tweets)
 
 ### 2. Data Preparation
-- Runnable as: `[filterTweets.sh 'hdfs:/data/tweet_storage/' -> 'hdfs:/data/tweet_storage/filtered']`  //priority: 4
+- Runnable as: `./filterTweets.sh input message_field group_field` 
   - Input tweets must include: tweet body, message identifier of the source of a retweet
   - Output data format: unaltered, but records will have been filtered out
 - Intermediate steps performed
   - Filter to english tweets
-  - Filter out retweets, and tweets with URLs
-  - Filter duplicates 
+    - `./runThis.sh <path/to/input> <path/to/output> MESSAGE_FIELD en`
+    - ex. `./runThis.sh /hadoop_data/ctlb/2020/timelines2020.csv /hadoop_data/ctlb/2020/english/timelines2020.csv 2 en`
+  - Filter out retweets, tweets with URLs, and duplicates
+    - `~/spark/bin/spark-submit  ~/hadoop-tools/sparkScripts/deduplicate_and_filter.py --input_file </path/to/input> --output_file </path/to/output> --message_field <column number> --group_field <column number>`
+    - ex. `~/spark/bin/spark-submit  ~/hadoop-tools/sparkScripts/deduplicate_and_filter.py --input_file /hadoop_data/ctlb/2020/english/timelines2019.csv --output_file /hadoop_data/ctlb/2020/dedup/timelines2019_en.csv --message_field 2 --group_field 0`
 
 ### 3. Account-level, time scoring   
 - Runnable as: `lexiconExtractAndScore.sh INPUT MESSAGE_FIELD GROUP_ID WEIGHTS LEXICON`
@@ -72,4 +75,4 @@ This system is currently built around aggregation to the account (user) level an
   - Space `scripts/dlatk_space.sh` 
   - Time `scripts/dlatk_time.sh`
 
-  
+
