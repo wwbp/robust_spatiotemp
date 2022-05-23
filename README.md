@@ -8,9 +8,12 @@ This system is currently built around aggregation to the account (user) level an
 ### Prerequisites:
 - create a symlink between your home directory and your spark directory called `spark/` such that spark jobs be run via `~/spark/bin/spark-submit`
 
-### 1. Tweet gathering //ask Sal to provide example command
-  - link to how to map twitter users to counties
-  - [gatherTweets.sh user_ids.csv hdfs:/data/tweet_storage/]
+### 1. Tweet Gathering
+  - Collecting tweets
+    - Use the [TwitterMySQL](https://github.com/dlatk/TwitterMySQL) library found in DLATK, the GitHub repository has information about accessing the Twitter API keys to pull tweets
+    - Command to run tweet extraction: `python twInterface.py -d twitter -t batch_1 --time_lines --user_list </path/to/listOfAccounts.txt> --authJSON </path/to/twitterAPIkeys.json>`
+  - Mapping twitter users to counties
+    - Further details can be found in: Characterizing [Geographic Variation in Well-Being Using Tweets](https://www.researchgate.net/publication/282330246_Characterizing_Geographic_Variation_in_Well-Being_Using_Tweets)
 
 ### 2. Data Preparation
 - Runnable as: `[filterTweets.sh 'hdfs:/data/tweet_storage/' -> 'hdfs:/data/tweet_storage/filtered']`  //priority: 4
@@ -52,12 +55,21 @@ This system is currently built around aggregation to the account (user) level an
   - `~/spark/bin/spark-submit  ~/hadoop-tools/sparkScripts/agg_feats_to_group.py --input_file </hadoop/path/input> --output_file /<hadoop/path/output>  --gft <selected_threshold>`
     - ex. `~/spark/bin/spark-submit  ~/hadoop-tools/sparkScripts/agg_feats_to_group.py --input_file /hadoop/path/1gram.yw_user_id.cnty --output_file /hadoop_data/ctlb/2020/feats/feat.1gram.yw_cnty --gft 200`
 
-### 5. Analysis //script per analysis [main page at least does plotting)
- - Plotting `feat_over_time.py`
- - reliability `reliability.py`
- - convergent validity `fixed_effects.py`   //priority: 3
-  - external criteria 
-    - Space `dlatk_space.sh` // get from Nikita
-    - Time `dlatk_time.sh` // get from Nikita
+### 5. Analysis
+- Generate a data json to speed up processing
+  - In `get_county_feats()` of the scripts replace `sql = ...` with a SQL query that returns your generated scores in the format `<timeunit>:<spaceunit>, <DEP_SCORE>, <count based score>, <group norm based score>`
+  - This will generate a JSON file that stores a compact representation of the data used by these analysis scripts, this JSON is only created once to save time reading from SQL
+- Reliability 
+  - Can be used to evaluate the 1-cohen's d reliability of any measure stored in MySQL 
+  - `python scripts/cohensdh.py`
+- Plotting scores over time
+  - Functions are provided to generate a time series plot for any collection of space units.
+  - `python scripts/feat_over_time.py`
+- Convergent Validity 
+  - Allows for a set of patsy-style modelss to be evaluated
+  - `python scripts/fixed_effects.py`
+- External Criteria // get from Nikita
+  - Space `scripts/dlatk_space.sh` 
+  - Time `scripts/dlatk_time.sh`
 
-OUTPUT: Plots over time (with given location_id) 
+  
