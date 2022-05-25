@@ -83,19 +83,20 @@ Filters to english, as well as removes retweets, tweets with urls, duplicate twe
 ### You now have the scores per time:unit, community. 
 
 ### 5. Analysis (Optional) 
-- Generate a data json to speed up processing
-  - In `get_county_feats()` of the scripts replace `sql = ...` with a SQL query that returns your generated scores in the format `<timeunit>:<spaceunit>, <DEP_SCORE>, <count based score>, <group norm based score>`
-  - This will generate a JSON file that stores a compact representation of the data used by these analysis scripts, this JSON is only created once to save time reading from SQL
-- Reliability 
-  - Can be used to evaluate the 1-cohen's d reliability of any measure stored in MySQL 
+- **First, move your scores to mysql**
+  - Steps to do this. 
+  - TODO: consider creating a "select.sql" that is commonly used for everything below. 
+- **A. Generate Reliability Scores**
+  Can be used to evaluate the 1-cohen's d reliability of any measure stored in MySQL 
+  - edit `scripts/cohensdh.py` and change `get_county_feats()` of the scripts replace `sql = ...` with a SQL query that returns your generated scores in the format `<timeunit>:<spaceunit>, <DEP_SCORE>, <count based score>, <group norm based score>` This will generate a JSON file that stores a compact representation of the data used by these analysis scripts, this JSON is only created once to save time reading from SQL
   - `python scripts/cohensdh.py`
-- Plotting scores over time
-  - Functions are provided to generate a time series plot for any collection of space units.
+- **B. Plotting scores over time**
+  - do the first step of A except to `scripts/feat_over_time.py` Functions are provided to generate a time series plot for any collection of space units.
   - `python scripts/feat_over_time.py`
-- Convergent Validity 
+- **C. Convergent Validity**
   - Allows for a set of patsy-style modelss to be evaluated
   - `python scripts/fixed_effects.py`
-- External Criteria // get from Nikita
+- **D. External Criteria // get from Nikita** 
   - Space `scripts/dlatk_space.sh` 
   - Time `scripts/dlatk_time.sh`
 
