@@ -16,10 +16,16 @@ This system is currently built around aggregation to the account (user) level an
     - Further details can be found in: Characterizing [Geographic Variation in Well-Being Using Tweets](https://www.researchgate.net/publication/282330246_Characterizing_Geographic_Variation_in_Well-Being_Using_Tweets)
 
 ### 2. Data Preparation
-- Runnable as: `./filterTweets.sh input message_field group_field` 
-  - Input tweets must include: tweet body, message identifier of the source of a retweet
-  - Output data format: unaltered, but records will have been filtered out
-- Intermediate steps performed
+Filters to english, as well as removes retweets, tweets with urls, duplicate tweets. 
+- Runnable as: `./filterTweets.sh hdfs_input_csv message_field_idx group_field_idx` 
+  - Input: 
+      -  `hdfs_input_csv` -- tweets in csv 
+      - `message_field_idx` -- the column index for the text
+      - `group_field_idx` -- is the column index for the id. 
+  - Output: 
+    - `hdfs_intput_csv_english_deduped` -- same format as input but with rows filtered out
+
+- **Advanced options:** run each step independently: 
   - Filter to english tweets
     - `./runThis.sh <path/to/input> <path/to/output> MESSAGE_FIELD en`
     - ex. `./runThis.sh /hadoop_data/ctlb/2020/timelines2020.csv /hadoop_data/ctlb/2020/english/timelines2020.csv 2 en`
@@ -32,7 +38,9 @@ This system is currently built around aggregation to the account (user) level an
   - Input tweets must include: tweet body, group_id containing account number of tweeter and timeunit (like week) tweet was made, mapping for accounts to a location (like county)
   - If accounts are going to be reweighted then a mapping between entities and weights must be provided
   - Output data format: `[timeunit+account], [score_type], [weighted_count], [weighted_score]`
-- Intermediate steps performed
+
+
+- **Advanced options:** run each step independently. 
   - Word extraction
     - `cd hadoop-tools/nGramExtraction/`
     - `./runThis INPUT OUTPUT MESSAGE_FIELD GROUP_ID N` 
