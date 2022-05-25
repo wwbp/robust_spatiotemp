@@ -1,0 +1,1492 @@
+cnty,distinct_users,county_name,state_abbr,region,division,state,region_name,division_name,cnty_w_sups300,weight
+01001,16,Autauga County,AL,3.0,6.0,1.0,South,East South Central,01999,0.011510791366906475
+01003,92,Baldwin County,AL,3.0,6.0,1.0,South,East South Central,01999,0.06618705035971223
+01005,1,Barbour County,AL,3.0,6.0,1.0,South,East South Central,01999,0.0007194244604316547
+01009,1,Blount County,AL,3.0,6.0,1.0,South,East South Central,01999,0.0007194244604316547
+01015,82,Calhoun County,AL,3.0,6.0,1.0,South,East South Central,01999,0.058992805755395686
+01017,3,Chambers County,AL,3.0,6.0,1.0,South,East South Central,01999,0.002158273381294964
+01019,1,Cherokee County,AL,3.0,6.0,1.0,South,East South Central,01999,0.0007194244604316547
+01021,1,Chilton County,AL,3.0,6.0,1.0,South,East South Central,01999,0.0007194244604316547
+01031,3,Coffee County,AL,3.0,6.0,1.0,South,East South Central,01999,0.002158273381294964
+01033,24,Colbert County,AL,3.0,6.0,1.0,South,East South Central,01999,0.017266187050359712
+01039,2,Covington County,AL,3.0,6.0,1.0,South,East South Central,01999,0.0014388489208633094
+01043,14,Cullman County,AL,3.0,6.0,1.0,South,East South Central,01999,0.010071942446043165
+01045,1,Dale County,AL,3.0,6.0,1.0,South,East South Central,01999,0.0007194244604316547
+01047,3,Dallas County,AL,3.0,6.0,1.0,South,East South Central,01999,0.002158273381294964
+01049,4,DeKalb County,AL,3.0,6.0,1.0,South,East South Central,01999,0.0028776978417266188
+01051,20,Elmore County,AL,3.0,6.0,1.0,South,East South Central,01999,0.014388489208633094
+01053,7,Escambia County,AL,3.0,6.0,1.0,South,East South Central,01999,0.005035971223021582
+01055,185,Etowah County,AL,3.0,6.0,1.0,South,East South Central,01999,0.13309352517985612
+01069,42,Houston County,AL,3.0,6.0,1.0,South,East South Central,01999,0.030215827338129497
+01071,7,Jackson County,AL,3.0,6.0,1.0,South,East South Central,01999,0.005035971223021582
+01073,934,Jefferson County,AL,3.0,6.0,1.0,South,East South Central,01073,1.0
+01077,68,Lauderdale County,AL,3.0,6.0,1.0,South,East South Central,01999,0.04892086330935252
+01081,192,Lee County,AL,3.0,6.0,1.0,South,East South Central,01999,0.1381294964028777
+01083,22,Limestone County,AL,3.0,6.0,1.0,South,East South Central,01999,0.015827338129496403
+01087,8,Macon County,AL,3.0,6.0,1.0,South,East South Central,01999,0.0057553956834532375
+01089,448,Madison County,AL,3.0,6.0,1.0,South,East South Central,01089,1.0
+01095,139,Marshall County,AL,3.0,6.0,1.0,South,East South Central,01999,0.1
+01097,437,Mobile County,AL,3.0,6.0,1.0,South,East South Central,01097,1.0
+01101,231,Montgomery County,AL,3.0,6.0,1.0,South,East South Central,01999,0.16618705035971224
+01103,59,Morgan County,AL,3.0,6.0,1.0,South,East South Central,01999,0.04244604316546763
+01109,29,Pike County,AL,3.0,6.0,1.0,South,East South Central,01999,0.020863309352517987
+01113,29,Russell County,AL,3.0,6.0,1.0,South,East South Central,01999,0.020863309352517987
+01115,7,St. Clair County,AL,3.0,6.0,1.0,South,East South Central,01999,0.005035971223021582
+01117,49,Shelby County,AL,3.0,6.0,1.0,South,East South Central,01999,0.03525179856115108
+01121,19,Talladega County,AL,3.0,6.0,1.0,South,East South Central,01999,0.013669064748201438
+01123,2,Tallapoosa County,AL,3.0,6.0,1.0,South,East South Central,01999,0.0014388489208633094
+01125,370,Tuscaloosa County,AL,3.0,6.0,1.0,South,East South Central,01125,1.0
+01127,27,Walker County,AL,3.0,6.0,1.0,South,East South Central,01999,0.019424460431654675
+02020,335,Anchorage Municipality,AK,4.0,9.0,2.0,West,Pacific,02020,1.0
+02090,120,Fairbanks North Star Borough,AK,4.0,9.0,2.0,West,Pacific,,
+02110,19,Juneau City and Borough,AK,4.0,9.0,2.0,West,Pacific,,
+02122,18,Kenai Peninsula Borough,AK,4.0,9.0,2.0,West,Pacific,,
+02170,139,Matanuska-Susitna Borough,AK,4.0,9.0,2.0,West,Pacific,,
+02185,1,North Slope Borough,AK,4.0,9.0,2.0,West,Pacific,,
+04003,30,Cochise County,AZ,4.0,8.0,4.0,West,Mountain,04999,0.03978779840848806
+04005,199,Coconino County,AZ,4.0,8.0,4.0,West,Mountain,04999,0.2639257294429708
+04007,75,Gila County,AZ,4.0,8.0,4.0,West,Mountain,04999,0.09946949602122016
+04009,8,Graham County,AZ,4.0,8.0,4.0,West,Mountain,04999,0.010610079575596816
+04013,5041,Maricopa County,AZ,4.0,8.0,4.0,West,Mountain,04013,1.0
+04015,54,Mohave County,AZ,4.0,8.0,4.0,West,Mountain,04999,0.07161803713527852
+04017,16,Navajo County,AZ,4.0,8.0,4.0,West,Mountain,04999,0.021220159151193633
+04019,1171,Pima County,AZ,4.0,8.0,4.0,West,Mountain,04019,1.0
+04021,128,Pinal County,AZ,4.0,8.0,4.0,West,Mountain,04999,0.16976127320954906
+04023,9,Santa Cruz County,AZ,4.0,8.0,4.0,West,Mountain,04999,0.011936339522546418
+04025,65,Yavapai County,AZ,4.0,8.0,4.0,West,Mountain,04999,0.08620689655172414
+04027,170,Yuma County,AZ,4.0,8.0,4.0,West,Mountain,04999,0.22546419098143236
+05005,1,Baxter County,AR,3.0,7.0,5.0,South,West South Central,05999,0.0011750881316098707
+05007,142,Benton County,AR,3.0,7.0,5.0,South,West South Central,05999,0.16686251468860164
+05019,3,Clark County,AR,3.0,7.0,5.0,South,West South Central,05999,0.0035252643948296123
+05027,2,Columbia County,AR,3.0,7.0,5.0,South,West South Central,05999,0.0023501762632197414
+05031,104,Craighead County,AR,3.0,7.0,5.0,South,West South Central,05999,0.12220916568742655
+05033,5,Crawford County,AR,3.0,7.0,5.0,South,West South Central,05999,0.005875440658049354
+05035,4,Crittenden County,AR,3.0,7.0,5.0,South,West South Central,05999,0.004700352526439483
+05041,1,Desha County,AR,3.0,7.0,5.0,South,West South Central,05999,0.0011750881316098707
+05043,1,Drew County,AR,3.0,7.0,5.0,South,West South Central,05999,0.0011750881316098707
+05045,91,Faulkner County,AR,3.0,7.0,5.0,South,West South Central,05999,0.10693301997649823
+05051,37,Garland County,AR,3.0,7.0,5.0,South,West South Central,05999,0.043478260869565216
+05055,1,Greene County,AR,3.0,7.0,5.0,South,West South Central,05999,0.0011750881316098707
+05063,2,Independence County,AR,3.0,7.0,5.0,South,West South Central,05999,0.0023501762632197414
+05069,22,Jefferson County,AR,3.0,7.0,5.0,South,West South Central,05999,0.025851938895417155
+05071,1,Johnson County,AR,3.0,7.0,5.0,South,West South Central,05999,0.0011750881316098707
+05085,8,Lonoke County,AR,3.0,7.0,5.0,South,West South Central,05999,0.009400705052878966
+05089,1,Marion County,AR,3.0,7.0,5.0,South,West South Central,05999,0.0011750881316098707
+05091,2,Miller County,AR,3.0,7.0,5.0,South,West South Central,05999,0.0023501762632197414
+05093,12,Mississippi County,AR,3.0,7.0,5.0,South,West South Central,05999,0.01410105757931845
+05105,1,Perry County,AR,3.0,7.0,5.0,South,West South Central,05999,0.0011750881316098707
+05113,2,Polk County,AR,3.0,7.0,5.0,South,West South Central,05999,0.0023501762632197414
+05115,32,Pope County,AR,3.0,7.0,5.0,South,West South Central,05999,0.03760282021151586
+05119,489,Pulaski County,AR,3.0,7.0,5.0,South,West South Central,05119,1.0
+05125,32,Saline County,AR,3.0,7.0,5.0,South,West South Central,05999,0.03760282021151586
+05131,85,Sebastian County,AR,3.0,7.0,5.0,South,West South Central,05999,0.099882491186839
+05139,6,Union County,AR,3.0,7.0,5.0,South,West South Central,05999,0.007050528789659225
+05143,235,Washington County,AR,3.0,7.0,5.0,South,West South Central,05999,0.27614571092831963
+05145,18,White County,AR,3.0,7.0,5.0,South,West South Central,05999,0.021151586368977675
+06001,102,Alameda County,CA,4.0,9.0,6.0,West,Pacific,06999,0.05354330708661417
+06007,225,Butte County,CA,4.0,9.0,6.0,West,Pacific,06999,0.11811023622047244
+06009,1,Calaveras County,CA,4.0,9.0,6.0,West,Pacific,06999,0.0005249343832020997
+06013,18,Contra Costa County,CA,4.0,9.0,6.0,West,Pacific,06999,0.009448818897637795
+06017,60,El Dorado County,CA,4.0,9.0,6.0,West,Pacific,06999,0.031496062992125984
+06019,1161,Fresno County,CA,4.0,9.0,6.0,West,Pacific,06019,1.0
+06021,9,Glenn County,CA,4.0,9.0,6.0,West,Pacific,06999,0.004724409448818898
+06023,85,Humboldt County,CA,4.0,9.0,6.0,West,Pacific,06999,0.04461942257217848
+06025,93,Imperial County,CA,4.0,9.0,6.0,West,Pacific,06999,0.048818897637795275
+06029,632,Kern County,CA,4.0,9.0,6.0,West,Pacific,06029,1.0
+06031,7,Kings County,CA,4.0,9.0,6.0,West,Pacific,06999,0.003674540682414698
+06033,4,Lake County,CA,4.0,9.0,6.0,West,Pacific,06999,0.002099737532808399
+06037,11733,Los Angeles County,CA,4.0,9.0,6.0,West,Pacific,06037,1.0
+06039,51,Madera County,CA,4.0,9.0,6.0,West,Pacific,06999,0.026771653543307086
+06041,1,Marin County,CA,4.0,9.0,6.0,West,Pacific,06999,0.0005249343832020997
+06045,29,Mendocino County,CA,4.0,9.0,6.0,West,Pacific,06999,0.015223097112860892
+06047,193,Merced County,CA,4.0,9.0,6.0,West,Pacific,06999,0.10131233595800525
+06051,1,Mono County,CA,4.0,9.0,6.0,West,Pacific,06999,0.0005249343832020997
+06053,418,Monterey County,CA,4.0,9.0,6.0,West,Pacific,06053,1.0
+06055,105,Napa County,CA,4.0,9.0,6.0,West,Pacific,06999,0.05511811023622047
+06057,34,Nevada County,CA,4.0,9.0,6.0,West,Pacific,06999,0.01784776902887139
+06059,2948,Orange County,CA,4.0,9.0,6.0,West,Pacific,06059,1.0
+06061,191,Placer County,CA,4.0,9.0,6.0,West,Pacific,06999,0.10026246719160105
+06065,2014,Riverside County,CA,4.0,9.0,6.0,West,Pacific,06065,1.0
+06067,2290,Sacramento County,CA,4.0,9.0,6.0,West,Pacific,06067,1.0
+06069,24,San Benito County,CA,4.0,9.0,6.0,West,Pacific,06999,0.012598425196850394
+06071,1776,San Bernardino County,CA,4.0,9.0,6.0,West,Pacific,06071,1.0
+06073,5441,San Diego County,CA,4.0,9.0,6.0,West,Pacific,06073,1.0
+06075,4436,San Francisco County,CA,4.0,9.0,6.0,West,Pacific,06075,1.0
+06077,631,San Joaquin County,CA,4.0,9.0,6.0,West,Pacific,06077,1.0
+06079,188,San Luis Obispo County,CA,4.0,9.0,6.0,West,Pacific,06999,0.09868766404199475
+06081,14,San Mateo County,CA,4.0,9.0,6.0,West,Pacific,06999,0.007349081364829396
+06083,468,Santa Barbara County,CA,4.0,9.0,6.0,West,Pacific,06083,1.0
+06085,90,Santa Clara County,CA,4.0,9.0,6.0,West,Pacific,06999,0.047244094488188976
+06087,379,Santa Cruz County,CA,4.0,9.0,6.0,West,Pacific,06087,1.0
+06089,84,Shasta County,CA,4.0,9.0,6.0,West,Pacific,06999,0.04409448818897638
+06093,12,Siskiyou County,CA,4.0,9.0,6.0,West,Pacific,06999,0.006299212598425197
+06095,320,Solano County,CA,4.0,9.0,6.0,West,Pacific,06095,1.0
+06097,357,Sonoma County,CA,4.0,9.0,6.0,West,Pacific,06097,1.0
+06099,418,Stanislaus County,CA,4.0,9.0,6.0,West,Pacific,06099,1.0
+06101,29,Sutter County,CA,4.0,9.0,6.0,West,Pacific,06999,0.015223097112860892
+06103,4,Tehama County,CA,4.0,9.0,6.0,West,Pacific,06999,0.002099737532808399
+06107,361,Tulare County,CA,4.0,9.0,6.0,West,Pacific,06107,1.0
+06109,7,Tuolumne County,CA,4.0,9.0,6.0,West,Pacific,06999,0.003674540682414698
+06111,792,Ventura County,CA,4.0,9.0,6.0,West,Pacific,06111,1.0
+06113,221,Yolo County,CA,4.0,9.0,6.0,West,Pacific,06999,0.11601049868766404
+06115,23,Yuba County,CA,4.0,9.0,6.0,West,Pacific,06999,0.012073490813648294
+08001,313,Adams County,CO,4.0,8.0,8.0,West,Mountain,08001,1.0
+08005,135,Arapahoe County,CO,4.0,8.0,8.0,West,Mountain,08999,0.13803680981595093
+08013,568,Boulder County,CO,4.0,8.0,8.0,West,Mountain,08013,1.0
+08014,24,Broomfield County,CO,4.0,8.0,8.0,West,Mountain,08999,0.024539877300613498
+08031,3376,Denver County,CO,4.0,8.0,8.0,West,Mountain,08031,1.0
+08035,101,Douglas County,CO,4.0,8.0,8.0,West,Mountain,08999,0.1032719836400818
+08037,15,Eagle County,CO,4.0,8.0,8.0,West,Mountain,08999,0.015337423312883436
+08041,626,El Paso County,CO,4.0,8.0,8.0,West,Mountain,08041,1.0
+08043,1,Fremont County,CO,4.0,8.0,8.0,West,Mountain,08999,0.0010224948875255625
+08045,1,Garfield County,CO,4.0,8.0,8.0,West,Mountain,08999,0.0010224948875255625
+08059,293,Jefferson County,CO,4.0,8.0,8.0,West,Mountain,08999,0.2995910020449898
+08067,105,La Plata County,CO,4.0,8.0,8.0,West,Mountain,08999,0.10736196319018405
+08069,353,Larimer County,CO,4.0,8.0,8.0,West,Mountain,08069,1.0
+08071,1,Las Animas County,CO,4.0,8.0,8.0,West,Mountain,08999,0.0010224948875255625
+08077,53,Mesa County,CO,4.0,8.0,8.0,West,Mountain,08999,0.0541922290388548
+08097,17,Pitkin County,CO,4.0,8.0,8.0,West,Mountain,08999,0.017382413087934562
+08101,45,Pueblo County,CO,4.0,8.0,8.0,West,Mountain,08999,0.046012269938650305
+08107,58,Routt County,CO,4.0,8.0,8.0,West,Mountain,08999,0.05930470347648262
+08117,17,Summit County,CO,4.0,8.0,8.0,West,Mountain,08999,0.017382413087934562
+08119,1,Teller County,CO,4.0,8.0,8.0,West,Mountain,08999,0.0010224948875255625
+08123,111,Weld County,CO,4.0,8.0,8.0,West,Mountain,08999,0.11349693251533742
+09001,596,Fairfield County,CT,1.0,1.0,9.0,Northeast,New England,09001,1.0
+09003,451,Hartford County,CT,1.0,1.0,9.0,Northeast,New England,09003,1.0
+09005,55,Litchfield County,CT,1.0,1.0,9.0,Northeast,New England,,
+09007,59,Middlesex County,CT,1.0,1.0,9.0,Northeast,New England,,
+09009,609,New Haven County,CT,1.0,1.0,9.0,Northeast,New England,09009,1.0
+09011,102,New London County,CT,1.0,1.0,9.0,Northeast,New England,,
+09013,33,Tolland County,CT,1.0,1.0,9.0,Northeast,New England,,
+09015,13,Windham County,CT,1.0,1.0,9.0,Northeast,New England,,
+10001,76,Kent County,DE,3.0,5.0,10.0,South,South Atlantic,,
+10003,317,New Castle County,DE,3.0,5.0,10.0,South,South Atlantic,10003,1.0
+10005,84,Sussex County,DE,3.0,5.0,10.0,South,South Atlantic,,
+11001,6112,District of Columbia,DC,3.0,5.0,11.0,South,South Atlantic,11001,1.0
+11001,6112,District of Columbia,DC,3.0,5.0,11.0,South,South Atlantic,11001,1.0
+12001,412,Alachua County,FL,3.0,5.0,12.0,South,South Atlantic,12001,1.0
+12005,1,Bay County,FL,3.0,5.0,12.0,South,South Atlantic,12999,0.00044169611307420494
+12009,313,Brevard County,FL,3.0,5.0,12.0,South,South Atlantic,12009,1.0
+12011,1511,Broward County,FL,3.0,5.0,12.0,South,South Atlantic,12011,1.0
+12015,52,Charlotte County,FL,3.0,5.0,12.0,South,South Atlantic,12999,0.022968197879858657
+12017,19,Citrus County,FL,3.0,5.0,12.0,South,South Atlantic,12999,0.008392226148409895
+12019,52,Clay County,FL,3.0,5.0,12.0,South,South Atlantic,12999,0.022968197879858657
+12021,190,Collier County,FL,3.0,5.0,12.0,South,South Atlantic,12999,0.08392226148409894
+12023,19,Columbia County,FL,3.0,5.0,12.0,South,South Atlantic,12999,0.008392226148409895
+12031,1108,Duval County,FL,3.0,5.0,12.0,South,South Atlantic,12031,1.0
+12033,430,Escambia County,FL,3.0,5.0,12.0,South,South Atlantic,12033,1.0
+12035,45,Flagler County,FL,3.0,5.0,12.0,South,South Atlantic,12999,0.01987632508833922
+12039,2,Gadsden County,FL,3.0,5.0,12.0,South,South Atlantic,12999,0.0008833922261484099
+12051,1,Hendry County,FL,3.0,5.0,12.0,South,South Atlantic,12999,0.00044169611307420494
+12053,54,Hernando County,FL,3.0,5.0,12.0,South,South Atlantic,12999,0.023851590106007067
+12055,13,Highlands County,FL,3.0,5.0,12.0,South,South Atlantic,12999,0.005742049469964664
+12057,2392,Hillsborough County,FL,3.0,5.0,12.0,South,South Atlantic,12057,1.0
+12061,87,Indian River County,FL,3.0,5.0,12.0,South,South Atlantic,12999,0.03842756183745583
+12063,5,Jackson County,FL,3.0,5.0,12.0,South,South Atlantic,12999,0.002208480565371025
+12069,112,Lake County,FL,3.0,5.0,12.0,South,South Atlantic,12999,0.04946996466431095
+12071,371,Lee County,FL,3.0,5.0,12.0,South,South Atlantic,12071,1.0
+12073,651,Leon County,FL,3.0,5.0,12.0,South,South Atlantic,12073,1.0
+12075,1,Levy County,FL,3.0,5.0,12.0,South,South Atlantic,12999,0.00044169611307420494
+12081,114,Manatee County,FL,3.0,5.0,12.0,South,South Atlantic,12999,0.05035335689045936
+12083,118,Marion County,FL,3.0,5.0,12.0,South,South Atlantic,12999,0.052120141342756186
+12085,59,Martin County,FL,3.0,5.0,12.0,South,South Atlantic,12999,0.026060070671378093
+12086,7160,Miami-Dade County,FL,3.0,5.0,12.0,South,South Atlantic,12086,1.0
+12087,65,Monroe County,FL,3.0,5.0,12.0,South,South Atlantic,12999,0.02871024734982332
+12089,33,Nassau County,FL,3.0,5.0,12.0,South,South Atlantic,12999,0.014575971731448763
+12091,133,Okaloosa County,FL,3.0,5.0,12.0,South,South Atlantic,12999,0.05874558303886926
+12093,1,Okeechobee County,FL,3.0,5.0,12.0,South,South Atlantic,12999,0.00044169611307420494
+12095,3438,Orange County,FL,3.0,5.0,12.0,South,South Atlantic,12095,1.0
+12097,156,Osceola County,FL,3.0,5.0,12.0,South,South Atlantic,12999,0.06890459363957598
+12099,1115,Palm Beach County,FL,3.0,5.0,12.0,South,South Atlantic,12099,1.0
+12101,147,Pasco County,FL,3.0,5.0,12.0,South,South Atlantic,12999,0.06492932862190813
+12103,864,Pinellas County,FL,3.0,5.0,12.0,South,South Atlantic,12103,1.0
+12105,299,Polk County,FL,3.0,5.0,12.0,South,South Atlantic,12999,0.13206713780918727
+12107,2,Putnam County,FL,3.0,5.0,12.0,South,South Atlantic,12999,0.0008833922261484099
+12109,109,St. Johns County,FL,3.0,5.0,12.0,South,South Atlantic,12999,0.04814487632508834
+12111,109,St. Lucie County,FL,3.0,5.0,12.0,South,South Atlantic,12999,0.04814487632508834
+12113,58,Santa Rosa County,FL,3.0,5.0,12.0,South,South Atlantic,12999,0.02561837455830389
+12115,1055,Sarasota County,FL,3.0,5.0,12.0,South,South Atlantic,12115,1.0
+12117,197,Seminole County,FL,3.0,5.0,12.0,South,South Atlantic,12999,0.08701413427561837
+12119,9,Sumter County,FL,3.0,5.0,12.0,South,South Atlantic,12999,0.003975265017667844
+12123,1,Taylor County,FL,3.0,5.0,12.0,South,South Atlantic,12999,0.00044169611307420494
+12127,337,Volusia County,FL,3.0,5.0,12.0,South,South Atlantic,12127,1.0
+12131,1,Walton County,FL,3.0,5.0,12.0,South,South Atlantic,12999,0.00044169611307420494
+13009,18,Baldwin County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.007614213197969543
+13013,14,Barrow County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.005922165820642978
+13015,42,Bartow County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.017766497461928935
+13019,1,Berrien County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.00042301184433164127
+13021,175,Bibb County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.07402707275803723
+13029,7,Bryan County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.002961082910321489
+13031,128,Bulloch County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.05414551607445008
+13033,1,Burke County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.00042301184433164127
+13035,1,Butts County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.00042301184433164127
+13039,11,Camden County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.004653130287648054
+13045,60,Carroll County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.025380710659898477
+13047,9,Catoosa County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.0038071065989847717
+13051,451,Chatham County,GA,3.0,5.0,13.0,South,South Atlantic,13051,1.0
+13055,1,Chattooga County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.00042301184433164127
+13057,95,Cherokee County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.04018612521150592
+13059,407,Clarke County,GA,3.0,5.0,13.0,South,South Atlantic,13059,1.0
+13063,70,Clayton County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.02961082910321489
+13067,542,Cobb County,GA,3.0,5.0,13.0,South,South Atlantic,13067,1.0
+13069,1,Coffee County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.00042301184433164127
+13071,1,Colquitt County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.00042301184433164127
+13073,34,Columbia County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.014382402707275803
+13077,56,Coweta County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.023688663282571912
+13083,1,Dade County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.00042301184433164127
+13087,1,Decatur County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.00042301184433164127
+13089,274,DeKalb County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.11590524534686972
+13091,1,Dodge County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.00042301184433164127
+13093,1,Dooly County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.00042301184433164127
+13095,31,Dougherty County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.01311336717428088
+13097,49,Douglas County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.020727580372250424
+13103,5,Effingham County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.0021150592216582064
+13105,1,Elbert County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.00042301184433164127
+13111,1,Fannin County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.00042301184433164127
+13113,49,Fayette County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.020727580372250424
+13115,53,Floyd County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.02241962774957699
+13117,66,Forsyth County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.027918781725888325
+13121,9919,Fulton County,GA,3.0,5.0,13.0,South,South Atlantic,13121,1.0
+13127,27,Glynn County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.011421319796954314
+13129,7,Gordon County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.002961082910321489
+13131,2,Grady County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.0008460236886632825
+13135,337,Gwinnett County,GA,3.0,5.0,13.0,South,South Atlantic,13135,1.0
+13139,72,Hall County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.030456852791878174
+13151,83,Henry County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.03510998307952622
+13153,71,Houston County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.03003384094754653
+13157,22,Jackson County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.009306260575296108
+13161,1,Jeff Davis County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.00042301184433164127
+13171,1,Lamar County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.00042301184433164127
+13175,19,Laurens County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.008037225042301184
+13179,22,Liberty County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.009306260575296108
+13185,122,Lowndes County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.051607445008460234
+13187,4,Lumpkin County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.001692047377326565
+13205,1,Mitchell County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.00042301184433164127
+13207,1,Monroe County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.00042301184433164127
+13211,1,Morgan County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.00042301184433164127
+13215,152,Muscogee County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.06429780033840947
+13217,42,Newton County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.017766497461928935
+13219,1,Oconee County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.00042301184433164127
+13223,39,Paulding County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.01649746192893401
+13225,5,Peach County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.0021150592216582064
+13227,1,Pickens County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.00042301184433164127
+13233,3,Polk County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.0012690355329949238
+13241,1,Rabun County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.00042301184433164127
+13245,229,Richmond County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.09686971235194586
+13247,18,Rockdale County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.007614213197969543
+13255,30,Spalding County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.012690355329949238
+13257,1,Stephens County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.00042301184433164127
+13261,4,Sumter County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.001692047377326565
+13275,13,Thomas County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.005499153976311337
+13277,9,Tift County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.0038071065989847717
+13279,1,Toombs County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.00042301184433164127
+13281,1,Towns County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.00042301184433164127
+13285,1,Troup County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.00042301184433164127
+13295,10,Walker County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.004230118443316413
+13297,48,Walton County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.02030456852791878
+13299,1,Ware County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.00042301184433164127
+13311,1,White County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.00042301184433164127
+13313,37,Whitfield County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.015651438240270727
+13317,1,Wilkes County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.00042301184433164127
+13321,1,Worth County,GA,3.0,5.0,13.0,South,South Atlantic,13999,0.00042301184433164127
+15001,56,Hawaii County,HI,4.0,9.0,15.0,West,Pacific,,
+15003,937,Honolulu County,HI,4.0,9.0,15.0,West,Pacific,15003,1.0
+15007,1,Kauai County,HI,4.0,9.0,15.0,West,Pacific,,
+15009,52,Maui County,HI,4.0,9.0,15.0,West,Pacific,,
+16001,625,Ada County,ID,4.0,8.0,16.0,West,Mountain,16001,1.0
+16005,52,Bannock County,ID,4.0,8.0,16.0,West,Mountain,,
+16011,1,Bingham County,ID,4.0,8.0,16.0,West,Mountain,,
+16013,5,Blaine County,ID,4.0,8.0,16.0,West,Mountain,,
+16017,1,Bonner County,ID,4.0,8.0,16.0,West,Mountain,,
+16019,34,Bonneville County,ID,4.0,8.0,16.0,West,Mountain,,
+16027,79,Canyon County,ID,4.0,8.0,16.0,West,Mountain,,
+16039,1,Elmore County,ID,4.0,8.0,16.0,West,Mountain,,
+16051,1,Jefferson County,ID,4.0,8.0,16.0,West,Mountain,,
+16055,14,Kootenai County,ID,4.0,8.0,16.0,West,Mountain,,
+16057,33,Latah County,ID,4.0,8.0,16.0,West,Mountain,,
+16065,13,Madison County,ID,4.0,8.0,16.0,West,Mountain,,
+16069,8,Nez Perce County,ID,4.0,8.0,16.0,West,Mountain,,
+16083,18,Twin Falls County,ID,4.0,8.0,16.0,West,Mountain,,
+17001,31,Adams County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.01334481274214378
+17007,9,Boone County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.0038743004735256135
+17019,280,Champaign County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.12053379250968575
+17021,1,Christian County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.00043047783039173483
+17027,1,Clinton County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.00043047783039173483
+17029,16,Coles County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.006887645286267757
+17031,12279,Cook County,IL,2.0,3.0,17.0,Midwest,East North Central,17031,1.0
+17037,78,DeKalb County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.03357727077055531
+17043,494,DuPage County,IL,2.0,3.0,17.0,Midwest,East North Central,17043,1.0
+17049,1,Effingham County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.00043047783039173483
+17055,1,Franklin County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.00043047783039173483
+17063,19,Grundy County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.008179078777442962
+17073,2,Henry County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.0008609556607834697
+17077,38,Jackson County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.016358157554885924
+17081,1,Jefferson County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.00043047783039173483
+17083,1,Jersey County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.00043047783039173483
+17087,1,Johnson County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.00043047783039173483
+17089,285,Kane County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.12268618166164443
+17091,62,Kankakee County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.02668962548428756
+17093,37,Kendall County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.015927679724494187
+17095,14,Knox County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.006026689625484288
+17097,414,Lake County,IL,2.0,3.0,17.0,Midwest,East North Central,17097,1.0
+17099,18,LaSalle County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.007748600947051227
+17101,1,Lawrence County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.00043047783039173483
+17103,1,Lee County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.00043047783039173483
+17105,1,Livingston County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.00043047783039173483
+17107,1,Logan County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.00043047783039173483
+17109,64,McDonough County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.02755058114507103
+17111,178,McHenry County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.0766250538097288
+17113,159,McLean County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.06844597503228583
+17115,55,Macon County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.023676280671545414
+17119,129,Madison County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.05553164012053379
+17121,5,Marion County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.002152389151958674
+17127,26,Massac County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.011192423590185106
+17133,1,Monroe County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.00043047783039173483
+17137,4,Morgan County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.0017219113215669393
+17141,4,Ogle County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.0017219113215669393
+17143,130,Peoria County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.055962117950925525
+17161,86,Rock Island County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.03702109341368919
+17163,87,St. Clair County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.03745157124408093
+17167,151,Sangamon County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.06500215238915195
+17177,2,Stephenson County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.0008609556607834697
+17179,52,Tazewell County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.02238484718037021
+17183,31,Vermilion County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.01334481274214378
+17187,1,Warren County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.00043047783039173483
+17195,21,Whiteside County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.009040034438226431
+17197,486,Will County,IL,2.0,3.0,17.0,Midwest,East North Central,17197,1.0
+17199,13,Williamson County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.005596211795092553
+17201,223,Winnebago County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.09599655617735686
+17203,1,Woodford County,IL,2.0,3.0,17.0,Midwest,East North Central,17999,0.00043047783039173483
+18001,1,Adams County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.0004426737494466578
+18003,441,Allen County,IN,2.0,3.0,18.0,Midwest,East North Central,18003,1.0
+18005,39,Bartholomew County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.017264276228419653
+18011,4,Boone County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.0017706949977866313
+18017,8,Cass County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.0035413899955732625
+18019,74,Clark County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.03275785745905268
+18023,1,Clinton County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.0004426737494466578
+18027,1,Daviess County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.0004426737494466578
+18029,14,Dearborn County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.00619743249225321
+18033,5,DeKalb County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.002213368747233289
+18035,139,Delaware County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.061531651173085435
+18037,1,Dubois County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.0004426737494466578
+18039,109,Elkhart County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.048251438689685705
+18043,32,Floyd County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.01416555998229305
+18047,1,Franklin County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.0004426737494466578
+18053,25,Grant County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.011066843736166445
+18057,347,Hamilton County,IN,2.0,3.0,18.0,Midwest,East North Central,18057,1.0
+18059,31,Hancock County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.013722886232846392
+18061,1,Harrison County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.0004426737494466578
+18063,96,Hendricks County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.04249667994687915
+18065,8,Henry County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.0035413899955732625
+18067,91,Howard County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.04028331119964586
+18069,4,Huntington County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.0017706949977866313
+18071,2,Jackson County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.0008853474988933156
+18073,1,Jasper County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.0004426737494466578
+18077,2,Jefferson County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.0008853474988933156
+18081,113,Johnson County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.05002213368747233
+18083,5,Knox County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.002213368747233289
+18085,24,Kosciusko County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.010624169986719787
+18089,355,Lake County,IN,2.0,3.0,18.0,Midwest,East North Central,18089,1.0
+18091,19,LaPorte County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.008410801239486499
+18093,1,Lawrence County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.0004426737494466578
+18095,79,Madison County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.03497122620628597
+18097,1574,Marion County,IN,2.0,3.0,18.0,Midwest,East North Central,18097,1.0
+18099,7,Marshall County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.003098716246126605
+18105,222,Monroe County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.09827357237715803
+18107,4,Montgomery County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.0017706949977866313
+18109,34,Morgan County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.015050907481186366
+18113,4,Noble County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.0017706949977866313
+18127,98,Porter County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.043382027445772464
+18133,1,Putnam County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.0004426737494466578
+18137,1,Ripley County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.0004426737494466578
+18141,296,St. Joseph County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.13103142983621072
+18145,8,Shelby County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.0035413899955732625
+18157,214,Tippecanoe County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.09473218238158478
+18163,245,Vanderburgh County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.10845506861443116
+18167,96,Vigo County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.04249667994687915
+18169,16,Wabash County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.007082779991146525
+18173,8,Warrick County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.0035413899955732625
+18175,1,Washington County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.0004426737494466578
+18177,72,Wayne County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.03187250996015936
+18179,1,Wells County,IN,2.0,3.0,18.0,Midwest,East North Central,18999,0.0004426737494466578
+19013,159,Black Hawk County,IA,2.0,4.0,19.0,Midwest,West North Central,19999,0.1485981308411215
+19017,1,Bremer County,IA,2.0,4.0,19.0,Midwest,West North Central,19999,0.0009345794392523365
+19021,1,Buena Vista County,IA,2.0,4.0,19.0,Midwest,West North Central,19999,0.0009345794392523365
+19031,1,Cedar County,IA,2.0,4.0,19.0,Midwest,West North Central,19999,0.0009345794392523365
+19033,12,Cerro Gordo County,IA,2.0,4.0,19.0,Midwest,West North Central,19999,0.011214953271028037
+19045,11,Clinton County,IA,2.0,4.0,19.0,Midwest,West North Central,19999,0.010280373831775701
+19049,18,Dallas County,IA,2.0,4.0,19.0,Midwest,West North Central,19999,0.016822429906542057
+19057,2,Des Moines County,IA,2.0,4.0,19.0,Midwest,West North Central,19999,0.001869158878504673
+19059,1,Dickinson County,IA,2.0,4.0,19.0,Midwest,West North Central,19999,0.0009345794392523365
+19061,70,Dubuque County,IA,2.0,4.0,19.0,Midwest,West North Central,19999,0.06542056074766354
+19065,1,Fayette County,IA,2.0,4.0,19.0,Midwest,West North Central,19999,0.0009345794392523365
+19071,1,Fremont County,IA,2.0,4.0,19.0,Midwest,West North Central,19999,0.0009345794392523365
+19087,1,Henry County,IA,2.0,4.0,19.0,Midwest,West North Central,19999,0.0009345794392523365
+19099,1,Jasper County,IA,2.0,4.0,19.0,Midwest,West North Central,19999,0.0009345794392523365
+19101,84,Jefferson County,IA,2.0,4.0,19.0,Midwest,West North Central,19999,0.07850467289719626
+19103,319,Johnson County,IA,2.0,4.0,19.0,Midwest,West North Central,19103,1.0
+19105,1,Jones County,IA,2.0,4.0,19.0,Midwest,West North Central,19999,0.0009345794392523365
+19113,249,Linn County,IA,2.0,4.0,19.0,Midwest,West North Central,19999,0.23271028037383176
+19125,4,Marion County,IA,2.0,4.0,19.0,Midwest,West North Central,19999,0.003738317757009346
+19127,6,Marshall County,IA,2.0,4.0,19.0,Midwest,West North Central,19999,0.005607476635514018
+19139,7,Muscatine County,IA,2.0,4.0,19.0,Midwest,West North Central,19999,0.0065420560747663555
+19149,1,Plymouth County,IA,2.0,4.0,19.0,Midwest,West North Central,19999,0.0009345794392523365
+19153,825,Polk County,IA,2.0,4.0,19.0,Midwest,West North Central,19153,1.0
+19155,47,Pottawattamie County,IA,2.0,4.0,19.0,Midwest,West North Central,19999,0.04392523364485981
+19157,1,Poweshiek County,IA,2.0,4.0,19.0,Midwest,West North Central,19999,0.0009345794392523365
+19163,115,Scott County,IA,2.0,4.0,19.0,Midwest,West North Central,19999,0.10747663551401869
+19167,2,Sioux County,IA,2.0,4.0,19.0,Midwest,West North Central,19999,0.001869158878504673
+19169,168,Story County,IA,2.0,4.0,19.0,Midwest,West North Central,19999,0.15700934579439252
+19179,1,Wapello County,IA,2.0,4.0,19.0,Midwest,West North Central,19999,0.0009345794392523365
+19181,18,Warren County,IA,2.0,4.0,19.0,Midwest,West North Central,19999,0.016822429906542057
+19187,9,Webster County,IA,2.0,4.0,19.0,Midwest,West North Central,19999,0.008411214953271028
+19191,1,Winneshiek County,IA,2.0,4.0,19.0,Midwest,West North Central,19999,0.0009345794392523365
+19193,76,Woodbury County,IA,2.0,4.0,19.0,Midwest,West North Central,19999,0.07102803738317758
+20001,1,Allen County,KS,2.0,4.0,20.0,Midwest,West North Central,20999,0.0010869565217391304
+20009,1,Barton County,KS,2.0,4.0,20.0,Midwest,West North Central,20999,0.0010869565217391304
+20015,18,Butler County,KS,2.0,4.0,20.0,Midwest,West North Central,20999,0.01956521739130435
+20035,12,Cowley County,KS,2.0,4.0,20.0,Midwest,West North Central,20999,0.013043478260869565
+20037,40,Crawford County,KS,2.0,4.0,20.0,Midwest,West North Central,20999,0.043478260869565216
+20045,226,Douglas County,KS,2.0,4.0,20.0,Midwest,West North Central,20999,0.24565217391304348
+20051,19,Ellis County,KS,2.0,4.0,20.0,Midwest,West North Central,20999,0.020652173913043477
+20055,10,Finney County,KS,2.0,4.0,20.0,Midwest,West North Central,20999,0.010869565217391304
+20057,14,Ford County,KS,2.0,4.0,20.0,Midwest,West North Central,20999,0.015217391304347827
+20059,1,Franklin County,KS,2.0,4.0,20.0,Midwest,West North Central,20999,0.0010869565217391304
+20061,1,Geary County,KS,2.0,4.0,20.0,Midwest,West North Central,20999,0.0010869565217391304
+20071,1,Greeley County,KS,2.0,4.0,20.0,Midwest,West North Central,20999,0.0010869565217391304
+20079,8,Harvey County,KS,2.0,4.0,20.0,Midwest,West North Central,20999,0.008695652173913044
+20091,519,Johnson County,KS,2.0,4.0,20.0,Midwest,West North Central,20091,1.0
+20103,25,Leavenworth County,KS,2.0,4.0,20.0,Midwest,West North Central,20999,0.02717391304347826
+20111,22,Lyon County,KS,2.0,4.0,20.0,Midwest,West North Central,20999,0.02391304347826087
+20113,7,McPherson County,KS,2.0,4.0,20.0,Midwest,West North Central,20999,0.007608695652173913
+20121,1,Miami County,KS,2.0,4.0,20.0,Midwest,West North Central,20999,0.0010869565217391304
+20125,1,Montgomery County,KS,2.0,4.0,20.0,Midwest,West North Central,20999,0.0010869565217391304
+20127,1,Morris County,KS,2.0,4.0,20.0,Midwest,West North Central,20999,0.0010869565217391304
+20143,1,Ottawa County,KS,2.0,4.0,20.0,Midwest,West North Central,20999,0.0010869565217391304
+20155,22,Reno County,KS,2.0,4.0,20.0,Midwest,West North Central,20999,0.02391304347826087
+20161,133,Riley County,KS,2.0,4.0,20.0,Midwest,West North Central,20999,0.14456521739130435
+20169,32,Saline County,KS,2.0,4.0,20.0,Midwest,West North Central,20999,0.034782608695652174
+20173,718,Sedgwick County,KS,2.0,4.0,20.0,Midwest,West North Central,20173,1.0
+20175,58,Seward County,KS,2.0,4.0,20.0,Midwest,West North Central,20999,0.06304347826086956
+20177,140,Shawnee County,KS,2.0,4.0,20.0,Midwest,West North Central,20999,0.15217391304347827
+20191,4,Sumner County,KS,2.0,4.0,20.0,Midwest,West North Central,20999,0.004347826086956522
+20193,1,Thomas County,KS,2.0,4.0,20.0,Midwest,West North Central,20999,0.0010869565217391304
+20209,120,Wyandotte County,KS,2.0,4.0,20.0,Midwest,West North Central,20999,0.13043478260869565
+21009,5,Barren County,KY,3.0,6.0,21.0,South,East South Central,21999,0.00547645125958379
+21015,71,Boone County,KY,3.0,6.0,21.0,South,East South Central,21999,0.07776560788608981
+21017,1,Bourbon County,KY,3.0,6.0,21.0,South,East South Central,21999,0.001095290251916758
+21019,25,Boyd County,KY,3.0,6.0,21.0,South,East South Central,21999,0.027382256297918947
+21021,7,Boyle County,KY,3.0,6.0,21.0,South,East South Central,21999,0.007667031763417305
+21029,14,Bullitt County,KY,3.0,6.0,21.0,South,East South Central,21999,0.01533406352683461
+21035,26,Calloway County,KY,3.0,6.0,21.0,South,East South Central,21999,0.028477546549835708
+21037,51,Campbell County,KY,3.0,6.0,21.0,South,East South Central,21999,0.05585980284775466
+21047,19,Christian County,KY,3.0,6.0,21.0,South,East South Central,21999,0.0208105147864184
+21049,5,Clark County,KY,3.0,6.0,21.0,South,East South Central,21999,0.00547645125958379
+21059,66,Daviess County,KY,3.0,6.0,21.0,South,East South Central,21999,0.07228915662650602
+21067,542,Fayette County,KY,3.0,6.0,21.0,South,East South Central,21067,1.0
+21073,34,Franklin County,KY,3.0,6.0,21.0,South,East South Central,21999,0.03723986856516977
+21089,1,Greenup County,KY,3.0,6.0,21.0,South,East South Central,21999,0.001095290251916758
+21093,52,Hardin County,KY,3.0,6.0,21.0,South,East South Central,21999,0.056955093099671415
+21095,3,Harlan County,KY,3.0,6.0,21.0,South,East South Central,21999,0.0032858707557502738
+21101,10,Henderson County,KY,3.0,6.0,21.0,South,East South Central,21999,0.01095290251916758
+21107,3,Hopkins County,KY,3.0,6.0,21.0,South,East South Central,21999,0.0032858707557502738
+21111,1069,Jefferson County,KY,3.0,6.0,21.0,South,East South Central,21111,1.0
+21113,13,Jessamine County,KY,3.0,6.0,21.0,South,East South Central,21999,0.014238773274917854
+21117,82,Kenton County,KY,3.0,6.0,21.0,South,East South Central,21999,0.08981380065717415
+21125,8,Laurel County,KY,3.0,6.0,21.0,South,East South Central,21999,0.008762322015334063
+21145,39,McCracken County,KY,3.0,6.0,21.0,South,East South Central,21999,0.04271631982475356
+21151,86,Madison County,KY,3.0,6.0,21.0,South,East South Central,21999,0.09419496166484119
+21161,2,Mason County,KY,3.0,6.0,21.0,South,East South Central,21999,0.002190580503833516
+21167,1,Mercer County,KY,3.0,6.0,21.0,South,East South Central,21999,0.001095290251916758
+21177,30,Muhlenberg County,KY,3.0,6.0,21.0,South,East South Central,21999,0.03285870755750274
+21179,16,Nelson County,KY,3.0,6.0,21.0,South,East South Central,21999,0.017524644030668127
+21185,9,Oldham County,KY,3.0,6.0,21.0,South,East South Central,21999,0.009857612267250822
+21193,6,Perry County,KY,3.0,6.0,21.0,South,East South Central,21999,0.0065717415115005475
+21195,21,Pike County,KY,3.0,6.0,21.0,South,East South Central,21999,0.023001095290251915
+21199,24,Pulaski County,KY,3.0,6.0,21.0,South,East South Central,21999,0.02628696604600219
+21209,27,Scott County,KY,3.0,6.0,21.0,South,East South Central,21999,0.029572836801752465
+21211,1,Shelby County,KY,3.0,6.0,21.0,South,East South Central,21999,0.001095290251916758
+21217,2,Taylor County,KY,3.0,6.0,21.0,South,East South Central,21999,0.002190580503833516
+21227,146,Warren County,KY,3.0,6.0,21.0,South,East South Central,21999,0.15991237677984665
+21235,6,Whitley County,KY,3.0,6.0,21.0,South,East South Central,21999,0.0065717415115005475
+21239,1,Woodford County,KY,3.0,6.0,21.0,South,East South Central,21999,0.001095290251916758
+22001,5,Acadia Parish,LA,3.0,7.0,22.0,South,West South Central,22999,0.0026680896478121665
+22003,5,Allen Parish,LA,3.0,7.0,22.0,South,West South Central,22999,0.0026680896478121665
+22005,73,Ascension Parish,LA,3.0,7.0,22.0,South,West South Central,22999,0.03895410885805763
+22007,1,Assumption Parish,LA,3.0,7.0,22.0,South,West South Central,22999,0.0005336179295624333
+22009,1,Avoyelles Parish,LA,3.0,7.0,22.0,South,West South Central,22999,0.0005336179295624333
+22015,53,Bossier Parish,LA,3.0,7.0,22.0,South,West South Central,22999,0.028281750266808965
+22017,235,Caddo Parish,LA,3.0,7.0,22.0,South,West South Central,22999,0.12540021344717184
+22019,262,Calcasieu Parish,LA,3.0,7.0,22.0,South,West South Central,22999,0.13980789754535752
+22023,1,Cameron Parish,LA,3.0,7.0,22.0,South,West South Central,22999,0.0005336179295624333
+22033,917,East Baton Rouge Parish,LA,3.0,7.0,22.0,South,West South Central,22033,1.0
+22039,1,Evangeline Parish,LA,3.0,7.0,22.0,South,West South Central,22999,0.0005336179295624333
+22045,22,Iberia Parish,LA,3.0,7.0,22.0,South,West South Central,22999,0.011739594450373533
+22047,5,Iberville Parish,LA,3.0,7.0,22.0,South,West South Central,22999,0.0026680896478121665
+22051,158,Jefferson Parish,LA,3.0,7.0,22.0,South,West South Central,22999,0.08431163287086446
+22053,5,Jefferson Davis Parish,LA,3.0,7.0,22.0,South,West South Central,22999,0.0026680896478121665
+22055,390,Lafayette Parish,LA,3.0,7.0,22.0,South,West South Central,22055,1.0
+22057,66,Lafourche Parish,LA,3.0,7.0,22.0,South,West South Central,22999,0.035218783351120594
+22061,75,Lincoln Parish,LA,3.0,7.0,22.0,South,West South Central,22999,0.040021344717182494
+22063,43,Livingston Parish,LA,3.0,7.0,22.0,South,West South Central,22999,0.02294557097118463
+22065,1,Madison Parish,LA,3.0,7.0,22.0,South,West South Central,22999,0.0005336179295624333
+22067,1,Morehouse Parish,LA,3.0,7.0,22.0,South,West South Central,22999,0.0005336179295624333
+22069,55,Natchitoches Parish,LA,3.0,7.0,22.0,South,West South Central,22999,0.02934898612593383
+22071,2781,Orleans Parish,LA,3.0,7.0,22.0,South,West South Central,22071,1.0
+22073,161,Ouachita Parish,LA,3.0,7.0,22.0,South,West South Central,22999,0.08591248665955176
+22075,7,Plaquemines Parish,LA,3.0,7.0,22.0,South,West South Central,22999,0.003735325506937033
+22077,1,Pointe Coupee Parish,LA,3.0,7.0,22.0,South,West South Central,22999,0.0005336179295624333
+22079,103,Rapides Parish,LA,3.0,7.0,22.0,South,West South Central,22999,0.05496264674493063
+22081,1,Red River Parish,LA,3.0,7.0,22.0,South,West South Central,22999,0.0005336179295624333
+22085,1,Sabine Parish,LA,3.0,7.0,22.0,South,West South Central,22999,0.0005336179295624333
+22087,6,St. Bernard Parish,LA,3.0,7.0,22.0,South,West South Central,22999,0.0032017075773745998
+22089,25,St. Charles Parish,LA,3.0,7.0,22.0,South,West South Central,22999,0.013340448239060833
+22093,39,St. James Parish,LA,3.0,7.0,22.0,South,West South Central,22999,0.0208110992529349
+22095,31,St. John the Baptist Parish,LA,3.0,7.0,22.0,South,West South Central,22999,0.016542155816435433
+22097,27,St. Landry Parish,LA,3.0,7.0,22.0,South,West South Central,22999,0.0144076840981857
+22099,20,St. Martin Parish,LA,3.0,7.0,22.0,South,West South Central,22999,0.010672358591248666
+22101,21,St. Mary Parish,LA,3.0,7.0,22.0,South,West South Central,22999,0.011205976520811099
+22103,151,St. Tammany Parish,LA,3.0,7.0,22.0,South,West South Central,22999,0.08057630736392743
+22105,98,Tangipahoa Parish,LA,3.0,7.0,22.0,South,West South Central,22999,0.052294557097118465
+22109,85,Terrebonne Parish,LA,3.0,7.0,22.0,South,West South Central,22999,0.04535752401280683
+22113,7,Vermilion Parish,LA,3.0,7.0,22.0,South,West South Central,22999,0.003735325506937033
+22115,16,Vernon Parish,LA,3.0,7.0,22.0,South,West South Central,22999,0.008537886872998933
+22117,3,Washington Parish,LA,3.0,7.0,22.0,South,West South Central,22999,0.0016008537886872999
+22119,1,Webster Parish,LA,3.0,7.0,22.0,South,West South Central,22999,0.0005336179295624333
+22121,1,West Baton Rouge Parish,LA,3.0,7.0,22.0,South,West South Central,22999,0.0005336179295624333
+22127,1,Winn Parish,LA,3.0,7.0,22.0,South,West South Central,22999,0.0005336179295624333
+23001,35,Androscoggin County,ME,1.0,1.0,23.0,Northeast,New England,,
+23003,21,Aroostook County,ME,1.0,1.0,23.0,Northeast,New England,,
+23005,345,Cumberland County,ME,1.0,1.0,23.0,Northeast,New England,23005,1.0
+23009,3,Hancock County,ME,1.0,1.0,23.0,Northeast,New England,,
+23011,34,Kennebec County,ME,1.0,1.0,23.0,Northeast,New England,,
+23013,1,Knox County,ME,1.0,1.0,23.0,Northeast,New England,,
+23019,89,Penobscot County,ME,1.0,1.0,23.0,Northeast,New England,,
+23031,53,York County,ME,1.0,1.0,23.0,Northeast,New England,,
+24001,15,Allegany County,MD,3.0,5.0,24.0,South,South Atlantic,24999,0.020188425302826378
+24003,382,Anne Arundel County,MD,3.0,5.0,24.0,South,South Atlantic,24003,1.0
+24005,306,Baltimore County,MD,3.0,5.0,24.0,South,South Atlantic,24005,1.0
+24009,22,Calvert County,MD,3.0,5.0,24.0,South,South Atlantic,24999,0.029609690444145357
+24013,43,Carroll County,MD,3.0,5.0,24.0,South,South Atlantic,24999,0.05787348586810229
+24015,27,Cecil County,MD,3.0,5.0,24.0,South,South Atlantic,24999,0.03633916554508748
+24017,67,Charles County,MD,3.0,5.0,24.0,South,South Atlantic,24999,0.0901749663526245
+24019,1,Dorchester County,MD,3.0,5.0,24.0,South,South Atlantic,24999,0.0013458950201884253
+24021,173,Frederick County,MD,3.0,5.0,24.0,South,South Atlantic,24999,0.23283983849259757
+24025,97,Harford County,MD,3.0,5.0,24.0,South,South Atlantic,24999,0.13055181695827725
+24027,120,Howard County,MD,3.0,5.0,24.0,South,South Atlantic,24999,0.16150740242261102
+24031,673,Montgomery County,MD,3.0,5.0,24.0,South,South Atlantic,24031,1.0
+24033,516,Prince George's County,MD,3.0,5.0,24.0,South,South Atlantic,24033,1.0
+24035,1,Queen Anne's County,MD,3.0,5.0,24.0,South,South Atlantic,24999,0.0013458950201884253
+24037,18,St. Mary's County,MD,3.0,5.0,24.0,South,South Atlantic,24999,0.024226110363391656
+24041,4,Talbot County,MD,3.0,5.0,24.0,South,South Atlantic,24999,0.005383580080753701
+24043,79,Washington County,MD,3.0,5.0,24.0,South,South Atlantic,24999,0.1063257065948856
+24045,53,Wicomico County,MD,3.0,5.0,24.0,South,South Atlantic,24999,0.07133243606998654
+24047,23,Worcester County,MD,3.0,5.0,24.0,South,South Atlantic,24999,0.03095558546433378
+24510,1569,Baltimore city,MD,3.0,5.0,24.0,South,South Atlantic,24510,1.0
+25001,83,Barnstable County,MA,1.0,1.0,25.0,Northeast,New England,25999,0.16500994035785288
+25003,51,Berkshire County,MA,1.0,1.0,25.0,Northeast,New England,25999,0.10139165009940358
+25005,349,Bristol County,MA,1.0,1.0,25.0,Northeast,New England,25005,1.0
+25009,649,Essex County,MA,1.0,1.0,25.0,Northeast,New England,25009,1.0
+25011,7,Franklin County,MA,1.0,1.0,25.0,Northeast,New England,25999,0.013916500994035786
+25013,324,Hampden County,MA,1.0,1.0,25.0,Northeast,New England,25013,1.0
+25015,74,Hampshire County,MA,1.0,1.0,25.0,Northeast,New England,25999,0.147117296222664
+25017,929,Middlesex County,MA,1.0,1.0,25.0,Northeast,New England,25017,1.0
+25019,6,Nantucket County,MA,1.0,1.0,25.0,Northeast,New England,25999,0.011928429423459244
+25021,429,Norfolk County,MA,1.0,1.0,25.0,Northeast,New England,25021,1.0
+25023,282,Plymouth County,MA,1.0,1.0,25.0,Northeast,New England,25999,0.5606361829025845
+25025,5519,Suffolk County,MA,1.0,1.0,25.0,Northeast,New England,25025,1.0
+25027,1111,Worcester County,MA,1.0,1.0,25.0,Northeast,New England,25027,1.0
+26005,4,Allegan County,MI,2.0,3.0,26.0,Midwest,East North Central,26999,0.0034904013961605585
+26015,1,Barry County,MI,2.0,3.0,26.0,Midwest,East North Central,26999,0.0008726003490401396
+26017,36,Bay County,MI,2.0,3.0,26.0,Midwest,East North Central,26999,0.031413612565445025
+26021,73,Berrien County,MI,2.0,3.0,26.0,Midwest,East North Central,26999,0.0636998254799302
+26023,1,Branch County,MI,2.0,3.0,26.0,Midwest,East North Central,26999,0.0008726003490401396
+26025,70,Calhoun County,MI,2.0,3.0,26.0,Midwest,East North Central,26999,0.06108202443280977
+26033,6,Chippewa County,MI,2.0,3.0,26.0,Midwest,East North Central,26999,0.005235602094240838
+26037,1,Clinton County,MI,2.0,3.0,26.0,Midwest,East North Central,26999,0.0008726003490401396
+26041,1,Delta County,MI,2.0,3.0,26.0,Midwest,East North Central,26999,0.0008726003490401396
+26045,14,Eaton County,MI,2.0,3.0,26.0,Midwest,East North Central,26999,0.012216404886561954
+26047,1,Emmet County,MI,2.0,3.0,26.0,Midwest,East North Central,26999,0.0008726003490401396
+26049,390,Genesee County,MI,2.0,3.0,26.0,Midwest,East North Central,26049,1.0
+26055,60,Grand Traverse County,MI,2.0,3.0,26.0,Midwest,East North Central,26999,0.05235602094240838
+26057,8,Gratiot County,MI,2.0,3.0,26.0,Midwest,East North Central,26999,0.006980802792321117
+26059,1,Hillsdale County,MI,2.0,3.0,26.0,Midwest,East North Central,26999,0.0008726003490401396
+26061,7,Houghton County,MI,2.0,3.0,26.0,Midwest,East North Central,26999,0.006108202443280977
+26065,485,Ingham County,MI,2.0,3.0,26.0,Midwest,East North Central,26065,1.0
+26067,20,Ionia County,MI,2.0,3.0,26.0,Midwest,East North Central,26999,0.017452006980802792
+26073,67,Isabella County,MI,2.0,3.0,26.0,Midwest,East North Central,26999,0.05846422338568935
+26075,71,Jackson County,MI,2.0,3.0,26.0,Midwest,East North Central,26999,0.06195462478184991
+26077,357,Kalamazoo County,MI,2.0,3.0,26.0,Midwest,East North Central,26077,1.0
+26081,842,Kent County,MI,2.0,3.0,26.0,Midwest,East North Central,26081,1.0
+26087,16,Lapeer County,MI,2.0,3.0,26.0,Midwest,East North Central,26999,0.013961605584642234
+26091,28,Lenawee County,MI,2.0,3.0,26.0,Midwest,East North Central,26999,0.02443280977312391
+26093,65,Livingston County,MI,2.0,3.0,26.0,Midwest,East North Central,26999,0.056719022687609075
+26099,301,Macomb County,MI,2.0,3.0,26.0,Midwest,East North Central,26099,1.0
+26103,34,Marquette County,MI,2.0,3.0,26.0,Midwest,East North Central,26999,0.029668411867364748
+26107,11,Mecosta County,MI,2.0,3.0,26.0,Midwest,East North Central,26999,0.009598603839441536
+26111,25,Midland County,MI,2.0,3.0,26.0,Midwest,East North Central,26999,0.02181500872600349
+26115,44,Monroe County,MI,2.0,3.0,26.0,Midwest,East North Central,26999,0.038394415357766144
+26121,87,Muskegon County,MI,2.0,3.0,26.0,Midwest,East North Central,26999,0.07591623036649214
+26125,610,Oakland County,MI,2.0,3.0,26.0,Midwest,East North Central,26125,1.0
+26137,8,Otsego County,MI,2.0,3.0,26.0,Midwest,East North Central,26999,0.006980802792321117
+26139,155,Ottawa County,MI,2.0,3.0,26.0,Midwest,East North Central,26999,0.13525305410122165
+26145,167,Saginaw County,MI,2.0,3.0,26.0,Midwest,East North Central,26999,0.1457242582897033
+26147,36,St. Clair County,MI,2.0,3.0,26.0,Midwest,East North Central,26999,0.031413612565445025
+26149,8,St. Joseph County,MI,2.0,3.0,26.0,Midwest,East North Central,26999,0.006980802792321117
+26155,11,Shiawassee County,MI,2.0,3.0,26.0,Midwest,East North Central,26999,0.009598603839441536
+26159,8,Van Buren County,MI,2.0,3.0,26.0,Midwest,East North Central,26999,0.006980802792321117
+26161,688,Washtenaw County,MI,2.0,3.0,26.0,Midwest,East North Central,26161,1.0
+26163,2596,Wayne County,MI,2.0,3.0,26.0,Midwest,East North Central,26163,1.0
+26165,1,Wexford County,MI,2.0,3.0,26.0,Midwest,East North Central,26999,0.0008726003490401396
+27003,107,Anoka County,MN,2.0,4.0,27.0,Midwest,West North Central,27999,0.11251314405888538
+27007,12,Beltrami County,MN,2.0,4.0,27.0,Midwest,West North Central,27999,0.012618296529968454
+27013,62,Blue Earth County,MN,2.0,4.0,27.0,Midwest,West North Central,27999,0.06519453207150368
+27019,27,Carver County,MN,2.0,4.0,27.0,Midwest,West North Central,27999,0.028391167192429023
+27023,13,Chippewa County,MN,2.0,4.0,27.0,Midwest,West North Central,27999,0.013669821240799159
+27027,33,Clay County,MN,2.0,4.0,27.0,Midwest,West North Central,27999,0.03470031545741325
+27035,6,Crow Wing County,MN,2.0,4.0,27.0,Midwest,West North Central,27999,0.006309148264984227
+27037,208,Dakota County,MN,2.0,4.0,27.0,Midwest,West North Central,27999,0.21871713985278654
+27043,4,Faribault County,MN,2.0,4.0,27.0,Midwest,West North Central,27999,0.004206098843322818
+27049,1,Goodhue County,MN,2.0,4.0,27.0,Midwest,West North Central,27999,0.0010515247108307045
+27053,1511,Hennepin County,MN,2.0,4.0,27.0,Midwest,West North Central,27053,1.0
+27083,1,Lyon County,MN,2.0,4.0,27.0,Midwest,West North Central,27999,0.0010515247108307045
+27099,1,Mower County,MN,2.0,4.0,27.0,Midwest,West North Central,27999,0.0010515247108307045
+27107,1,Norman County,MN,2.0,4.0,27.0,Midwest,West North Central,27999,0.0010515247108307045
+27109,77,Olmsted County,MN,2.0,4.0,27.0,Midwest,West North Central,27999,0.08096740273396424
+27111,1,Otter Tail County,MN,2.0,4.0,27.0,Midwest,West North Central,27999,0.0010515247108307045
+27119,1,Polk County,MN,2.0,4.0,27.0,Midwest,West North Central,27999,0.0010515247108307045
+27123,586,Ramsey County,MN,2.0,4.0,27.0,Midwest,West North Central,27123,1.0
+27131,8,Rice County,MN,2.0,4.0,27.0,Midwest,West North Central,27999,0.008412197686645636
+27137,140,St. Louis County,MN,2.0,4.0,27.0,Midwest,West North Central,27999,0.14721345951629863
+27139,41,Scott County,MN,2.0,4.0,27.0,Midwest,West North Central,27999,0.04311251314405889
+27141,7,Sherburne County,MN,2.0,4.0,27.0,Midwest,West North Central,27999,0.007360672975814932
+27145,86,Stearns County,MN,2.0,4.0,27.0,Midwest,West North Central,27999,0.0904311251314406
+27147,1,Steele County,MN,2.0,4.0,27.0,Midwest,West North Central,27999,0.0010515247108307045
+27159,1,Wadena County,MN,2.0,4.0,27.0,Midwest,West North Central,27999,0.0010515247108307045
+27161,1,Waseca County,MN,2.0,4.0,27.0,Midwest,West North Central,27999,0.0010515247108307045
+27163,77,Washington County,MN,2.0,4.0,27.0,Midwest,West North Central,27999,0.08096740273396424
+27169,11,Winona County,MN,2.0,4.0,27.0,Midwest,West North Central,27999,0.011566771819137749
+27171,23,Wright County,MN,2.0,4.0,27.0,Midwest,West North Central,27999,0.024185068349106203
+28001,2,Adams County,MS,3.0,6.0,28.0,South,East South Central,28999,0.0014695077149155032
+28003,4,Alcorn County,MS,3.0,6.0,28.0,South,East South Central,28999,0.0029390154298310064
+28011,7,Bolivar County,MS,3.0,6.0,28.0,South,East South Central,28999,0.005143277002204262
+28017,1,Chickasaw County,MS,3.0,6.0,28.0,South,East South Central,28999,0.0007347538574577516
+28027,2,Coahoma County,MS,3.0,6.0,28.0,South,East South Central,28999,0.0014695077149155032
+28029,1,Copiah County,MS,3.0,6.0,28.0,South,East South Central,28999,0.0007347538574577516
+28033,85,DeSoto County,MS,3.0,6.0,28.0,South,East South Central,28999,0.06245407788390889
+28035,151,Forrest County,MS,3.0,6.0,28.0,South,East South Central,28999,0.1109478324761205
+28045,8,Hancock County,MS,3.0,6.0,28.0,South,East South Central,28999,0.005878030859662013
+28047,142,Harrison County,MS,3.0,6.0,28.0,South,East South Central,28999,0.10433504775900074
+28049,271,Hinds County,MS,3.0,6.0,28.0,South,East South Central,28999,0.1991182953710507
+28059,51,Jackson County,MS,3.0,6.0,28.0,South,East South Central,28999,0.03747244673034533
+28067,4,Jones County,MS,3.0,6.0,28.0,South,East South Central,28999,0.0029390154298310064
+28071,145,Lafayette County,MS,3.0,6.0,28.0,South,East South Central,28999,0.106539309331374
+28075,38,Lauderdale County,MS,3.0,6.0,28.0,South,East South Central,28999,0.027920646583394562
+28081,76,Lee County,MS,3.0,6.0,28.0,South,East South Central,28999,0.055841293166789124
+28083,1,Leflore County,MS,3.0,6.0,28.0,South,East South Central,28999,0.0007347538574577516
+28085,1,Lincoln County,MS,3.0,6.0,28.0,South,East South Central,28999,0.0007347538574577516
+28087,24,Lowndes County,MS,3.0,6.0,28.0,South,East South Central,28999,0.01763409257898604
+28089,64,Madison County,MS,3.0,6.0,28.0,South,East South Central,28999,0.0470242468772961
+28091,1,Marion County,MS,3.0,6.0,28.0,South,East South Central,28999,0.0007347538574577516
+28095,2,Monroe County,MS,3.0,6.0,28.0,South,East South Central,28999,0.0014695077149155032
+28099,2,Neshoba County,MS,3.0,6.0,28.0,South,East South Central,28999,0.0014695077149155032
+28105,134,Oktibbeha County,MS,3.0,6.0,28.0,South,East South Central,28999,0.09845701689933872
+28107,1,Panola County,MS,3.0,6.0,28.0,South,East South Central,28999,0.0007347538574577516
+28109,1,Pearl River County,MS,3.0,6.0,28.0,South,East South Central,28999,0.0007347538574577516
+28113,3,Pike County,MS,3.0,6.0,28.0,South,East South Central,28999,0.002204261572373255
+28121,112,Rankin County,MS,3.0,6.0,28.0,South,East South Central,28999,0.08229243203526819
+28129,1,Smith County,MS,3.0,6.0,28.0,South,East South Central,28999,0.0007347538574577516
+28145,1,Union County,MS,3.0,6.0,28.0,South,East South Central,28999,0.0007347538574577516
+28149,5,Warren County,MS,3.0,6.0,28.0,South,East South Central,28999,0.0036737692872887582
+28151,10,Washington County,MS,3.0,6.0,28.0,South,East South Central,28999,0.0073475385745775165
+28159,10,Winston County,MS,3.0,6.0,28.0,South,East South Central,28999,0.0073475385745775165
+29001,1,Adair County,MO,2.0,4.0,29.0,Midwest,West North Central,29999,0.0007485029940119761
+29019,202,Boone County,MO,2.0,4.0,29.0,Midwest,West North Central,29999,0.15119760479041916
+29021,28,Buchanan County,MO,2.0,4.0,29.0,Midwest,West North Central,29999,0.020958083832335328
+29023,1,Butler County,MO,2.0,4.0,29.0,Midwest,West North Central,29999,0.0007485029940119761
+29027,1,Callaway County,MO,2.0,4.0,29.0,Midwest,West North Central,29999,0.0007485029940119761
+29029,2,Camden County,MO,2.0,4.0,29.0,Midwest,West North Central,29999,0.0014970059880239522
+29031,44,Cape Girardeau County,MO,2.0,4.0,29.0,Midwest,West North Central,29999,0.03293413173652695
+29037,20,Cass County,MO,2.0,4.0,29.0,Midwest,West North Central,29999,0.014970059880239521
+29043,20,Christian County,MO,2.0,4.0,29.0,Midwest,West North Central,29999,0.014970059880239521
+29047,42,Clay County,MO,2.0,4.0,29.0,Midwest,West North Central,29999,0.03143712574850299
+29051,38,Cole County,MO,2.0,4.0,29.0,Midwest,West North Central,29999,0.02844311377245509
+29071,9,Franklin County,MO,2.0,4.0,29.0,Midwest,West North Central,29999,0.006736526946107785
+29077,299,Greene County,MO,2.0,4.0,29.0,Midwest,West North Central,29999,0.22380239520958084
+29095,1784,Jackson County,MO,2.0,4.0,29.0,Midwest,West North Central,29095,1.0
+29097,103,Jasper County,MO,2.0,4.0,29.0,Midwest,West North Central,29999,0.07709580838323353
+29099,28,Jefferson County,MO,2.0,4.0,29.0,Midwest,West North Central,29999,0.020958083832335328
+29101,78,Johnson County,MO,2.0,4.0,29.0,Midwest,West North Central,29999,0.058383233532934134
+29113,1,Lincoln County,MO,2.0,4.0,29.0,Midwest,West North Central,29999,0.0007485029940119761
+29127,3,Marion County,MO,2.0,4.0,29.0,Midwest,West North Central,29999,0.002245508982035928
+29135,1,Moniteau County,MO,2.0,4.0,29.0,Midwest,West North Central,29999,0.0007485029940119761
+29145,6,Newton County,MO,2.0,4.0,29.0,Midwest,West North Central,29999,0.004491017964071856
+29147,6,Nodaway County,MO,2.0,4.0,29.0,Midwest,West North Central,29999,0.004491017964071856
+29159,1,Pettis County,MO,2.0,4.0,29.0,Midwest,West North Central,29999,0.0007485029940119761
+29161,15,Phelps County,MO,2.0,4.0,29.0,Midwest,West North Central,29999,0.01122754491017964
+29165,7,Platte County,MO,2.0,4.0,29.0,Midwest,West North Central,29999,0.005239520958083832
+29169,5,Pulaski County,MO,2.0,4.0,29.0,Midwest,West North Central,29999,0.0037425149700598802
+29175,1,Randolph County,MO,2.0,4.0,29.0,Midwest,West North Central,29999,0.0007485029940119761
+29183,115,St. Charles County,MO,2.0,4.0,29.0,Midwest,West North Central,29999,0.08607784431137724
+29187,3,St. Francois County,MO,2.0,4.0,29.0,Midwest,West North Central,29999,0.002245508982035928
+29189,228,St. Louis County,MO,2.0,4.0,29.0,Midwest,West North Central,29999,0.17065868263473055
+29195,1,Saline County,MO,2.0,4.0,29.0,Midwest,West North Central,29999,0.0007485029940119761
+29201,1,Scott County,MO,2.0,4.0,29.0,Midwest,West North Central,29999,0.0007485029940119761
+29213,26,Taney County,MO,2.0,4.0,29.0,Midwest,West North Central,29999,0.019461077844311378
+29510,2256,St. Louis city,MO,2.0,4.0,29.0,Midwest,West North Central,29510,1.0
+30013,14,Cascade County,MT,4.0,8.0,30.0,West,Mountain,30999,0.034482758620689655
+30023,1,Deer Lodge County,MT,4.0,8.0,30.0,West,Mountain,30999,0.0024630541871921183
+30029,16,Flathead County,MT,4.0,8.0,30.0,West,Mountain,30999,0.03940886699507389
+30031,74,Gallatin County,MT,4.0,8.0,30.0,West,Mountain,30999,0.18226600985221675
+30041,12,Hill County,MT,4.0,8.0,30.0,West,Mountain,30999,0.029556650246305417
+30049,20,Lewis and Clark County,MT,4.0,8.0,30.0,West,Mountain,30999,0.04926108374384237
+30063,179,Missoula County,MT,4.0,8.0,30.0,West,Mountain,30999,0.4408866995073892
+30093,10,Silver Bow County,MT,4.0,8.0,30.0,West,Mountain,30999,0.024630541871921183
+30111,80,Yellowstone County,MT,4.0,8.0,30.0,West,Mountain,30999,0.19704433497536947
+31001,2,Adams County,NE,2.0,4.0,31.0,Midwest,West North Central,,
+31019,23,Buffalo County,NE,2.0,4.0,31.0,Midwest,West North Central,,
+31053,5,Dodge County,NE,2.0,4.0,31.0,Midwest,West North Central,,
+31055,1233,Douglas County,NE,2.0,4.0,31.0,Midwest,West North Central,31055,1.0
+31067,1,Gage County,NE,2.0,4.0,31.0,Midwest,West North Central,,
+31079,51,Hall County,NE,2.0,4.0,31.0,Midwest,West North Central,,
+31109,457,Lancaster County,NE,2.0,4.0,31.0,Midwest,West North Central,31109,1.0
+31111,1,Lincoln County,NE,2.0,4.0,31.0,Midwest,West North Central,,
+31119,12,Madison County,NE,2.0,4.0,31.0,Midwest,West North Central,,
+31141,2,Platte County,NE,2.0,4.0,31.0,Midwest,West North Central,,
+31153,90,Sarpy County,NE,2.0,4.0,31.0,Midwest,West North Central,,
+31157,1,Scotts Bluff County,NE,2.0,4.0,31.0,Midwest,West North Central,,
+31185,1,York County,NE,2.0,4.0,31.0,Midwest,West North Central,,
+32001,4,Churchill County,NV,4.0,8.0,32.0,West,Mountain,,
+32003,4882,Clark County,NV,4.0,8.0,32.0,West,Mountain,32003,1.0
+32005,1,Douglas County,NV,4.0,8.0,32.0,West,Mountain,,
+32007,22,Elko County,NV,4.0,8.0,32.0,West,Mountain,,
+32019,2,Lyon County,NV,4.0,8.0,32.0,West,Mountain,,
+32021,1,Mineral County,NV,4.0,8.0,32.0,West,Mountain,,
+32023,5,Nye County,NV,4.0,8.0,32.0,West,Mountain,,
+32031,721,Washoe County,NV,4.0,8.0,32.0,West,Mountain,32031,1.0
+32510,26,Carson City,NV,4.0,8.0,32.0,West,Mountain,,
+33001,7,Belknap County,NH,1.0,1.0,33.0,Northeast,New England,33999,0.011666666666666667
+33003,1,Carroll County,NH,1.0,1.0,33.0,Northeast,New England,33999,0.0016666666666666668
+33005,18,Cheshire County,NH,1.0,1.0,33.0,Northeast,New England,33999,0.03
+33009,15,Grafton County,NH,1.0,1.0,33.0,Northeast,New England,33999,0.025
+33011,247,Hillsborough County,NH,1.0,1.0,33.0,Northeast,New England,33999,0.4116666666666667
+33013,79,Merrimack County,NH,1.0,1.0,33.0,Northeast,New England,33999,0.13166666666666665
+33015,181,Rockingham County,NH,1.0,1.0,33.0,Northeast,New England,33999,0.3016666666666667
+33017,52,Strafford County,NH,1.0,1.0,33.0,Northeast,New England,33999,0.08666666666666667
+34001,152,Atlantic County,NJ,1.0,2.0,34.0,Northeast,Middle Atlantic,34999,0.07030527289546716
+34003,316,Bergen County,NJ,1.0,2.0,34.0,Northeast,Middle Atlantic,34003,1.0
+34005,108,Burlington County,NJ,1.0,2.0,34.0,Northeast,Middle Atlantic,34999,0.04995374653098982
+34007,310,Camden County,NJ,1.0,2.0,34.0,Northeast,Middle Atlantic,34007,1.0
+34009,45,Cape May County,NJ,1.0,2.0,34.0,Northeast,Middle Atlantic,34999,0.020814061054579093
+34011,52,Cumberland County,NJ,1.0,2.0,34.0,Northeast,Middle Atlantic,34999,0.024051803885291396
+34013,493,Essex County,NJ,1.0,2.0,34.0,Northeast,Middle Atlantic,34013,1.0
+34015,88,Gloucester County,NJ,1.0,2.0,34.0,Northeast,Middle Atlantic,34999,0.04070305272895467
+34017,291,Hudson County,NJ,1.0,2.0,34.0,Northeast,Middle Atlantic,34999,0.13459759481961148
+34019,14,Hunterdon County,NJ,1.0,2.0,34.0,Northeast,Middle Atlantic,34999,0.0064754856614246065
+34021,238,Mercer County,NJ,1.0,2.0,34.0,Northeast,Middle Atlantic,34999,0.11008325624421832
+34023,332,Middlesex County,NJ,1.0,2.0,34.0,Northeast,Middle Atlantic,34023,1.0
+34025,238,Monmouth County,NJ,1.0,2.0,34.0,Northeast,Middle Atlantic,34999,0.11008325624421832
+34027,135,Morris County,NJ,1.0,2.0,34.0,Northeast,Middle Atlantic,34999,0.06244218316373728
+34029,167,Ocean County,NJ,1.0,2.0,34.0,Northeast,Middle Atlantic,34999,0.07724329324699353
+34031,231,Passaic County,NJ,1.0,2.0,34.0,Northeast,Middle Atlantic,34999,0.10684551341350601
+34033,7,Salem County,NJ,1.0,2.0,34.0,Northeast,Middle Atlantic,34999,0.0032377428307123032
+34035,63,Somerset County,NJ,1.0,2.0,34.0,Northeast,Middle Atlantic,34999,0.029139685476410732
+34037,16,Sussex County,NJ,1.0,2.0,34.0,Northeast,Middle Atlantic,34999,0.0074005550416281225
+34039,295,Union County,NJ,1.0,2.0,34.0,Northeast,Middle Atlantic,34999,0.1364477335800185
+34041,22,Warren County,NJ,1.0,2.0,34.0,Northeast,Middle Atlantic,34999,0.010175763182238668
+35001,814,Bernalillo County,NM,4.0,8.0,35.0,West,Mountain,35001,1.0
+35005,25,Chaves County,NM,4.0,8.0,35.0,West,Mountain,35999,0.05
+35007,1,Colfax County,NM,4.0,8.0,35.0,West,Mountain,35999,0.002
+35009,7,Curry County,NM,4.0,8.0,35.0,West,Mountain,35999,0.014
+35013,198,Do�a Ana County,NM,4.0,8.0,35.0,West,Mountain,35999,0.396
+35015,26,Eddy County,NM,4.0,8.0,35.0,West,Mountain,35999,0.052
+35017,1,Grant County,NM,4.0,8.0,35.0,West,Mountain,35999,0.002
+35025,47,Lea County,NM,4.0,8.0,35.0,West,Mountain,35999,0.094
+35028,1,Los Alamos County,NM,4.0,8.0,35.0,West,Mountain,35999,0.002
+35029,1,Luna County,NM,4.0,8.0,35.0,West,Mountain,35999,0.002
+35031,1,McKinley County,NM,4.0,8.0,35.0,West,Mountain,35999,0.002
+35035,12,Otero County,NM,4.0,8.0,35.0,West,Mountain,35999,0.024
+35041,1,Roosevelt County,NM,4.0,8.0,35.0,West,Mountain,35999,0.002
+35043,51,Sandoval County,NM,4.0,8.0,35.0,West,Mountain,35999,0.102
+35045,31,San Juan County,NM,4.0,8.0,35.0,West,Mountain,35999,0.062
+35047,1,San Miguel County,NM,4.0,8.0,35.0,West,Mountain,35999,0.002
+35049,80,Santa Fe County,NM,4.0,8.0,35.0,West,Mountain,35999,0.16
+35051,2,Sierra County,NM,4.0,8.0,35.0,West,Mountain,35999,0.004
+35055,3,Taos County,NM,4.0,8.0,35.0,West,Mountain,35999,0.006
+35061,11,Valencia County,NM,4.0,8.0,35.0,West,Mountain,35999,0.022
+36001,439,Albany County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36001,1.0
+36003,1,Allegany County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.0003123048094940662
+36005,130,Bronx County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.04059962523422861
+36007,137,Broome County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.042785758900687074
+36009,72,Cattaraugus County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.022485946283572766
+36011,41,Cayuga County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.012804497189256714
+36013,83,Chautauqua County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.025921299188007497
+36015,63,Chemung County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.01967520299812617
+36017,3,Chenango County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.0009369144284821987
+36019,33,Clinton County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.010306058713304185
+36021,13,Columbia County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.004059962523422861
+36023,24,Cortland County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.007495315427857589
+36025,12,Delaware County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.0037476577139287947
+36027,226,Dutchess County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.07058088694565896
+36029,2354,Erie County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36029,1.0
+36031,1,Essex County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.0003123048094940662
+36033,2,Franklin County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.0006246096189881324
+36035,5,Fulton County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.001561524047470331
+36037,17,Genesee County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.005309181761399126
+36039,1,Greene County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.0003123048094940662
+36041,1,Hamilton County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.0003123048094940662
+36043,7,Herkimer County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.0021861336664584633
+36045,78,Jefferson County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.024359775140537165
+36047,336,Kings County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36047,1.0
+36049,1,Lewis County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.0003123048094940662
+36051,16,Livingston County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.004996876951905059
+36053,10,Madison County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.003123048094940662
+36055,1236,Monroe County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36055,1.0
+36057,32,Montgomery County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.009993753903810118
+36059,37,Nassau County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.01155527795128045
+36061,97,New York County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.030293566520924423
+36063,254,Niagara County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.07932542161149282
+36065,180,Oneida County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.056214865708931916
+36067,739,Onondaga County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36067,1.0
+36069,72,Ontario County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.022485946283572766
+36071,259,Orange County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.08088694565896315
+36073,1,Orleans County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.0003123048094940662
+36075,63,Oswego County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.01967520299812617
+36077,22,Otsego County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.006870705808869456
+36079,26,Putnam County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.008119925046845722
+36081,127,Queens County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.03966271080574641
+36083,110,Rensselaer County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.034353529044347283
+36085,521,Richmond County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36085,1.0
+36087,137,Rockland County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.042785758900687074
+36089,72,St. Lawrence County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.022485946283572766
+36091,120,Saratoga County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.037476577139287946
+36093,104,Schenectady County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.03247970018738289
+36095,2,Schoharie County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.0006246096189881324
+36097,1,Schuyler County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.0003123048094940662
+36099,2,Seneca County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.0006246096189881324
+36101,28,Steuben County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.008744534665833853
+36103,73,Suffolk County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.022798251093066834
+36105,2,Sullivan County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.0006246096189881324
+36107,1,Tioga County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.0003123048094940662
+36109,177,Tompkins County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.05527795128044972
+36111,129,Ulster County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.04028732042473454
+36113,12,Warren County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.0037476577139287947
+36115,10,Washington County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.003123048094940662
+36117,29,Wayne County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.00905683947532792
+36119,44,Westchester County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.013741411617738912
+36121,1,Wyoming County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.0003123048094940662
+36123,1,Yates County,NY,1.0,2.0,36.0,Northeast,Middle Atlantic,36999,0.0003123048094940662
+37001,72,Alamance County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.03621730382293763
+37013,1,Beaufort County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.0005030181086519115
+37019,31,Brunswick County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.015593561368209255
+37021,343,Buncombe County,NC,3.0,5.0,37.0,South,South Atlantic,37021,1.0
+37023,35,Burke County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.017605633802816902
+37025,103,Cabarrus County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.05181086519114688
+37027,4,Caldwell County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.002012072434607646
+37031,15,Carteret County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.007545271629778672
+37035,70,Catawba County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.035211267605633804
+37037,2,Chatham County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.001006036217303823
+37045,32,Cleveland County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.01609657947686117
+37047,1,Columbus County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.0005030181086519115
+37049,31,Craven County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.015593561368209255
+37051,328,Cumberland County,NC,3.0,5.0,37.0,South,South Atlantic,37051,1.0
+37055,12,Dare County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.006036217303822937
+37057,36,Davidson County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.018108651911468814
+37063,491,Durham County,NC,3.0,5.0,37.0,South,South Atlantic,37063,1.0
+37065,1,Edgecombe County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.0005030181086519115
+37067,40,Forsyth County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.02012072434607646
+37069,2,Franklin County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.001006036217303823
+37071,99,Gaston County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.049798792756539235
+37077,1,Granville County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.0005030181086519115
+37081,600,Guilford County,NC,3.0,5.0,37.0,South,South Atlantic,37081,1.0
+37083,1,Halifax County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.0005030181086519115
+37085,20,Harnett County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.01006036217303823
+37087,3,Haywood County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.0015090543259557343
+37089,17,Henderson County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.008551307847082495
+37093,1,Hoke County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.0005030181086519115
+37097,91,Iredell County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.045774647887323945
+37099,16,Jackson County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.008048289738430584
+37101,41,Johnston County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.02062374245472837
+37105,17,Lee County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.008551307847082495
+37107,17,Lenoir County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.008551307847082495
+37109,16,Lincoln County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.008048289738430584
+37119,1656,Mecklenburg County,NC,3.0,5.0,37.0,South,South Atlantic,37119,1.0
+37125,30,Moore County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.015090543259557344
+37127,45,Nash County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.022635814889336015
+37129,269,New Hanover County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.13531187122736418
+37133,66,Onslow County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.03319919517102616
+37135,258,Orange County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.12977867203219315
+37139,9,Pasquotank County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.004527162977867203
+37147,146,Pitt County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.07344064386317907
+37151,20,Randolph County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.01006036217303823
+37153,4,Richmond County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.002012072434607646
+37155,41,Robeson County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.02062374245472837
+37157,10,Rockingham County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.005030181086519115
+37159,31,Rowan County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.015593561368209255
+37161,1,Rutherford County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.0005030181086519115
+37163,1,Sampson County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.0005030181086519115
+37167,1,Stanly County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.0005030181086519115
+37171,10,Surry County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.005030181086519115
+37179,71,Union County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.03571428571428571
+37181,2,Vance County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.001006036217303823
+37183,1910,Wake County,NC,3.0,5.0,37.0,South,South Atlantic,37183,1.0
+37189,77,Watauga County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.03873239436619718
+37191,37,Wayne County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.018611670020120725
+37193,1,Wilkes County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.0005030181086519115
+37195,30,Wilson County,NC,3.0,5.0,37.0,South,South Atlantic,37999,0.015090543259557344
+38015,65,Burleigh County,ND,2.0,4.0,38.0,Midwest,West North Central,38999,0.14541387024608501
+38017,288,Cass County,ND,2.0,4.0,38.0,Midwest,West North Central,38999,0.6442953020134228
+38035,58,Grand Forks County,ND,2.0,4.0,38.0,Midwest,West North Central,38999,0.1297539149888143
+38071,1,Ramsey County,ND,2.0,4.0,38.0,Midwest,West North Central,38999,0.0022371364653243847
+38079,1,Rolette County,ND,2.0,4.0,38.0,Midwest,West North Central,38999,0.0022371364653243847
+38089,1,Stark County,ND,2.0,4.0,38.0,Midwest,West North Central,38999,0.0022371364653243847
+38101,32,Ward County,ND,2.0,4.0,38.0,Midwest,West North Central,38999,0.07158836689038031
+38105,1,Williams County,ND,2.0,4.0,38.0,Midwest,West North Central,38999,0.0022371364653243847
+39003,98,Allen County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.034702549575070823
+39005,15,Ashland County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.005311614730878187
+39007,31,Ashtabula County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.010977337110481586
+39009,138,Athens County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.04886685552407932
+39011,9,Auglaize County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.003186968838526912
+39013,27,Belmont County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.009560906515580737
+39015,1,Brown County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.0003541076487252125
+39017,176,Butler County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.06232294617563739
+39021,1,Champaign County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.0003541076487252125
+39023,49,Clark County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.017351274787535412
+39025,48,Clermont County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.0169971671388102
+39027,21,Clinton County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.007436260623229462
+39029,20,Columbiana County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.007082152974504249
+39033,8,Crawford County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.0028328611898017
+39035,2806,Cuyahoga County,OH,2.0,3.0,39.0,Midwest,East North Central,39035,1.0
+39037,2,Darke County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.000708215297450425
+39039,14,Defiance County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.004957507082152974
+39041,57,Delaware County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.02018413597733711
+39043,78,Erie County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.02762039660056657
+39045,95,Fairfield County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.03364022662889518
+39049,3116,Franklin County,OH,2.0,3.0,39.0,Midwest,East North Central,39049,1.0
+39051,17,Fulton County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.0060198300283286115
+39055,18,Geauga County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.006373937677053824
+39057,83,Greene County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.029390934844192633
+39059,15,Guernsey County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.005311614730878187
+39061,1454,Hamilton County,OH,2.0,3.0,39.0,Midwest,East North Central,39061,1.0
+39063,54,Hancock County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.019121813031161474
+39065,14,Hardin County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.004957507082152974
+39069,3,Henry County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.0010623229461756375
+39071,1,Highland County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.0003541076487252125
+39077,32,Huron County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.0113314447592068
+39079,3,Jackson County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.0010623229461756375
+39081,36,Jefferson County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.012747875354107648
+39083,16,Knox County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.0056657223796034
+39085,189,Lake County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.06692634560906516
+39087,12,Lawrence County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.00424929178470255
+39089,83,Licking County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.029390934844192633
+39091,3,Logan County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.0010623229461756375
+39093,282,Lorain County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.09985835694050992
+39095,687,Lucas County,OH,2.0,3.0,39.0,Midwest,East North Central,39095,1.0
+39097,9,Madison County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.003186968838526912
+39099,367,Mahoning County,OH,2.0,3.0,39.0,Midwest,East North Central,39099,1.0
+39101,13,Marion County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.004603399433427762
+39103,87,Medina County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.030807365439093484
+39107,7,Mercer County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.002478753541076487
+39109,45,Miami County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.01593484419263456
+39113,722,Montgomery County,OH,2.0,3.0,39.0,Midwest,East North Central,39113,1.0
+39119,53,Muskingum County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.018767705382436262
+39123,13,Ottawa County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.004603399433427762
+39127,1,Perry County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.0003541076487252125
+39129,15,Pickaway County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.005311614730878187
+39133,187,Portage County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.06621813031161473
+39139,60,Richland County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.021246458923512748
+39141,45,Ross County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.01593484419263456
+39143,33,Sandusky County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.011685552407932011
+39145,35,Scioto County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.012393767705382436
+39147,45,Seneca County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.01593484419263456
+39149,5,Shelby County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.0017705382436260624
+39151,304,Stark County,OH,2.0,3.0,39.0,Midwest,East North Central,39151,1.0
+39153,705,Summit County,OH,2.0,3.0,39.0,Midwest,East North Central,39153,1.0
+39155,95,Trumbull County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.03364022662889518
+39157,33,Tuscarawas County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.011685552407932011
+39159,8,Union County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.0028328611898017
+39161,1,Van Wert County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.0003541076487252125
+39165,66,Warren County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.023371104815864022
+39167,21,Washington County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.007436260623229462
+39169,53,Wayne County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.018767705382436262
+39171,6,Williams County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.002124645892351275
+39173,139,Wood County,OH,2.0,3.0,39.0,Midwest,East North Central,39999,0.049220963172804534
+40013,32,Bryan County,OK,3.0,7.0,40.0,South,West South Central,40999,0.03795966785290629
+40015,1,Caddo County,OK,3.0,7.0,40.0,South,West South Central,40999,0.0011862396204033216
+40017,103,Canadian County,OK,3.0,7.0,40.0,South,West South Central,40999,0.1221826809015421
+40019,18,Carter County,OK,3.0,7.0,40.0,South,West South Central,40999,0.021352313167259787
+40021,38,Cherokee County,OK,3.0,7.0,40.0,South,West South Central,40999,0.045077105575326216
+40027,473,Cleveland County,OK,3.0,7.0,40.0,South,West South Central,40027,1.0
+40031,82,Comanche County,OK,3.0,7.0,40.0,South,West South Central,40999,0.09727164887307237
+40037,3,Creek County,OK,3.0,7.0,40.0,South,West South Central,40999,0.0035587188612099642
+40039,22,Custer County,OK,3.0,7.0,40.0,South,West South Central,40999,0.02609727164887307
+40041,170,Delaware County,OK,3.0,7.0,40.0,South,West South Central,40999,0.20166073546856464
+40047,15,Garfield County,OK,3.0,7.0,40.0,South,West South Central,40999,0.017793594306049824
+40049,1,Garvin County,OK,3.0,7.0,40.0,South,West South Central,40999,0.0011862396204033216
+40051,9,Grady County,OK,3.0,7.0,40.0,South,West South Central,40999,0.010676156583629894
+40065,1,Jackson County,OK,3.0,7.0,40.0,South,West South Central,40999,0.0011862396204033216
+40071,22,Kay County,OK,3.0,7.0,40.0,South,West South Central,40999,0.02609727164887307
+40073,1,Kingfisher County,OK,3.0,7.0,40.0,South,West South Central,40999,0.0011862396204033216
+40079,20,Le Flore County,OK,3.0,7.0,40.0,South,West South Central,40999,0.02372479240806643
+40083,2,Logan County,OK,3.0,7.0,40.0,South,West South Central,40999,0.002372479240806643
+40087,4,McClain County,OK,3.0,7.0,40.0,South,West South Central,40999,0.004744958481613286
+40089,1,McCurtain County,OK,3.0,7.0,40.0,South,West South Central,40999,0.0011862396204033216
+40097,2,Mayes County,OK,3.0,7.0,40.0,South,West South Central,40999,0.002372479240806643
+40101,26,Muskogee County,OK,3.0,7.0,40.0,South,West South Central,40999,0.03084223013048636
+40109,1366,Oklahoma County,OK,3.0,7.0,40.0,South,West South Central,40109,1.0
+40111,1,Okmulgee County,OK,3.0,7.0,40.0,South,West South Central,40999,0.0011862396204033216
+40115,8,Ottawa County,OK,3.0,7.0,40.0,South,West South Central,40999,0.009489916963226572
+40119,138,Payne County,OK,3.0,7.0,40.0,South,West South Central,40999,0.16370106761565836
+40121,9,Pittsburg County,OK,3.0,7.0,40.0,South,West South Central,40999,0.010676156583629894
+40123,32,Pontotoc County,OK,3.0,7.0,40.0,South,West South Central,40999,0.03795966785290629
+40125,40,Pottawatomie County,OK,3.0,7.0,40.0,South,West South Central,40999,0.04744958481613286
+40131,23,Rogers County,OK,3.0,7.0,40.0,South,West South Central,40999,0.027283511269276393
+40133,1,Seminole County,OK,3.0,7.0,40.0,South,West South Central,40999,0.0011862396204033216
+40135,1,Sequoyah County,OK,3.0,7.0,40.0,South,West South Central,40999,0.0011862396204033216
+40137,4,Stephens County,OK,3.0,7.0,40.0,South,West South Central,40999,0.004744958481613286
+40139,1,Texas County,OK,3.0,7.0,40.0,South,West South Central,40999,0.0011862396204033216
+40143,905,Tulsa County,OK,3.0,7.0,40.0,South,West South Central,40143,1.0
+40145,1,Wagoner County,OK,3.0,7.0,40.0,South,West South Central,40999,0.0011862396204033216
+40147,11,Washington County,OK,3.0,7.0,40.0,South,West South Central,40999,0.013048635824436536
+41003,103,Benton County,OR,4.0,9.0,41.0,West,Pacific,41999,0.07357142857142857
+41005,181,Clackamas County,OR,4.0,9.0,41.0,West,Pacific,41999,0.12928571428571428
+41007,15,Clatsop County,OR,4.0,9.0,41.0,West,Pacific,41999,0.010714285714285714
+41009,78,Columbia County,OR,4.0,9.0,41.0,West,Pacific,41999,0.055714285714285716
+41011,7,Coos County,OR,4.0,9.0,41.0,West,Pacific,41999,0.005
+41017,116,Deschutes County,OR,4.0,9.0,41.0,West,Pacific,41999,0.08285714285714285
+41019,35,Douglas County,OR,4.0,9.0,41.0,West,Pacific,41999,0.025
+41027,1,Hood River County,OR,4.0,9.0,41.0,West,Pacific,41999,0.0007142857142857143
+41029,138,Jackson County,OR,4.0,9.0,41.0,West,Pacific,41999,0.09857142857142857
+41031,10,Jefferson County,OR,4.0,9.0,41.0,West,Pacific,41999,0.007142857142857143
+41033,17,Josephine County,OR,4.0,9.0,41.0,West,Pacific,41999,0.012142857142857143
+41035,6,Klamath County,OR,4.0,9.0,41.0,West,Pacific,41999,0.004285714285714286
+41039,488,Lane County,OR,4.0,9.0,41.0,West,Pacific,41039,1.0
+41041,3,Lincoln County,OR,4.0,9.0,41.0,West,Pacific,41999,0.002142857142857143
+41043,90,Linn County,OR,4.0,9.0,41.0,West,Pacific,41999,0.06428571428571428
+41045,1,Malheur County,OR,4.0,9.0,41.0,West,Pacific,41999,0.0007142857142857143
+41047,247,Marion County,OR,4.0,9.0,41.0,West,Pacific,41999,0.17642857142857143
+41051,2914,Multnomah County,OR,4.0,9.0,41.0,West,Pacific,41051,1.0
+41053,11,Polk County,OR,4.0,9.0,41.0,West,Pacific,41999,0.007857142857142858
+41059,30,Umatilla County,OR,4.0,9.0,41.0,West,Pacific,41999,0.02142857142857143
+41061,6,Union County,OR,4.0,9.0,41.0,West,Pacific,41999,0.004285714285714286
+41067,265,Washington County,OR,4.0,9.0,41.0,West,Pacific,41999,0.18928571428571428
+41071,40,Yamhill County,OR,4.0,9.0,41.0,West,Pacific,41999,0.02857142857142857
+42001,27,Adams County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42999,0.008706868752015479
+42003,2081,Allegheny County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42003,1.0
+42005,5,Armstrong County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42999,0.0016123831022250886
+42007,71,Beaver County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42999,0.02289584005159626
+42011,214,Berks County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42999,0.0690099967752338
+42013,56,Blair County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42999,0.01805869074492099
+42015,1,Bradford County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42999,0.0003224766204450177
+42017,344,Bucks County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42017,1.0
+42019,74,Butler County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42999,0.023863269912931313
+42021,64,Cambria County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42999,0.020638503708481134
+42025,1,Carbon County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42999,0.0003224766204450177
+42027,182,Centre County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42999,0.05869074492099323
+42029,325,Chester County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42029,1.0
+42033,11,Clearfield County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42999,0.003547242824895195
+42035,3,Clinton County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42999,0.0009674298613350532
+42037,18,Columbia County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42999,0.005804579168010319
+42039,10,Crawford County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42999,0.0032247662044501773
+42041,127,Cumberland County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42999,0.04095453079651725
+42043,249,Dauphin County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42999,0.08029667849080942
+42045,266,Delaware County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42999,0.08577878103837472
+42047,1,Elk County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42999,0.0003224766204450177
+42049,285,Erie County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42999,0.09190583682683005
+42051,50,Fayette County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42999,0.016123831022250887
+42055,39,Franklin County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42999,0.012576588197355692
+42061,5,Huntingdon County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42999,0.0016123831022250886
+42063,28,Indiana County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42999,0.009029345372460496
+42065,1,Jefferson County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42999,0.0003224766204450177
+42069,193,Lackawanna County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42999,0.06223798774588842
+42071,370,Lancaster County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42071,1.0
+42073,26,Lawrence County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42999,0.00838439213157046
+42075,8,Lebanon County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42999,0.0025798129635601417
+42077,190,Lehigh County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42999,0.06127055788455337
+42079,80,Luzerne County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42999,0.025798129635601418
+42081,24,Lycoming County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42999,0.007739438890680426
+42083,1,McKean County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42999,0.0003224766204450177
+42085,47,Mercer County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42999,0.015156401160915834
+42089,47,Monroe County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42999,0.015156401160915834
+42091,413,Montgomery County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42091,1.0
+42095,246,Northampton County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42999,0.07932924862947437
+42097,8,Northumberland County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42999,0.0025798129635601417
+42101,5429,Philadelphia County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42101,1.0
+42107,21,Schuylkill County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42999,0.006772009029345372
+42111,9,Somerset County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42999,0.0029022895840051595
+42119,3,Union County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42999,0.0009674298613350532
+42121,6,Venango County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42999,0.0019348597226701064
+42125,99,Washington County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42999,0.03192518542405676
+42129,86,Westmoreland County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42999,0.027732989358271527
+42133,219,York County,PA,1.0,2.0,42.0,Northeast,Middle Atlantic,42999,0.07062237987745888
+44001,12,Bristol County,RI,1.0,1.0,44.0,Northeast,New England,,
+44003,332,Kent County,RI,1.0,1.0,44.0,Northeast,New England,44003,1.0
+44005,54,Newport County,RI,1.0,1.0,44.0,Northeast,New England,,
+44007,691,Providence County,RI,1.0,1.0,44.0,Northeast,New England,44007,1.0
+44009,23,Washington County,RI,1.0,1.0,44.0,Northeast,New England,,
+45003,93,Aiken County,SC,3.0,5.0,45.0,South,South Atlantic,45999,0.07282693813625685
+45007,68,Anderson County,SC,3.0,5.0,45.0,South,South Atlantic,45999,0.05324980422866092
+45013,93,Beaufort County,SC,3.0,5.0,45.0,South,South Atlantic,45999,0.07282693813625685
+45015,36,Berkeley County,SC,3.0,5.0,45.0,South,South Atlantic,45999,0.028191072826938137
+45019,756,Charleston County,SC,3.0,5.0,45.0,South,South Atlantic,45019,1.0
+45021,6,Cherokee County,SC,3.0,5.0,45.0,South,South Atlantic,45999,0.004698512137823023
+45025,1,Chesterfield County,SC,3.0,5.0,45.0,South,South Atlantic,45999,0.0007830853563038371
+45029,1,Colleton County,SC,3.0,5.0,45.0,South,South Atlantic,45999,0.0007830853563038371
+45031,20,Darlington County,SC,3.0,5.0,45.0,South,South Atlantic,45999,0.015661707126076743
+45035,65,Dorchester County,SC,3.0,5.0,45.0,South,South Atlantic,45999,0.05090054815974941
+45041,64,Florence County,SC,3.0,5.0,45.0,South,South Atlantic,45999,0.050117462803445575
+45043,26,Georgetown County,SC,3.0,5.0,45.0,South,South Atlantic,45999,0.020360219263899765
+45045,483,Greenville County,SC,3.0,5.0,45.0,South,South Atlantic,45045,1.0
+45047,23,Greenwood County,SC,3.0,5.0,45.0,South,South Atlantic,45999,0.018010963194988253
+45051,385,Horry County,SC,3.0,5.0,45.0,South,South Atlantic,45051,1.0
+45055,3,Kershaw County,SC,3.0,5.0,45.0,South,South Atlantic,45999,0.0023492560689115116
+45057,13,Lancaster County,SC,3.0,5.0,45.0,South,South Atlantic,45999,0.010180109631949883
+45059,3,Laurens County,SC,3.0,5.0,45.0,South,South Atlantic,45999,0.0023492560689115116
+45063,219,Lexington County,SC,3.0,5.0,45.0,South,South Atlantic,45999,0.17149569303054032
+45067,1,Marion County,SC,3.0,5.0,45.0,South,South Atlantic,45999,0.0007830853563038371
+45071,1,Newberry County,SC,3.0,5.0,45.0,South,South Atlantic,45999,0.0007830853563038371
+45073,9,Oconee County,SC,3.0,5.0,45.0,South,South Atlantic,45999,0.007047768206734534
+45075,13,Orangeburg County,SC,3.0,5.0,45.0,South,South Atlantic,45999,0.010180109631949883
+45077,137,Pickens County,SC,3.0,5.0,45.0,South,South Atlantic,45999,0.10728269381362568
+45079,483,Richland County,SC,3.0,5.0,45.0,South,South Atlantic,45079,1.0
+45083,151,Spartanburg County,SC,3.0,5.0,45.0,South,South Atlantic,45999,0.1182458888018794
+45085,33,Sumter County,SC,3.0,5.0,45.0,South,South Atlantic,45999,0.025841816758026624
+45087,1,Union County,SC,3.0,5.0,45.0,South,South Atlantic,45999,0.0007830853563038371
+45089,1,Williamsburg County,SC,3.0,5.0,45.0,South,South Atlantic,45999,0.0007830853563038371
+45091,196,York County,SC,3.0,5.0,45.0,South,South Atlantic,45999,0.1534847298355521
+46011,13,Brookings County,SD,2.0,4.0,46.0,Midwest,West North Central,46999,0.037900874635568516
+46013,10,Brown County,SD,2.0,4.0,46.0,Midwest,West North Central,46999,0.029154518950437316
+46027,8,Clay County,SD,2.0,4.0,46.0,Midwest,West North Central,46999,0.023323615160349854
+46035,8,Davison County,SD,2.0,4.0,46.0,Midwest,West North Central,46999,0.023323615160349854
+46065,5,Hughes County,SD,2.0,4.0,46.0,Midwest,West North Central,46999,0.014577259475218658
+46081,4,Lawrence County,SD,2.0,4.0,46.0,Midwest,West North Central,46999,0.011661807580174927
+46093,1,Meade County,SD,2.0,4.0,46.0,Midwest,West North Central,46999,0.0029154518950437317
+46099,233,Minnehaha County,SD,2.0,4.0,46.0,Midwest,West North Central,46999,0.6793002915451894
+46103,60,Pennington County,SD,2.0,4.0,46.0,Midwest,West North Central,46999,0.1749271137026239
+46135,1,Yankton County,SD,2.0,4.0,46.0,Midwest,West North Central,46999,0.0029154518950437317
+47001,37,Anderson County,TN,3.0,6.0,47.0,South,East South Central,47999,0.030807660283097418
+47003,4,Bedford County,TN,3.0,6.0,47.0,South,East South Central,47999,0.0033305578684429643
+47009,62,Blount County,TN,3.0,6.0,47.0,South,East South Central,47999,0.051623646960865945
+47011,63,Bradley County,TN,3.0,6.0,47.0,South,East South Central,47999,0.05245628642797669
+47019,1,Carter County,TN,3.0,6.0,47.0,South,East South Central,47999,0.0008326394671107411
+47021,1,Cheatham County,TN,3.0,6.0,47.0,South,East South Central,47999,0.0008326394671107411
+47025,1,Claiborne County,TN,3.0,6.0,47.0,South,East South Central,47999,0.0008326394671107411
+47029,1,Cocke County,TN,3.0,6.0,47.0,South,East South Central,47999,0.0008326394671107411
+47031,16,Coffee County,TN,3.0,6.0,47.0,South,East South Central,47999,0.013322231473771857
+47035,1,Cumberland County,TN,3.0,6.0,47.0,South,East South Central,47999,0.0008326394671107411
+47037,3252,Davidson County,TN,3.0,6.0,47.0,South,East South Central,47037,1.0
+47043,27,Dickson County,TN,3.0,6.0,47.0,South,East South Central,47999,0.022481265611990008
+47045,1,Dyer County,TN,3.0,6.0,47.0,South,East South Central,47999,0.0008326394671107411
+47047,6,Fayette County,TN,3.0,6.0,47.0,South,East South Central,47999,0.004995836802664446
+47051,1,Franklin County,TN,3.0,6.0,47.0,South,East South Central,47999,0.0008326394671107411
+47053,2,Gibson County,TN,3.0,6.0,47.0,South,East South Central,47999,0.0016652789342214821
+47059,17,Greene County,TN,3.0,6.0,47.0,South,East South Central,47999,0.014154870940882597
+47063,14,Hamblen County,TN,3.0,6.0,47.0,South,East South Central,47999,0.011656952539550375
+47065,575,Hamilton County,TN,3.0,6.0,47.0,South,East South Central,47065,1.0
+47073,1,Hawkins County,TN,3.0,6.0,47.0,South,East South Central,47999,0.0008326394671107411
+47077,1,Henderson County,TN,3.0,6.0,47.0,South,East South Central,47999,0.0008326394671107411
+47083,1,Houston County,TN,3.0,6.0,47.0,South,East South Central,47999,0.0008326394671107411
+47089,6,Jefferson County,TN,3.0,6.0,47.0,South,East South Central,47999,0.004995836802664446
+47093,898,Knox County,TN,3.0,6.0,47.0,South,East South Central,47093,1.0
+47099,1,Lawrence County,TN,3.0,6.0,47.0,South,East South Central,47999,0.0008326394671107411
+47103,1,Lincoln County,TN,3.0,6.0,47.0,South,East South Central,47999,0.0008326394671107411
+47105,11,Loudon County,TN,3.0,6.0,47.0,South,East South Central,47999,0.009159034138218152
+47107,7,McMinn County,TN,3.0,6.0,47.0,South,East South Central,47999,0.005828476269775187
+47113,70,Madison County,TN,3.0,6.0,47.0,South,East South Central,47999,0.058284762697751874
+47115,1,Marion County,TN,3.0,6.0,47.0,South,East South Central,47999,0.0008326394671107411
+47117,13,Marshall County,TN,3.0,6.0,47.0,South,East South Central,47999,0.010824313072439634
+47119,51,Maury County,TN,3.0,6.0,47.0,South,East South Central,47999,0.042464612822647796
+47123,1,Monroe County,TN,3.0,6.0,47.0,South,East South Central,47999,0.0008326394671107411
+47125,144,Montgomery County,TN,3.0,6.0,47.0,South,East South Central,47999,0.11990008326394672
+47131,1,Obion County,TN,3.0,6.0,47.0,South,East South Central,47999,0.0008326394671107411
+47141,55,Putnam County,TN,3.0,6.0,47.0,South,East South Central,47999,0.04579517069109076
+47143,1,Rhea County,TN,3.0,6.0,47.0,South,East South Central,47999,0.0008326394671107411
+47145,10,Roane County,TN,3.0,6.0,47.0,South,East South Central,47999,0.00832639467110741
+47147,8,Robertson County,TN,3.0,6.0,47.0,South,East South Central,47999,0.006661115736885929
+47149,330,Rutherford County,TN,3.0,6.0,47.0,South,East South Central,47149,1.0
+47155,50,Sevier County,TN,3.0,6.0,47.0,South,East South Central,47999,0.041631973355537054
+47157,1610,Shelby County,TN,3.0,6.0,47.0,South,East South Central,47157,1.0
+47163,75,Sullivan County,TN,3.0,6.0,47.0,South,East South Central,47999,0.06244796003330558
+47165,125,Sumner County,TN,3.0,6.0,47.0,South,East South Central,47999,0.10407993338884262
+47167,7,Tipton County,TN,3.0,6.0,47.0,South,East South Central,47999,0.005828476269775187
+47179,122,Washington County,TN,3.0,6.0,47.0,South,East South Central,47999,0.1015820149875104
+47183,4,Weakley County,TN,3.0,6.0,47.0,South,East South Central,47999,0.0033305578684429643
+47187,145,Williamson County,TN,3.0,6.0,47.0,South,East South Central,47999,0.12073272273105745
+47189,34,Wilson County,TN,3.0,6.0,47.0,South,East South Central,47999,0.028309741881765195
+48001,26,Anderson County,TX,3.0,7.0,48.0,South,West South Central,48999,0.00521669341894061
+48003,2,Andrews County,TX,3.0,7.0,48.0,South,West South Central,48999,0.0004012841091492777
+48005,66,Angelina County,TX,3.0,7.0,48.0,South,West South Central,48999,0.013242375601926164
+48007,3,Aransas County,TX,3.0,7.0,48.0,South,West South Central,48999,0.0006019261637239165
+48013,23,Atascosa County,TX,3.0,7.0,48.0,South,West South Central,48999,0.004614767255216694
+48021,24,Bastrop County,TX,3.0,7.0,48.0,South,West South Central,48999,0.004815409309791332
+48025,17,Bee County,TX,3.0,7.0,48.0,South,West South Central,48999,0.0034109149277688606
+48027,337,Bell County,TX,3.0,7.0,48.0,South,West South Central,48027,1.0
+48029,3405,Bexar County,TX,3.0,7.0,48.0,South,West South Central,48029,1.0
+48037,53,Bowie County,TX,3.0,7.0,48.0,South,West South Central,48999,0.01063402889245586
+48039,259,Brazoria County,TX,3.0,7.0,48.0,South,West South Central,48999,0.05196629213483146
+48041,516,Brazos County,TX,3.0,7.0,48.0,South,West South Central,48041,1.0
+48043,1,Brewster County,TX,3.0,7.0,48.0,South,West South Central,48999,0.00020064205457463884
+48049,13,Brown County,TX,3.0,7.0,48.0,South,West South Central,48999,0.002608346709470305
+48053,1,Burnet County,TX,3.0,7.0,48.0,South,West South Central,48999,0.00020064205457463884
+48055,8,Caldwell County,TX,3.0,7.0,48.0,South,West South Central,48999,0.0016051364365971107
+48057,1,Calhoun County,TX,3.0,7.0,48.0,South,West South Central,48999,0.00020064205457463884
+48061,295,Cameron County,TX,3.0,7.0,48.0,South,West South Central,48999,0.059189406099518456
+48067,9,Cass County,TX,3.0,7.0,48.0,South,West South Central,48999,0.0018057784911717496
+48071,9,Chambers County,TX,3.0,7.0,48.0,South,West South Central,48999,0.0018057784911717496
+48073,6,Cherokee County,TX,3.0,7.0,48.0,South,West South Central,48999,0.001203852327447833
+48083,8,Coleman County,TX,3.0,7.0,48.0,South,West South Central,48999,0.0016051364365971107
+48085,814,Collin County,TX,3.0,7.0,48.0,South,West South Central,48085,1.0
+48091,127,Comal County,TX,3.0,7.0,48.0,South,West South Central,48999,0.025481540930979135
+48097,7,Cooke County,TX,3.0,7.0,48.0,South,West South Central,48999,0.0014044943820224719
+48099,21,Coryell County,TX,3.0,7.0,48.0,South,West South Central,48999,0.004213483146067416
+48113,3684,Dallas County,TX,3.0,7.0,48.0,South,West South Central,48113,1.0
+48117,51,Deaf Smith County,TX,3.0,7.0,48.0,South,West South Central,48999,0.010232744783306581
+48121,807,Denton County,TX,3.0,7.0,48.0,South,West South Central,48121,1.0
+48123,2,DeWitt County,TX,3.0,7.0,48.0,South,West South Central,48999,0.0004012841091492777
+48131,8,Duval County,TX,3.0,7.0,48.0,South,West South Central,48999,0.0016051364365971107
+48133,1,Eastland County,TX,3.0,7.0,48.0,South,West South Central,48999,0.00020064205457463884
+48135,229,Ector County,TX,3.0,7.0,48.0,South,West South Central,48999,0.045947030497592294
+48139,116,Ellis County,TX,3.0,7.0,48.0,South,West South Central,48999,0.023274478330658106
+48141,1172,El Paso County,TX,3.0,7.0,48.0,South,West South Central,48141,1.0
+48143,88,Erath County,TX,3.0,7.0,48.0,South,West South Central,48999,0.01765650080256822
+48157,292,Fort Bend County,TX,3.0,7.0,48.0,South,West South Central,48999,0.058587479935794544
+48163,8,Frio County,TX,3.0,7.0,48.0,South,West South Central,48999,0.0016051364365971107
+48167,312,Galveston County,TX,3.0,7.0,48.0,South,West South Central,48167,1.0
+48177,1,Gonzales County,TX,3.0,7.0,48.0,South,West South Central,48999,0.00020064205457463884
+48179,10,Gray County,TX,3.0,7.0,48.0,South,West South Central,48999,0.0020064205457463883
+48181,53,Grayson County,TX,3.0,7.0,48.0,South,West South Central,48999,0.01063402889245586
+48183,81,Gregg County,TX,3.0,7.0,48.0,South,West South Central,48999,0.016252006420545747
+48187,60,Guadalupe County,TX,3.0,7.0,48.0,South,West South Central,48999,0.012038523274478331
+48189,9,Hale County,TX,3.0,7.0,48.0,South,West South Central,48999,0.0018057784911717496
+48191,1,Hall County,TX,3.0,7.0,48.0,South,West South Central,48999,0.00020064205457463884
+48199,38,Hardin County,TX,3.0,7.0,48.0,South,West South Central,48999,0.007624398073836276
+48201,8869,Harris County,TX,3.0,7.0,48.0,South,West South Central,48201,1.0
+48203,25,Harrison County,TX,3.0,7.0,48.0,South,West South Central,48999,0.005016051364365971
+48209,655,Hays County,TX,3.0,7.0,48.0,South,West South Central,48209,1.0
+48213,21,Henderson County,TX,3.0,7.0,48.0,South,West South Central,48999,0.004213483146067416
+48215,847,Hidalgo County,TX,3.0,7.0,48.0,South,West South Central,48215,1.0
+48217,1,Hill County,TX,3.0,7.0,48.0,South,West South Central,48999,0.00020064205457463884
+48219,1,Hockley County,TX,3.0,7.0,48.0,South,West South Central,48999,0.00020064205457463884
+48221,17,Hood County,TX,3.0,7.0,48.0,South,West South Central,48999,0.0034109149277688606
+48223,4,Hopkins County,TX,3.0,7.0,48.0,South,West South Central,48999,0.0008025682182985554
+48225,1,Houston County,TX,3.0,7.0,48.0,South,West South Central,48999,0.00020064205457463884
+48227,15,Howard County,TX,3.0,7.0,48.0,South,West South Central,48999,0.003009630818619583
+48231,48,Hunt County,TX,3.0,7.0,48.0,South,West South Central,48999,0.009630818619582664
+48241,5,Jasper County,TX,3.0,7.0,48.0,South,West South Central,48999,0.0010032102728731941
+48245,262,Jefferson County,TX,3.0,7.0,48.0,South,West South Central,48999,0.052568218298555375
+48247,1,Jim Hogg County,TX,3.0,7.0,48.0,South,West South Central,48999,0.00020064205457463884
+48249,83,Jim Wells County,TX,3.0,7.0,48.0,South,West South Central,48999,0.016653290529695025
+48251,129,Johnson County,TX,3.0,7.0,48.0,South,West South Central,48999,0.02588282504012841
+48255,1,Karnes County,TX,3.0,7.0,48.0,South,West South Central,48999,0.00020064205457463884
+48257,70,Kaufman County,TX,3.0,7.0,48.0,South,West South Central,48999,0.014044943820224719
+48259,11,Kendall County,TX,3.0,7.0,48.0,South,West South Central,48999,0.0022070626003210273
+48265,7,Kerr County,TX,3.0,7.0,48.0,South,West South Central,48999,0.0014044943820224719
+48273,82,Kleberg County,TX,3.0,7.0,48.0,South,West South Central,48999,0.016452648475120384
+48277,33,Lamar County,TX,3.0,7.0,48.0,South,West South Central,48999,0.006621187800963082
+48291,25,Liberty County,TX,3.0,7.0,48.0,South,West South Central,48999,0.005016051364365971
+48293,14,Limestone County,TX,3.0,7.0,48.0,South,West South Central,48999,0.0028089887640449437
+48303,516,Lubbock County,TX,3.0,7.0,48.0,South,West South Central,48303,1.0
+48309,376,McLennan County,TX,3.0,7.0,48.0,South,West South Central,48309,1.0
+48313,1,Madison County,TX,3.0,7.0,48.0,South,West South Central,48999,0.00020064205457463884
+48321,8,Matagorda County,TX,3.0,7.0,48.0,South,West South Central,48999,0.0016051364365971107
+48323,19,Maverick County,TX,3.0,7.0,48.0,South,West South Central,48999,0.003812199036918138
+48325,35,Medina County,TX,3.0,7.0,48.0,South,West South Central,48999,0.007022471910112359
+48329,164,Midland County,TX,3.0,7.0,48.0,South,West South Central,48999,0.03290529695024077
+48331,1,Milam County,TX,3.0,7.0,48.0,South,West South Central,48999,0.00020064205457463884
+48339,309,Montgomery County,TX,3.0,7.0,48.0,South,West South Central,48339,1.0
+48347,75,Nacogdoches County,TX,3.0,7.0,48.0,South,West South Central,48999,0.015048154093097914
+48349,17,Navarro County,TX,3.0,7.0,48.0,South,West South Central,48999,0.0034109149277688606
+48355,547,Nueces County,TX,3.0,7.0,48.0,South,West South Central,48355,1.0
+48361,55,Orange County,TX,3.0,7.0,48.0,South,West South Central,48999,0.011035313001605136
+48363,2,Palo Pinto County,TX,3.0,7.0,48.0,South,West South Central,48999,0.0004012841091492777
+48365,1,Panola County,TX,3.0,7.0,48.0,South,West South Central,48999,0.00020064205457463884
+48367,51,Parker County,TX,3.0,7.0,48.0,South,West South Central,48999,0.010232744783306581
+48371,1,Pecos County,TX,3.0,7.0,48.0,South,West South Central,48999,0.00020064205457463884
+48373,14,Polk County,TX,3.0,7.0,48.0,South,West South Central,48999,0.0028089887640449437
+48375,166,Potter County,TX,3.0,7.0,48.0,South,West South Central,48999,0.03330658105939005
+48377,1,Presidio County,TX,3.0,7.0,48.0,South,West South Central,48999,0.00020064205457463884
+48379,1,Rains County,TX,3.0,7.0,48.0,South,West South Central,48999,0.00020064205457463884
+48381,95,Randall County,TX,3.0,7.0,48.0,South,West South Central,48999,0.01906099518459069
+48387,1,Red River County,TX,3.0,7.0,48.0,South,West South Central,48999,0.00020064205457463884
+48389,1,Reeves County,TX,3.0,7.0,48.0,South,West South Central,48999,0.00020064205457463884
+48393,1,Roberts County,TX,3.0,7.0,48.0,South,West South Central,48999,0.00020064205457463884
+48397,61,Rockwall County,TX,3.0,7.0,48.0,South,West South Central,48999,0.012239165329052969
+48401,1,Rusk County,TX,3.0,7.0,48.0,South,West South Central,48999,0.00020064205457463884
+48409,73,San Patricio County,TX,3.0,7.0,48.0,South,West South Central,48999,0.014646869983948636
+48419,1,Shelby County,TX,3.0,7.0,48.0,South,West South Central,48999,0.00020064205457463884
+48423,325,Smith County,TX,3.0,7.0,48.0,South,West South Central,48423,1.0
+48427,13,Starr County,TX,3.0,7.0,48.0,South,West South Central,48999,0.002608346709470305
+48439,2842,Tarrant County,TX,3.0,7.0,48.0,South,West South Central,48439,1.0
+48441,144,Taylor County,TX,3.0,7.0,48.0,South,West South Central,48999,0.028892455858747994
+48449,1,Titus County,TX,3.0,7.0,48.0,South,West South Central,48999,0.00020064205457463884
+48451,180,Tom Green County,TX,3.0,7.0,48.0,South,West South Central,48999,0.036115569823434994
+48453,4283,Travis County,TX,3.0,7.0,48.0,South,West South Central,48453,1.0
+48463,23,Uvalde County,TX,3.0,7.0,48.0,South,West South Central,48999,0.004614767255216694
+48465,23,Val Verde County,TX,3.0,7.0,48.0,South,West South Central,48999,0.004614767255216694
+48467,12,Van Zandt County,TX,3.0,7.0,48.0,South,West South Central,48999,0.002407704654895666
+48469,57,Victoria County,TX,3.0,7.0,48.0,South,West South Central,48999,0.011436597110754414
+48471,118,Walker County,TX,3.0,7.0,48.0,South,West South Central,48999,0.023675762439807384
+48473,31,Waller County,TX,3.0,7.0,48.0,South,West South Central,48999,0.006219903691813804
+48477,10,Washington County,TX,3.0,7.0,48.0,South,West South Central,48999,0.0020064205457463883
+48479,182,Webb County,TX,3.0,7.0,48.0,South,West South Central,48999,0.03651685393258427
+48481,14,Wharton County,TX,3.0,7.0,48.0,South,West South Central,48999,0.0028089887640449437
+48485,115,Wichita County,TX,3.0,7.0,48.0,South,West South Central,48999,0.023073836276083465
+48489,11,Willacy County,TX,3.0,7.0,48.0,South,West South Central,48999,0.0022070626003210273
+48491,277,Williamson County,TX,3.0,7.0,48.0,South,West South Central,48999,0.05557784911717496
+48493,14,Wilson County,TX,3.0,7.0,48.0,South,West South Central,48999,0.0028089887640449437
+48497,19,Wise County,TX,3.0,7.0,48.0,South,West South Central,48999,0.003812199036918138
+48499,4,Wood County,TX,3.0,7.0,48.0,South,West South Central,48999,0.0008025682182985554
+48505,2,Zapata County,TX,3.0,7.0,48.0,South,West South Central,48999,0.0004012841091492777
+48507,5,Zavala County,TX,3.0,7.0,48.0,South,West South Central,48999,0.0010032102728731941
+49003,12,Box Elder County,UT,4.0,8.0,49.0,West,Mountain,49999,0.024844720496894408
+49005,71,Cache County,UT,4.0,8.0,49.0,West,Mountain,49999,0.14699792960662525
+49011,115,Davis County,UT,4.0,8.0,49.0,West,Mountain,49999,0.23809523809523808
+49013,1,Duchesne County,UT,4.0,8.0,49.0,West,Mountain,49999,0.002070393374741201
+49019,1,Grand County,UT,4.0,8.0,49.0,West,Mountain,49999,0.002070393374741201
+49021,36,Iron County,UT,4.0,8.0,49.0,West,Mountain,49999,0.07453416149068323
+49035,1374,Salt Lake County,UT,4.0,8.0,49.0,West,Mountain,49035,1.0
+49043,18,Summit County,UT,4.0,8.0,49.0,West,Mountain,49999,0.037267080745341616
+49045,9,Tooele County,UT,4.0,8.0,49.0,West,Mountain,49999,0.018633540372670808
+49049,376,Utah County,UT,4.0,8.0,49.0,West,Mountain,49049,1.0
+49053,65,Washington County,UT,4.0,8.0,49.0,West,Mountain,49999,0.13457556935817805
+49057,155,Weber County,UT,4.0,8.0,49.0,West,Mountain,49999,0.32091097308488614
+50005,1,Caledonia County,VT,1.0,1.0,50.0,Northeast,New England,,
+50007,161,Chittenden County,VT,1.0,1.0,50.0,Northeast,New England,,
+50021,1,Rutland County,VT,1.0,1.0,50.0,Northeast,New England,,
+50023,7,Washington County,VT,1.0,1.0,50.0,Northeast,New England,,
+50025,1,Windham County,VT,1.0,1.0,50.0,Northeast,New England,,
+50027,3,Windsor County,VT,1.0,1.0,50.0,Northeast,New England,,
+51013,314,Arlington County,VA,3.0,5.0,51.0,South,South Atlantic,51013,1.0
+51031,1,Campbell County,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.00041322314049586776
+51041,34,Chesterfield County,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.014049586776859505
+51047,9,Culpeper County,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.00371900826446281
+51057,1,Essex County,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.00041322314049586776
+51059,415,Fairfax County,VA,3.0,5.0,51.0,South,South Atlantic,51059,1.0
+51061,18,Fauquier County,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.00743801652892562
+51067,1,Franklin County,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.00041322314049586776
+51085,28,Hanover County,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.011570247933884297
+51087,66,Henrico County,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.02727272727272727
+51093,2,Isle of Wight County,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.0008264462809917355
+51107,170,Loudoun County,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.07024793388429752
+51121,114,Montgomery County,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.047107438016528926
+51147,4,Prince Edward County,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.001652892561983471
+51153,202,Prince William County,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.0834710743801653
+51165,3,Rockingham County,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.0012396694214876034
+51171,1,Shenandoah County,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.00041322314049586776
+51185,1,Tazewell County,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.00041322314049586776
+51187,1,Warren County,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.00041322314049586776
+51191,6,Washington County,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.0024793388429752068
+51195,5,Wise County,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.002066115702479339
+51199,18,York County,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.00743801652892562
+51510,343,Alexandria city,VA,3.0,5.0,51.0,South,South Atlantic,51510,1.0
+51520,2,Bristol city,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.0008264462809917355
+51540,250,Charlottesville city,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.10330578512396695
+51550,166,Chesapeake city,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.06859504132231405
+51590,31,Danville city,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.0128099173553719
+51595,1,Emporia city,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.00041322314049586776
+51600,156,Fairfax city,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.06446280991735537
+51610,46,Falls Church city,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.019008264462809916
+51630,121,Fredericksburg city,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.05
+51650,118,Hampton city,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.048760330578512395
+51660,73,Harrisonburg city,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.03016528925619835
+51678,1,Lexington city,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.00041322314049586776
+51680,112,Lynchburg city,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.04628099173553719
+51683,57,Manassas city,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.023553719008264463
+51690,2,Martinsville city,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.0008264462809917355
+51700,138,Newport News city,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.05702479338842975
+51710,348,Norfolk city,VA,3.0,5.0,51.0,South,South Atlantic,51710,1.0
+51730,16,Petersburg city,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.006611570247933884
+51740,61,Portsmouth city,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.025206611570247933
+51750,26,Radford city,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.010743801652892562
+51760,1103,Richmond city,VA,3.0,5.0,51.0,South,South Atlantic,51760,1.0
+51770,175,Roanoke city,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.07231404958677685
+51775,4,Salem city,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.001652892561983471
+51790,9,Staunton city,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.00371900826446281
+51800,43,Suffolk city,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.017768595041322315
+51810,635,Virginia Beach city,VA,3.0,5.0,51.0,South,South Atlantic,51810,1.0
+51830,68,Williamsburg city,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.02809917355371901
+51840,59,Winchester city,VA,3.0,5.0,51.0,South,South Atlantic,51999,0.024380165289256198
+53001,1,Adams County,WA,4.0,9.0,53.0,West,Pacific,53999,0.000724112961622013
+53005,99,Benton County,WA,4.0,9.0,53.0,West,Pacific,53999,0.07168718320057929
+53007,34,Chelan County,WA,4.0,9.0,53.0,West,Pacific,53999,0.024619840695148443
+53009,42,Clallam County,WA,4.0,9.0,53.0,West,Pacific,53999,0.03041274438812455
+53011,361,Clark County,WA,4.0,9.0,53.0,West,Pacific,53011,1.0
+53015,39,Cowlitz County,WA,4.0,9.0,53.0,West,Pacific,53999,0.028240405503258507
+53017,1,Douglas County,WA,4.0,9.0,53.0,West,Pacific,53999,0.000724112961622013
+53021,50,Franklin County,WA,4.0,9.0,53.0,West,Pacific,53999,0.036205648081100654
+53025,24,Grant County,WA,4.0,9.0,53.0,West,Pacific,53999,0.017378711078928313
+53027,32,Grays Harbor County,WA,4.0,9.0,53.0,West,Pacific,53999,0.023171614771904415
+53029,14,Island County,WA,4.0,9.0,53.0,West,Pacific,53999,0.010137581462708182
+53033,6396,King County,WA,4.0,9.0,53.0,West,Pacific,53033,1.0
+53035,157,Kitsap County,WA,4.0,9.0,53.0,West,Pacific,53999,0.11368573497465605
+53037,36,Kittitas County,WA,4.0,9.0,53.0,West,Pacific,53999,0.02606806661839247
+53041,18,Lewis County,WA,4.0,9.0,53.0,West,Pacific,53999,0.013034033309196235
+53045,4,Mason County,WA,4.0,9.0,53.0,West,Pacific,53999,0.002896451846488052
+53053,1010,Pierce County,WA,4.0,9.0,53.0,West,Pacific,53053,1.0
+53057,20,Skagit County,WA,4.0,9.0,53.0,West,Pacific,53999,0.01448225923244026
+53061,393,Snohomish County,WA,4.0,9.0,53.0,West,Pacific,53061,1.0
+53063,450,Spokane County,WA,4.0,9.0,53.0,West,Pacific,53063,1.0
+53067,254,Thurston County,WA,4.0,9.0,53.0,West,Pacific,53999,0.18392469225199132
+53071,33,Walla Walla County,WA,4.0,9.0,53.0,West,Pacific,53999,0.02389572773352643
+53073,238,Whatcom County,WA,4.0,9.0,53.0,West,Pacific,53999,0.1723388848660391
+53075,89,Whitman County,WA,4.0,9.0,53.0,West,Pacific,53999,0.06444605358435916
+53077,196,Yakima County,WA,4.0,9.0,53.0,West,Pacific,53999,0.14192614047791455
+54003,35,Berkeley County,WV,3.0,5.0,54.0,South,South Atlantic,54999,0.04
+54011,137,Cabell County,WV,3.0,5.0,54.0,South,South Atlantic,54999,0.15657142857142858
+54019,7,Fayette County,WV,3.0,5.0,54.0,South,South Atlantic,54999,0.008
+54029,2,Hancock County,WV,3.0,5.0,54.0,South,South Atlantic,54999,0.002285714285714286
+54033,27,Harrison County,WV,3.0,5.0,54.0,South,South Atlantic,54999,0.030857142857142857
+54037,26,Jefferson County,WV,3.0,5.0,54.0,South,South Atlantic,54999,0.029714285714285714
+54039,177,Kanawha County,WV,3.0,5.0,54.0,South,South Atlantic,54999,0.2022857142857143
+54045,5,Logan County,WV,3.0,5.0,54.0,South,South Atlantic,54999,0.005714285714285714
+54049,24,Marion County,WV,3.0,5.0,54.0,South,South Atlantic,54999,0.027428571428571427
+54055,13,Mercer County,WV,3.0,5.0,54.0,South,South Atlantic,54999,0.014857142857142857
+54061,294,Monongalia County,WV,3.0,5.0,54.0,South,South Atlantic,54999,0.336
+54065,1,Morgan County,WV,3.0,5.0,54.0,South,South Atlantic,54999,0.001142857142857143
+54069,42,Ohio County,WV,3.0,5.0,54.0,South,South Atlantic,54999,0.048
+54079,10,Putnam County,WV,3.0,5.0,54.0,South,South Atlantic,54999,0.011428571428571429
+54081,33,Raleigh County,WV,3.0,5.0,54.0,South,South Atlantic,54999,0.037714285714285714
+54099,2,Wayne County,WV,3.0,5.0,54.0,South,South Atlantic,54999,0.002285714285714286
+54107,40,Wood County,WV,3.0,5.0,54.0,South,South Atlantic,54999,0.045714285714285714
+55009,276,Brown County,WI,2.0,3.0,55.0,Midwest,East North Central,55999,0.2020497803806735
+55015,1,Calumet County,WI,2.0,3.0,55.0,Midwest,East North Central,55999,0.0007320644216691069
+55017,1,Chippewa County,WI,2.0,3.0,55.0,Midwest,East North Central,55999,0.0007320644216691069
+55021,8,Columbia County,WI,2.0,3.0,55.0,Midwest,East North Central,55999,0.005856515373352855
+55025,760,Dane County,WI,2.0,3.0,55.0,Midwest,East North Central,55025,1.0
+55027,1,Dodge County,WI,2.0,3.0,55.0,Midwest,East North Central,55999,0.0007320644216691069
+55029,1,Door County,WI,2.0,3.0,55.0,Midwest,East North Central,55999,0.0007320644216691069
+55031,7,Douglas County,WI,2.0,3.0,55.0,Midwest,East North Central,55999,0.005124450951683748
+55035,74,Eau Claire County,WI,2.0,3.0,55.0,Midwest,East North Central,55999,0.05417276720351391
+55039,23,Fond du Lac County,WI,2.0,3.0,55.0,Midwest,East North Central,55999,0.01683748169838946
+55043,1,Grant County,WI,2.0,3.0,55.0,Midwest,East North Central,55999,0.0007320644216691069
+55051,1,Iron County,WI,2.0,3.0,55.0,Midwest,East North Central,55999,0.0007320644216691069
+55055,9,Jefferson County,WI,2.0,3.0,55.0,Midwest,East North Central,55999,0.006588579795021962
+55059,103,Kenosha County,WI,2.0,3.0,55.0,Midwest,East North Central,55999,0.07540263543191801
+55063,97,La Crosse County,WI,2.0,3.0,55.0,Midwest,East North Central,55999,0.07101024890190337
+55071,16,Manitowoc County,WI,2.0,3.0,55.0,Midwest,East North Central,55999,0.01171303074670571
+55073,33,Marathon County,WI,2.0,3.0,55.0,Midwest,East North Central,55999,0.024158125915080528
+55079,486,Milwaukee County,WI,2.0,3.0,55.0,Midwest,East North Central,55079,1.0
+55087,96,Outagamie County,WI,2.0,3.0,55.0,Midwest,East North Central,55999,0.07027818448023426
+55089,17,Ozaukee County,WI,2.0,3.0,55.0,Midwest,East North Central,55999,0.012445095168374817
+55093,4,Pierce County,WI,2.0,3.0,55.0,Midwest,East North Central,55999,0.0029282576866764276
+55097,16,Portage County,WI,2.0,3.0,55.0,Midwest,East North Central,55999,0.01171303074670571
+55101,100,Racine County,WI,2.0,3.0,55.0,Midwest,East North Central,55999,0.07320644216691069
+55105,71,Rock County,WI,2.0,3.0,55.0,Midwest,East North Central,55999,0.05197657393850659
+55109,16,St. Croix County,WI,2.0,3.0,55.0,Midwest,East North Central,55999,0.01171303074670571
+55111,2,Sauk County,WI,2.0,3.0,55.0,Midwest,East North Central,55999,0.0014641288433382138
+55115,1,Shawano County,WI,2.0,3.0,55.0,Midwest,East North Central,55999,0.0007320644216691069
+55117,47,Sheboygan County,WI,2.0,3.0,55.0,Midwest,East North Central,55999,0.034407027818448024
+55127,54,Walworth County,WI,2.0,3.0,55.0,Midwest,East North Central,55999,0.03953147877013177
+55131,21,Washington County,WI,2.0,3.0,55.0,Midwest,East North Central,55999,0.015373352855051245
+55133,175,Waukesha County,WI,2.0,3.0,55.0,Midwest,East North Central,55999,0.1281112737920937
+55139,90,Winnebago County,WI,2.0,3.0,55.0,Midwest,East North Central,55999,0.06588579795021962
+55141,4,Wood County,WI,2.0,3.0,55.0,Midwest,East North Central,55999,0.0029282576866764276
+56001,34,Albany County,WY,4.0,8.0,56.0,West,Mountain,,
+56005,4,Campbell County,WY,4.0,8.0,56.0,West,Mountain,,
+56009,1,Converse County,WY,4.0,8.0,56.0,West,Mountain,,
+56013,1,Fremont County,WY,4.0,8.0,56.0,West,Mountain,,
+56021,45,Laramie County,WY,4.0,8.0,56.0,West,Mountain,,
+56025,31,Natrona County,WY,4.0,8.0,56.0,West,Mountain,,
+56029,9,Park County,WY,4.0,8.0,56.0,West,Mountain,,
+56037,1,Sweetwater County,WY,4.0,8.0,56.0,West,Mountain,,
+56039,2,Teton County,WY,4.0,8.0,56.0,West,Mountain,,

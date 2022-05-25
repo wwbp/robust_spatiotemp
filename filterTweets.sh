@@ -3,7 +3,7 @@
 # Check params
 if [ $# -ne 3 ]
 then
-    echo "./filterTweets.sh input message_field group_field"
+    echo "./filterTweets.sh HDFS_INPUT_CSV MESSAGE_FIELD_IDX GROUP_FIELD_IDX"
     exit 1
 fi
 

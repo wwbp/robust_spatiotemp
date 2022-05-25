@@ -3,7 +3,7 @@
 # Check params
 if [ $# -ne 5 ]
 then
-    echo "./lexiconExtractAndScore.sh INPUT MESSAGE_FIELD GROUP_ID WEIGHTS LEXICON"
+    echo "./lexiconExtractAndScore.sh HDFS_INPUT_CSV MESSAGE_FIELD_IDX GROUP_ID_IDX LEXICON_CSV [WEIGHTS_CSV]"
     exit 1
 fi
 
@@ -14,8 +14,8 @@ dir = "dirname ${input}"
 output="${dir}/feat.1gram.${base}"
 message_field="$2"
 group_id="$3"
-weight_mapping="$4"
-lexicon="$5"
+lexicon="$4"
+weight_mapping="$5"
 
 if hadoop fs -test -d "$output"
 then
