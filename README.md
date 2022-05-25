@@ -17,9 +17,9 @@ This system is currently built around aggregation to the account (user) level an
 
 ### 2. Data Preparation
 Filters to english, as well as removes retweets, tweets with urls, duplicate tweets. 
-- Runnable as: `./filterTweets.sh hdfs_input_csv message_field_idx group_field_idx` 
+- Runnable as: `./filterTweets.sh HDFS_INPUT_CSV MESSAGE_FIELD_DSX GROUP_FIELD_IDX` 
   - Input: 
-      -  `hdfs_input_csv` -- tweets in csv 
+      -  `HDFS_INPUT_CSV` -- tweets in csv 
       - `message_field_idx` -- the column index for the text
       - `group_field_idx` -- is the column index for the id. 
   - Output: 
@@ -34,8 +34,14 @@ Filters to english, as well as removes retweets, tweets with urls, duplicate twe
     - ex. `~/spark/bin/spark-submit  ~/hadoop-tools/sparkScripts/deduplicate_and_filter.py --input_file /hadoop_data/ctlb/2020/english/timelines2019.csv --output_file /hadoop_data/ctlb/2020/dedup/timelines2019_en.csv --message_field 2 --group_field 0`
 
 ### 3. Account-level, time scoring   
-- Runnable as: `lexiconExtractAndScore.sh INPUT MESSAGE_FIELD GROUP_ID WEIGHTS LEXICON`
-  - Input tweets must include: tweet body, group_id containing account number of tweeter and timeunit (like week) tweet was made, mapping for accounts to a location (like county)
+  Extracts word mentions per group_id (group_id is commonly 
+- Runnable as: `lexiconExtractAndScore.sh HDFS_INPUT_CSV MESSAGE_FIELD_IDX GROUP_ID_IDX WEIGHTS_CSV LEXICON_CSV`
+  - Input:
+    - `HDFS_INPUT_CSV` -- social media data (e.g. tweets) with tweet body, group_id containing account number of tweeter and timeunit (like week) tweet was made, mapping for accounts to a location (like county)
+    - `MESSAGE_FIELD_IDX` -- column index where message (text) is contained
+    - `GROUP_ID_IDX` -- column index for the group id (i.e. the column to agrgegate words by). 
+    - `WEIGHTS_CSV` -- maps group_id to weights: column 0 is group_id, column 1 is weight
+    - `LEXICON_CSV` -- weighted lexicon: column 0 is word, column 1 is category, and column 3 is weight (TODO: link to lexica)
   - If accounts are going to be reweighted then a mapping between entities and weights must be provided
   - Output data format: `[timeunit+account], [score_type], [weighted_count], [weighted_score]`
 
