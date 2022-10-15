@@ -26,7 +26,7 @@ Filters to english, as well as removes retweets, tweets with urls, duplicate twe
     - `hdfs_intput_csv_english_deduped` -- same format as input but with rows filtered out
 - [Advanced: Run each step independently](/README-advanced.md)
 
-### 3. Account-level, time scoring   
+### 3. Account-, time-level, lexical scoring   
   Extracts word mentions per group_id (group_id is commonly `time_unit:user_id`), optionally postratifies given weights_csv, and then runs the specified weighted lexicon per group_id. 
 - Runnable as: `lexiconExtractAndScore.sh HDFS_INPUT_CSV MESSAGE_FIELD_IDX GROUP_ID_IDX LEXICON_CSV [WEIGHTS_CSV]`
   - Input:
