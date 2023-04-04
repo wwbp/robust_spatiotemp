@@ -22,31 +22,36 @@
       - GROUP_ID must be "time_unit:account_id"
       - ex.`./runThis.sh /hadoop_data/ctlb/2020/feats/timelines2020_full_3upts.csv /hadoop_data/ctlb/2020/feats/feat.1gram.timelines2020_full_3upts.yw_user_id 3 0 1`
       - ex. outputs `/hadoop_data/ctlb/2020/feats/feat.1gram.timelines2020_full_3upts.yw_user_id`
-  - Reset outlier words usage per account
-    - `~/spark/bin/spark-submit ~/hadoop-tools/sparkScripts/outlier_reset.py --input_file </hadoop/path/input> --no_scale`
-      - ex `~/spark/bin/spark-submit ~/hadoop-tools/sparkScripts/outlier_reset.py --input_file /hadoop_data/ctlb/2019/feats/feat.1gram.timelines2019_full_3upts.yw_user_id --no_scale`
-      - ex. outputs `/hadoop_data/ctlb/2019/feats/feat.1gram.timelines2019_full_3upts3sig.yw_user_id`
-  - Generate dep/anx scores for users based on wellbeing lexicon
+  - Anscombe transform 1gram usage
+    - `~/spark/bin/spark-submit ~/hadoop-tools/sparkScripts/anscombe_transform.py --input_file </hadoop/path/input>`
+      - ex `~/spark/bin/spark-submit ~/hadoop-tools/sparkScripts/anscombe_transform.py --input_file /hadoop_data/ctlb/2019/feats/feat.1gram.timelines2019_full_3upts.yw_user_id --no_scale`
+      - ex. outputs `hadoop_data/ctlb/2019/feats/featANS.1gram.timelines2019_full_3upts.yw_user_id`
+  - Generate dep/anx scores for user-time based on wellbeing lexicon
     - `~/spark/bin/spark-submit ~/hadoop-tools/sparkScripts/topics_extraction.py --lex_file <lex_file.csv> --word_table <hadoop/path/1gram> --output_file </hadoop/path/output>`
-      - ex. `~/spark/bin/spark-submit ~/hadoop-tools/sparkScripts/topics_extraction.py --lex_file /home/smangalik/hadoop-tools/permaLexicon/dd_depAnxLex_ctlb2adapt_nostd.csv --word_table /hadoop_data/ctlb/2019/feats/feat.1gram.timelines2019_full_3upts.yw_user_id --output_file /hadoop_data/ctlb/2019/feats/feat.dd_depAnxLex_ctlb2_nostd.timelines2019_full_3upts.yw_user_id`
-      - ex. outputs `/hadoop_data/ctlb/2019/feats/feat.dd_depAnxLex_ctlb2_nostd.timelines2019_full_3upts.yw_user_id`
-  - Reweight users for location representativeness (uses poststratification weights)
-      - `~/spark/bin/spark-submit ~/hadoop-tools/sparkScripts/reweight_userid_feats.py --input </hadoop/path/input> --output </hadoop/path/output> --mapping_file </hadoop/path/mapping.csv>`
-      - ex. - `~/spark/bin/spark-submit ~/hadoop-tools/sparkScripts/reweight_userid_feats.py --input /hadoop_data/ctlb/2020/feats/feat.dd_depAnxLex_ctlb2_nostd.timelines2020_full_3upts.yw_user_id --output /hadoop_data/ctlb/2020/feats/feat.dd_depAnxLex_ctlb2_weighted.timelines2020_full_3upts.yw_user_id --mapping_file /home/smangalik/post_strat_weights/users_2020/yw_user_2020_weights_income_k10_mbn50.csv`
-      - ex. outputs `/hadoop_data/ctlb/2020/feats/feat.dd_depAnxLex_ctlb2_weighted.timelines2020_full_3upts.yw_user_id`
+      - ex. `~/spark/bin/spark-submit ~/hadoop-tools/sparkScripts/topics_extraction.py --lex_file /home/smangalik/hadoop-tools/permaLexicon/dd_depAnxLex_ctlb2adapt_nostd.csv --word_table /hadoop_data/ctlb/2019/feats/featANS.1gram.timelines2019_full_3upts.yw_user_id --output_file /hadoop_data/ctlb/2019/feats/featANS.dd_depAnxLex_ctlb2_nostd.timelines2019_full_3upts.yw_user_id`
+      - ex. outputs `/hadoop_data/ctlb/2019/feats/featANS.dd_depAnxLex_ctlb2_nostd.timelines2019_full_3upts.yw_user_id`
+
+### 3.5 Adding Metadata to User-Time scores
+If you do not have a post-stratified weight set you will need to generate them using the documentation in [selection-bias-pipeline.md](selection-bias-pipeline.md)
+
+  - Add location based metadata to user-time
+      - `~/spark/bin/spark-submit ~/hadoop-tools/sparkScripts/add_county_to_feat_tables-ctlb.py --word_table <hadoop/path/depAnxScores>`
+      - ex. - `~/spark/bin/spark-submit ~/hadoop-tools/sparkScripts/add_county_to_feat_tables-ctlb.py --word_table /hadoop_data/ctlb/2019/feats/featANS.dd_daa_c2adpt_ans_nos.timelines2019_lex_3upts.yw_user_id`
+      - ex. outputs `/hadoop_data/ctlb/2020/feats/feat.dd_depAnxLex_ctlb2_weighted.timelines2020_full_3upts.yw_user_id.cnty`
+  - Add location based post-stratified weights to user-time
+      - `~/spark/bin/spark-submit ~/hadoop-tools/sparkScripts/add_weight_to_featcnty.py --input <hadoop/path/depAnxScores.cnty> --mapping_file <hadoop/path/mapping>`
+      - ex. - `~/spark/bin/spark-submit ~/hadoop-tools/sparkScripts/add_weight_to_featcnty.py --input /hadoop_data/ctlb/2019/feats/featANS.dd_daa_c2adpt_ans_nos.timelines2019_lex_3upts.yw_user_id.cnty --mapping_file /home/smangalik/post_strat_weights/users_2019/yw_user_2019_weights_income_k10_mbn50.csv`
+      - ex. outputs `/hadoop_data/ctlb/2019/feats/featANS.dd_daa_c2adpt_ans_nos.timelines2019_lex_3upts.yw_user_id.cnty.wt`
   - Rescale scores
-    - `~/spark/bin/spark-submit ~/hadoop-tools/sparkScripts/outlier_reset.py --input_file </hadoop/path/input> --no_sigma`
-      - ex `~/spark/bin/spark-submit ~/hadoop-tools/sparkScripts/outlier_reset.py --input_file /hadoop_data/ctlb/2019/feats/feat.dd_depAnxLex_ctlb2_nostd.timelines2019_full_3upts.yw_user_id --no_sigma`
-      - ex. outputs `/hadoop_data/ctlb/2020/feats/feat.dd_depAnxLex_ctlb2_05scale.timelines2020_full_3upts.yw_user_id`
+    - `~/spark/bin/spark-submit ~/hadoop-tools/sparkScripts/scale_outlier.py --input_file <hadoop/path/depAnxScores.cnty.wt> --no_sigma`
+      - ex `~/spark/bin/spark-submit ~/hadoop-tools/sparkScripts/scale_outlier.py --input_file /hadoop_data/ctlb/combined/featANS.dd_daa_c2adpt_ans_nos.timelines19to20_lex_3upts.yw_user_id.cnty.wt --no_sigma`
+      - ex. outputs `/hadoop_data/ctlb/combined/featANS.dd_daa_c2adpt_ans_nos.timelines19to20_lex_3upts.yw_user_id.cnty.wt.05fc`
 
 ### 4. Location aggregation  
-- Add higher space level, e.g. add counties column
-  - `~/spark/bin/spark-submit /hadoop-tools/jars/hadoop-lzo-0.4.21-SNAPSHOT.jar ~/hadoop-tools/sparkScripts/add_county_to_feat_tables-ctlb.py --word_table <input> --mapping_file <agg_mapping>`
 - Aggregate  
-  - `~/spark/bin/spark-submit  ~/hadoop-tools/sparkScripts/agg_feats_to_group.py --input_file </hadoop/path/input> --output_file /<hadoop/path/output>  --gft <selected_threshold>`
-    - ex. `~/spark/bin/spark-submit  ~/hadoop-tools/sparkScripts/agg_feats_to_group.py --input_file /hadoop/path/1gram.yw_user_id.cnty --output_file /hadoop_data/ctlb/2020/feats/feat.1gram.yw_cnty --gft 200`
+  - `~/spark/bin/spark-submit ~/hadoop-tools/sparkScripts/agg_feats_to_group.py –input-file <hadoop/path/depAnxScores.cnty.wt.05fc> –output-file <hadoop/path/depAnxScores.05fc>`
+    - ex. `~/spark/bin/spark-submit ~/hadoop-tools/sparkScripts/agg_feats_to_group.py –input-file /hadoop_data/ctlb/combined/featANS.dd_daa_c2adpt_ans_nos.timelines19to20_lex_3upts.yw_user_id.cnty.wt.05fc –output-file /hadoop_data/ctlb/combined/featANS.dd_daa_c2adpt_ans_nos.timelines19to20_lex_3upts.yw_cnty.wt.05fc`
+    - ex. outputs `/hadoop_data/ctlb/combined/featANS.dd_daa_c2adpt_ans_nos.timelines19to20_lex_3upts.yw_cnty.wt.05fc`
 
-
-### 5. Analysis (Optional) 
 
 

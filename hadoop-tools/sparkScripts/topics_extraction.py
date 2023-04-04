@@ -1,5 +1,5 @@
 '''
-~/spark/bin/spark-submit --conf spark.executor.memory=7G --conf spark.executorEnv.PYTHONHASHSEED=323 --jars ~/hadoop-tools/jars/hadoop-lzo-0.4.21-SNAPSHOT.jar ~/hadoop-tools/sparkScripts/topics_extraction.py --lex_file /home/smangalik/hadoop-tools/permaLexicon/dd_depAnxLex_ctlb2adapt_nostd.csv --word_table /hadoop_data/ctlb/2019/feats/feat.1gram.timelines2019_full_3upts.yw_user_id --output_file /hadoop_data/ctlb/2019/feats/feat.dd_depAnxLex_ctlb2_nostd.timelines2019_full_3upts.yw_user_id
+~/spark/bin/spark-submit --conf spark.executor.memory=7G --conf spark.executorEnv.PYTHONHASHSEED=323 --jars ~/hadoop-tools/jars/hadoop-lzo-0.4.21-SNAPSHOT.jar ~/hadoop-tools/sparkScripts/topics_extraction.py --lex_file /home/smangalik/hadoop-tools/permaLexicon/dd_depAnxLex_ctlb2adapt_nostd.csv --word_table /hadoop_data/ctlb/2019/feats/feat.1gram.timelines2019_full_3upts.yw_user_id
 '''
 
 #!/usr/bin/env python
@@ -121,7 +121,7 @@ def extract_topics(lex_file:str, word_table:str, output_file:str, lex_csv_header
         .flatMap(lambda tup: [(tup[0], cat, tup[1]['term_counts'][cat], gn + intercepts_bc.value.get(cat,0.0)) for cat, gn in tup[1]['prob'].items()])
     #df2 = topicsRddCSVStyle.toDF().show(n=20,truncate=False)
 
-    print("Writing CSV Data") 
+    print("Writing CSV Data to",output_file) 
     write_csv(topicsRddCSVStyle, output_file)
 
 if __name__ == '__main__':
@@ -137,12 +137,18 @@ if __name__ == '__main__':
                 help='If lex CSV does not contain a header')
     args = parser.parse_args()
 
-    if not (args.word_table and args.output_file):
-        print("You must specify --word_table and --output_file")
+    output_file = args.output_file
+    if output_file is None:
+        lex_name = args.lex_file.split('/')[-1].replace('.csv','')
+        output_file = args.word_table.replace('1gram',lex_name)
+        print("No output file specified, using default: %s" % (output_file))
+
+    if not (args.word_table):
+        print("You must specify --word_table")
         sys.exit()
 
 
-    extract_topics(args.lex_file, args.word_table, args.output_file, args.lex_csv_header)
+    extract_topics(args.lex_file, args.word_table, output_file, args.lex_csv_header)
 
 # change to this at some point
 # rdd_1gram.join(rdd_topic, by=('term','feat')).aggregate(key='category', sum(1gram_group_norm * topic_weight))

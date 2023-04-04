@@ -28,7 +28,7 @@ session = SparkSession\
 sc = session.sparkContext
 
 # Features
-rdd = sc.textFile("hdfs:" + feats).map(lambda line: line.split(",")).filter(lambda x: len(x)>=4)
+rdd = sc.textFile("hdfs:" + feats).map(lambda line: line.replace('"','').split(",")).filter(lambda x: len(x)>=4)
 rdd.toDF().show(n=10,truncate=False)
 
 print("Loaded feature table",feats)
@@ -100,13 +100,13 @@ for i, cnty_set in enumerate(cnty_sets):
     # Filter to only valid values using filter_func() then add the county column using map()
     
     # for feat table 
-    #iter_result = rdd.filter(lambda x: filter_func(x[0], mapping_dict_bc.value.keys())).map(lambda x: (x[0], x[1], x[2], x[3], mapping_dict_bc.value[yw_userid_to_userid(x[0])])).persist()
+    iter_result = rdd.filter(lambda x: filter_func(x[0], mapping_dict_bc.value.keys())).map(lambda x: (x[0], x[1], x[2], x[3], mapping_dict_bc.value[yw_userid_to_userid(x[0])])).persist()
     
     # for raw data
     #iter_result = rdd.filter(lambda x: filter_func(x[1], mapping_dict_bc.value.keys())).map(lambda x: (x[0], x[1], x[2], x[3], mapping_dict_bc.value[yw_userid_to_userid(x[1])])).persist()
     
     # for upt data
-    iter_result = rdd.filter(lambda x: filter_func(x[0], mapping_dict_bc.value.keys())).map(lambda x: (x[0], x[1], x[2], x[3], x[4], mapping_dict_bc.value[yw_userid_to_userid(x[0])])).persist()
+    #iter_result = rdd.filter(lambda x: filter_func(x[0], mapping_dict_bc.value.keys())).map(lambda x: (x[0], x[1], x[2], x[3], x[4], mapping_dict_bc.value[yw_userid_to_userid(x[0])])).persist()
     
     #iter_result.toDF().show(n=20,truncate=False) # peek at the result
 
@@ -120,6 +120,7 @@ for i, cnty_set in enumerate(cnty_sets):
     iter_output_file = output_file + "_" + str(i)
     print("Writing to",iter_output_file)
     iter_result.toDF().write.csv(iter_output_file, quoteAll=True)
+    #iter_result.toDF().write.csv(iter_output_file)
     iter_result.unpersist()
 
     
