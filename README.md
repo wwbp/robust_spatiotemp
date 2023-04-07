@@ -55,5 +55,6 @@ Filters to english, as well as removes retweets, tweets with urls, duplicate twe
 
 ### 5. Analysis (Optional) 
 - We provide a [notebook](https://colab.research.google.com/drive/17QSaLK9OslTvk9gXs6QWj4mQBUfo_NqU?usp=sharing) demonstrating how to use the outputted scores to do all analyses seen in the original manuscript
+  - See the data generated for _Robust language-based mental health assessments in time and space through social media_ in [wwbp/lbmha_2019-2020](https://github.com/wwbp/lbmha_2019-2020)
 
 
