@@ -1,6 +1,6 @@
 '''
 run as
-~/spark/bin/spark-submit --conf spark.executor.memory=7G --jars ~/hadoop-tools/jars/hadoop-lzo-0.4.21-SNAPSHOT.jar ~/hadoop-tools/sparkScripts/reweight_ywuserid_feats.py
+~/spark/bin/spark-submit --conf spark.executor.memory=7G --jars ~/hadoop-tools/jars/hadoop-lzo-0.4.21-SNAPSHOT.jar ~/hadoop-tools/sparkScripts/reweight_ywuserid_feats.py --input_file /hadoop_data/ctlb/2019/feats/feat.dd_daa_c2adpt_ans_nos.timelines2019_full_3upts.yw_user_id.cnty --mapping_file /home/smangalik/post_strat_weights/users_2019/yw_user_2019_weights_income_k10_mbn50.csv
 '''
 
 
@@ -11,28 +11,24 @@ from pyspark.sql import SparkSession
 # Parameters - EDIT ME
 
 # 2019
-# DEF_INPUTFILE    = "/hadoop_data/ctlb/2019/feats/feat.dd_depAnxLex_ctlb2_nostd.timelines2019_full_3upts.yw_user_id"
-# DEF_OUTPUTFILE   = "/hadoop_data/ctlb/2019/feats/feat.dd_depAnxLex_ctlb2_weighted.timelines2019_full_3upts.yw_user_id"
-# DEF_MAPPING_FILE = "/home/smangalik/post_strat_weights/users_2019/yw_user_2019_weights_income_k10_mbn50.csv" 
+DEF_INPUTFILE    = "/hadoop_data/ctlb/2019/feats/feat.dd_daa_c2adpt_ans_nos.timelines2019_full_3upts.yw_user_id.cnty"
+DEF_MAPPING_FILE = "/home/smangalik/post_strat_weights/users_2019/yw_user_2019_weights_income_k10_mbn50.csv" 
 
 # 2020
-DEF_INPUTFILE    = "/hadoop_data/ctlb/2020/feats/feat.dd_depAnxLex_ctlb2_nostd.timelines2020_full_3upts.yw_user_id"
-DEF_OUTPUTFILE   = "/hadoop_data/ctlb/2020/feats/feat.dd_depAnxLex_ctlb2_weighted.timelines2020_full_3upts.yw_user_id"
-DEF_MAPPING_FILE = "/home/smangalik/post_strat_weights/users_2020/yw_user_2020_weights_income_k10_mbn50.csv" 
+# DEF_INPUTFILE    = "/hadoop_data/ctlb/2020/feats/feat.dd_depAnxLex_ctlb2_nostd.timelines2020_full_3upts.yw_user_id"
+# DEF_MAPPING_FILE = "/home/smangalik/post_strat_weights/users_2020/yw_user_2020_weights_income_k10_mbn50.csv" 
 
 # parse arguments
 parser = argparse.ArgumentParser(description="Reweight yearweek_userids")
 parser.add_argument('--input', '--input_file', dest='input_file', default=DEF_INPUTFILE,
             help='')
-parser.add_argument('--output','--output_file', dest='output_file', default=DEF_OUTPUTFILE,
-            help='')
-parser.add_argument('--mapping_file', dest='mapping_file', default=DEF_MAPPING_FILE,
+parser.add_argument('--mapping','--mapping_file', dest='mapping_file', default=DEF_MAPPING_FILE,
                 help='Yearweek_Userid to Weight csv file. Default: %s' % (DEF_MAPPING_FILE))
 args = parser.parse_args()
 
 # Load args
 feats               = args.input_file
-output_file         = args.output_file
+output_file         = feats + ".wt"
 user_weight_mapping = args.mapping_file
 
 # Create SparkContext
@@ -82,10 +78,11 @@ print("Split Lengths:",[len(x) for x in ywuser_sets])
 def filter_func(x, vals):
     try:
         return x in vals # "2020_9:999999926" in mapping?
-    except ValueError:
-        print('ValueError:', str(x))
+    except:
+        print('Error:', str(x))
         return False
 
+# rdd where user_id in mapping batch
 for i, ywuser_set in enumerate(ywuser_sets):
     print('Iter {i}:'.format(i=i), list(ywuser_set)[:5])
 
@@ -98,6 +95,8 @@ for i, ywuser_set in enumerate(ywuser_sets):
     iter_result = rdd.filter(lambda x: filter_func(x[0], ywuser_weights_dict_bc.value.keys()))\
         .map( lambda x: ( x[0], x[1], ywuser_weights_dict_bc.value[x[0]] * x[2], ywuser_weights_dict_bc.value[x[0]] * x[3] ) )\
         .persist()
+    
+    iter_result.show(5)
 
     # As dataframe -- allows .show()
     #result_df = iter_result.toDF()
@@ -107,5 +106,13 @@ for i, ywuser_set in enumerate(ywuser_sets):
     # Write out the result
     #iter_result.saveAsTextFile("hdfs:" + output_file + "_" + str(i)) # From RDD
     iter_result.unpersist()
+
+# write out all rows that are not in the mapping
+
+# rdd where user_id not in mapping
+rdd.filter(lambda x: not filter_func(x[0], all_yw_users))\
+    .map( lambda x: ( x[0], x[1], x[2], x[3] ) )\
+    .toDF().write.csv("hdfs:" + output_file + "_not_in_mapping")
+
 
 sc.stop()

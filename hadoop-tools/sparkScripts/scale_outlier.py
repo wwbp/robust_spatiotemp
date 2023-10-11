@@ -3,8 +3,6 @@ Use as:
 
 ~/spark/bin/spark-submit --conf spark.executor.memory=7G --jars ~/hadoop-tools/jars/hadoop-lzo-0.4.21-SNAPSHOT.jar ~/hadoop-tools/sparkScripts/scale_outlier.py --input_file /hadoop_data/ctlb/2019/feats/feat.dd_depAnxLex_ctlb2_nostd.timelines2019_lex_3upts.yw_user_id.cnty.wt --no_sigma
 
-~/spark/bin/spark-submit --conf spark.executor.memory=7G --jars ~/hadoop-tools/jars/hadoop-lzo-0.4.21-SNAPSHOT.jar ~/hadoop-tools/sparkScripts/scale_outlier.py --input_file /hadoop_data/ctlb/2019/feats/feat.1gram.timelines2019_full_1upts_100users.yw_cnty
-~/spark/bin/spark-submit --conf spark.executor.memory=7G --jars ~/hadoop-tools/jars/hadoop-lzo-0.4.21-SNAPSHOT.jar ~/hadoop-tools/sparkScripts/scale_outlier.py --input_file /hadoop_data/ctlb/2019/feats/feat.1gram.timelines2019_full_1upts_100users.yw_cnty --no_scale
 '''
 
 #!/usr/bin/env python
@@ -19,47 +17,18 @@ from pyspark.sql import Window
 from pyspark.sql import functions as F
 
 
-# How many sigma is considered an outlier
+# How many sigma from mean to be considered an outlier?
 sigma_removal = False
 sigma = 3
 
 # What are the scaling bounds?
 rescaling = True
-floor, ceiling = 0, 5
+floor, ceiling = 0.0, 5.0
 standardize = False
 mean_center = False 
 post_standardize_fc = False
 
 DEF_INPUTFILE = None
-
-
-DEFAULT_PATH = os.path.dirname(os.path.realpath(__file__)) # '/hadoop-tools/sparkScripts'
-
-# get yearweek_county from yearweek_userid and county
-def make_yearweek_county(ywui, cnty):
-    if ywui is None or cnty is None: return ""
-    try:
-        yw, ui = ywui.split(":")
-        return yw + ":" + str(cnty)
-    except ValueError:
-        return ""
-def make_yearweek_supercounty(ywui, supercnty):
-    if ywui is None or supercnty is None: return ""
-    try:
-        yw, ui = ywui.split(":")
-        return yw + ":" + str(supercnty)
-    except ValueError:
-        return ""
-
-# get yearweek_county from yearweek_userid and county
-def make_year_county(ywui, cnty):
-    if ywui is None or cnty is None: return ""
-    try:
-        yw, ui = ywui.split(":")
-        year, week = yw.split("_")
-        return year + ":" + str(cnty)
-    except ValueError:
-        return ""
 
 # get userid from yearweek_userid
 def make_userid(ywui):
@@ -79,14 +48,13 @@ def make_yw(ywui):
     except ValueError:
         return ""
 
+# clean numerical features to ensure compatibility with spark
 def clean_num_feats(num):
     try:
         float_num = float(num.strip().strip('"').strip("'"))
     except:
         return float(0.0)
     return float_num
-
-## Spark Portion:
 
 if __name__ == '__main__':
     # parse arguments
@@ -97,30 +65,19 @@ if __name__ == '__main__':
     parser.add_argument('--no_scale', dest='scale', action='store_false')
     args = parser.parse_args()
 
-    if not (args.input_file):
+    if not args.input_file:
         print("You must specify --input_file")
         sys.exit()
 
-    input_file, header, sigma_removal, rescaling = args.input_file, False, args.sigma, args.scale
-    output_file = input_file
+    input_file, sigma_removal, rescaling, header = args.input_file, args.sigma, args.scale, False
 
     session = SparkSession\
             .builder\
-            .appName("aggFeatsByGroup")\
+            .appName("scaleOutliers")\
+            .config("spark.executor.memory", "50g")\
+            .config("spark.driver.memory", "50g")\
             .getOrCreate()
     sc = session.sparkContext
-
-    if not header:
-        dup_field = 'temp_column'
-
-    # schema = StructType([ \
-    #     StructField(yearweek_userid_field,StringType(),False), \
-    #     StructField(feat_field,StringType(),False), \
-    #     StructField(field_count_field,FloatType(),True), \
-    #     StructField(field_freq_field, FloatType(), True), \
-    #     StructField(county_field, StringType(), False), \
-    #     StructField(weight_field, FloatType(), True) \
-    # ])
 
     # Read in tweets and display a sample
     msgsDF = session.read.csv(input_file, header=header)#, schema=schema)
@@ -212,15 +169,16 @@ if __name__ == '__main__':
 
         # score = ceil(floor(score, 0), 5) 
         def thresh_score(score): 
-            return min(max(float(score),0.0),5.0)
+            return min(max(float(score),floor),ceiling)
         print("Applying floor of {} and ceiling of {}".format(floor,ceiling))  
         thresh_udf = udf(thresh_score, FloatType())
-        msgsDF = msgsDF.withColumn(field_freq_field, thresh_udf(field_freq_field))#, feat_field))
+        msgsDF = msgsDF.withColumn(field_freq_field, thresh_udf(field_freq_field))
 
         msgsDF_dep = msgsDF.where(col(feat_field)=="DEP_SCORE")
         msgsDF_anx = msgsDF.where(col(feat_field)=="ANX_SCORE")
         msgsDF_ang = msgsDF.where(col(feat_field)=="ANG_SCORE")
 
+        # Debug
         # low_dep_users = list(msgsDF_dep.where(col(field_freq_field) == floor).select(user_field).distinct().toPandas()[user_field])[:100]
         # high_dep_users = list(msgsDF_dep.where(col(field_freq_field) == ceiling).select(user_field).distinct().toPandas()[user_field])[:100]
         # low_anx_users = list(msgsDF_anx.where(col(field_freq_field) == floor).select(user_field).distinct().toPandas()[user_field])[:100]
@@ -229,11 +187,6 @@ if __name__ == '__main__':
         # print("High DEP Users",high_dep_users)
         # print("Low ANX Users",low_anx_users)
         # print("High ANX Users",high_anx_users)
-        
-
-        # print("STOPPING EARLY")
-        # sc.stop()
-        # sys.exit(0)
 
         msgsDF_dep_stats = msgsDF_dep.select(
             mean(col(field_freq_field)).alias('mean'),
@@ -277,7 +230,7 @@ if __name__ == '__main__':
         # Re-merge all feats
         msgsDF = msgsDF_dep.union(msgsDF_anx).union(msgsDF_ang)
 
-        # apply floor and ceiling 1 additional time
+        # apply floor and ceiling 1 additional time if standardizing
         if post_standardize_fc:
             print("Applying floor of {} and ceiling of {} again".format(floor,ceiling))
             thresh_udf = udf(thresh_score, FloatType())
@@ -292,18 +245,12 @@ if __name__ == '__main__':
 
     print("Length of Processed Data:", msgsDF.count())
 
-    # print("STOPPING EARLY")
-    # sc.stop()
-    # sys.exit(0)
-
     if rescaling and not standardize:
-        #output_file = output_file.replace("weighted","{}{}scale".format(floor,ceiling))
-        output_file = "{}.{}{}fc".format(output_file,floor,ceiling)
+        output_file = "{}.{}{}fc".format(input_file,int(floor),int(ceiling))
     if rescaling and standardize:
-        #output_file = output_file.replace("weighted","{}{}scale".format(floor,ceiling))
-        output_file = "{}.{}{}sc".format(output_file,floor,ceiling)
+        output_file = "{}.{}{}sc".format(input_file,floor,ceiling)
     if sigma_removal:
-        output_file = output_file.replace("upts","upts{}sig".format(sigma))
+        output_file = input_file.replace("upts","upts{}sig".format(sigma))
     
     # Write to file
     print("Writing data to output file:", output_file)

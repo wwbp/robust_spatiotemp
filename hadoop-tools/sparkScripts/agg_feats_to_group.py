@@ -1,6 +1,6 @@
 '''
 Use as:
-~/spark/bin/spark-submit --conf spark.executor.memory=7G --jars ~/hadoop-tools/jars/hadoop-lzo-0.4.21-SNAPSHOT.jar ~/hadoop-tools/sparkScripts/agg_feats_to_group.py --input_file /hadoop_data/ctlb/2019/feats/feat.dd_depAnxLex_ctlb2_nostd.timelines2019_lex_3upts.yw_user_id.cnty.wt.05fc --output_file /hadoop_data/ctlb/2019/feats/feat.dd_depAnxLex_ctlb2_nostd.timelines2019_lex_3upts.yw_cnty.wt.05fc 
+~/spark/bin/spark-submit --jars ~/hadoop-tools/jars/hadoop-lzo-0.4.21-SNAPSHOT.jar ~/hadoop-tools/sparkScripts/agg_feats_to_group.py --input_file /hadoop_data/ctlb/2019/feats/feat.dd_depAnxLex_ctlb2_nostd.timelines2019_lex_3upts.yw_user_id.cnty.wt.05fc --output_file /hadoop_data/ctlb/2019/feats/feat.dd_depAnxLex_ctlb2_nostd.timelines2019_lex_3upts.yw_cnty.wt.05fc 
 '''
 
 #!/usr/bin/env python
@@ -20,13 +20,13 @@ from pyspark.sql.functions import udf, col, avg, countDistinct, sum, stddev_pop
 import pyspark.sql.functions as F
 from pyspark.sql import Window
 
-MIN_USERS_IN_GROUP = 50 # TODO Set GFT 5, 30, 80, 100, 200, 300, 500
-
-DEF_INPUTFILE =  "/hadoop_data/ctlb/2019/feats/feat.dd_depAnxLex_ctlb2_nostd.timelines2019_lex_3upts.yw_user_id.cnty.wt"
-DEF_OUTPUTFILE = "/hadoop_data/ctlb/2019/feats/feat.dd_depAnxLex_ctlb2_nostd.timelines2019_lex_3upts.yw_cnty"
+DEF_INPUTFILE =  "/apollo_data/ctlb/2019/feats/feat.dd_depAnxLex_ctlb2_nostd.timelines2019_lex_3upts.yw_user_id.cnty.wt"
+DEF_OUTPUTFILE = "/apollo_data/ctlb/2019/feats/feat.dd_depAnxLex_ctlb2_nostd.timelines2019_lex_3upts.yw_cnty"
 DEF_MIN_USERS_IN_GROUP = 50 # Set GFT 50, 200, 500
 
-DEFAULT_PATH = os.path.dirname(os.path.realpath(__file__)) # '/hadoop-tools/sparkScripts'
+# Super county mapping file
+CURR_DIR = os.path.dirname(os.path.realpath(__file__))
+cnty_supes_mapping_file = CURR_DIR + "/cnty_supes_mapping.csv" 
 
 # get yearweek_county from yearweek_userid and county
 def make_yearweek_county(ywui, cnty):
@@ -92,8 +92,6 @@ def clean_num_feats(num):
         return float(0.0)
     return float_num
 
-## Spark Portion:
-
 if __name__ == '__main__':
     # parse arguments
     parser = argparse.ArgumentParser(description="Remove duplicate tweets within a group")
@@ -114,12 +112,10 @@ if __name__ == '__main__':
     session = SparkSession\
             .builder\
             .appName("aggFeatsByGroup")\
+            .config("spark.executor.memory", "20g")\
+            .config("spark.driver.memory", "20g")\
             .getOrCreate()
     sc = session.sparkContext
-
-    if not header:
-        dup_field = 'temp_column'
-
 
     # Read in tweets and display a sample
     msgsDF = session.read.csv(input_file, header=header)
@@ -141,7 +137,7 @@ if __name__ == '__main__':
     ym_cnty_field = "yearmonth_cnty"
     yw_supercnty_field = "yearweek_supercnty"
     year_cnty_field = "year_cnty"
-    group_field = yw_supercnty_field # TODO yw_cnty_field / yw_supercnty_field / user_field / county_field / ym_cnty_field / yearweek_field
+    group_field = yw_supercnty_field # TODO PICK: yw_cnty_field / yw_supercnty_field / user_field / county_field / ym_cnty_field / yearweek_field
     msgsDF = msgsDF.withColumnRenamed("_c0",yearweek_userid_field)
     msgsDF = msgsDF.withColumnRenamed("_c1",feat_field)
     msgsDF = msgsDF.withColumnRenamed("_c2",field_count_field)
@@ -152,8 +148,8 @@ if __name__ == '__main__':
     if '_c6' in msgsDF.columns:
         msgsDF = msgsDF.withColumnRenamed("_c6",yearweek_field)
 
-    print("Original Data -",input_file)
-    msgsDF.sample(False, 0.01, seed=1).limit(10).show(10,False)
+    print("Original Data from",input_file)
+    msgsDF.sample(withReplacement=False, fraction=0.01, seed=1).limit(10).show(n=10,truncate=False)
 
     # Clean columns
     clean_ywui = udf(lambda x:x.strip().replace("'","").replace('"',""), StringType())
@@ -192,7 +188,6 @@ if __name__ == '__main__':
     # if ywui_wt exists then prepare for use
     if yearweek_userid_weight in msgsDF.columns:
         msgsDF = msgsDF.withColumn(yearweek_userid_weight, clean_num_feats_udf(yearweek_userid_weight))
-        # msgsDF = msgsDF.withColumn(field_freq_field, col(field_freq_field) * col(yearweek_userid_weight)) # pre-multiply weights
 
     print("Cleaned Data")
     msgsDF.show(20,False)
@@ -200,8 +195,7 @@ if __name__ == '__main__':
     if "super" in group_field: # only calculate for super counties
 
         # Add on the super counties and super county weights
-        mapping_file = "/home/smangalik/hadoop-tools/sparkScripts/cnty_supes_mapping.csv"
-        cnty_supes_df = pd.read_csv(mapping_file, dtype={'cnty':'str', 'cnty_w_sups300':'str'})
+        cnty_supes_df = pd.read_csv(cnty_supes_mapping_file, dtype={'cnty':'str', 'cnty_w_sups300':'str'})
         cnty_supes_df = cnty_supes_df.dropna(how='any',axis=0) # remove missing mappings
         cnty_supes_mapping = dict(zip(cnty_supes_df['cnty'], cnty_supes_df['cnty_w_sups300']))
         supes_wt_mapping = dict(zip(cnty_supes_df['cnty'], cnty_supes_df['weight']))
@@ -239,17 +233,7 @@ if __name__ == '__main__':
         print("Cleaned Data (Corrected by Weight)")
         msgsDF.sample(withReplacement=False, fraction=0.001).show(20,False)
 
-    # Filter with broadcasted list
-    # valid_entities = list(userCountDF.select(group_field).toPandas()[group_field])
-    # valid_entities_bc = sc.broadcast(valid_entities)
-    # userCountDF.unpersist(blocking = True)
-    # msgsDF = msgsDF.where( (msgsDF[group_field].isin(valid_entities_bc.value)) )
-    # valid_entities_bc.destroy()
-
-    # Filter with an inner join
-    # msgsDF = msgsDF.join(userCountDF,group_field,"inner").drop(col("distinct_users"))
-
-    # Get count of unique values
+    # Debugging: Get count of unique values
     # print("Unique Yearweek UserIDs")
     # msgsDF.select(countDistinct(yearweek_userid_field)).show(20,False)
     # print("Unique Entities")
@@ -262,8 +246,8 @@ if __name__ == '__main__':
     aggDF = msgsDF.groupBy([group_field,feat_field]).agg(
         sum(field_count_field).alias('sum_N_lexwords'), 
         (F.sum(col(field_freq_field) * col(yearweek_userid_weight))/F.sum(col(yearweek_userid_weight))).alias("wavg_score"),
-        # TODO (sum[weights*(score - weighted_avg_score)**2]/sum(weights))**0.5
-        #((F.sum(col(yearweek_userid_weight)*(col(field_freq_field) - col("avg_score_wt"))**2)/F.sum(col(yearweek_userid_weight)))**0.5).alias('std_score_wt'),
+        # TODO add stddev (sum[weights*(score - weighted_avg_score)**2]/sum(weights))**0.5
+        # TODO add stddev weighted ((F.sum(col(yearweek_userid_weight)*(col(field_freq_field) - col("avg_score_wt"))**2)/F.sum(col(yearweek_userid_weight)))**0.5).alias('std_score_wt'),
         avg(field_freq_field).alias('avg_score'),
         stddev_pop(field_freq_field).alias('std_score'),
         countDistinct(user_field).alias('N_users')
@@ -273,16 +257,6 @@ if __name__ == '__main__':
         aggDF = aggDF.withColumn("Space", make_userid_udf(group_field))
         aggDF = aggDF.withColumn("Time", make_yearweek_udf(group_field))
     aggDF.sample(False, 0.1, seed=1).limit(10).show(20,False)
-    #aggDF.toPandas().to_csv('~/yearweek_user_counts_2019.csv', index=False) # write to local before GFT
-
-    # GFT filter to MIN_USERS_IN_GROUP
-    #aggDF = aggDF.where(col("N_users") >= MIN_USERS_IN_GROUP) 
-    #print("Aggregated Data with over",MIN_USERS_IN_GROUP,"users per",group_field)
-    #aggDF.sample(False, 0.01, seed=1).limit(10).show(20,False)
-
-    # print('STOPPING EARLY')
-    # sc.stop()
-    # sys.exit()
 
     # Write to file
     print("Writing data to output file",output_file)

@@ -165,24 +165,24 @@ class Tokenizer:
         
         return words
 
-    def tokenize_random_tweet(self):
-        """
-        If the twitter library is installed and a twitter connection
-        can be established, then tokenize a random tweet.
-        """
-        try:
-            import twitter
-        except ImportError:
-            print("Apologies. The random tweet functionality requires the Python twitter library: http://code.google.com/p/python-twitter/")
-        from random import shuffle
-        api = twitter.Api()
-        tweets = api.GetPublicTimeline()
-        if tweets:
-            for tweet in tweets:
-                if tweet.user.lang == 'en':            
-                    return self.tokenize(tweet.text)
-        else:
-            raise Exception("Apologies. I couldn't get Twitter to give me a public English-language tweet. Perhaps try again")
+    # def tokenize_random_tweet(self):
+    #     """
+    #     If the twitter library is installed and a twitter connection
+    #     can be established, then tokenize a random tweet.
+    #     """
+    #     try:
+    #         import twitter
+    #     except ImportError:
+    #         print("Apologies. The random tweet functionality requires the Python twitter library: http://code.google.com/p/python-twitter/")
+    #     from random import shuffle
+    #     api = twitter.Api()
+    #     tweets = api.GetPublicTimeline()
+    #     if tweets:
+    #         for tweet in tweets:
+    #             if tweet.user.lang == 'en':            
+    #                 return self.tokenize(tweet.text)
+    #     else:
+    #         raise Exception("Apologies. I couldn't get Twitter to give me a public English-language tweet. Perhaps try again")
 
     def __html2unicode(self, s):
         """
@@ -359,7 +359,10 @@ def replaceUser(message):
     return message
 
 def parsed_message(s):
+    # Replace URLs and USERs
     s = replaceUser(replaceURL(s))
+
+    #remove hashtags, mentions, and other stuff
     words = [word for word in tokenizer.tokenize(s) if ((word[0]!='#') and (word[0]!='@') and not Exclude_RE.search(word))]
     s = ' '.join(words).lower()
     if len(words)>=6:
@@ -376,6 +379,11 @@ def _addTokenizerFile(sc):
 ## Spark Portion:
 
 if __name__ == '__main__':
+
+    # time the script
+    import time
+    start_time = time.time()
+
     # parse arguments
     parser = argparse.ArgumentParser(description="Remove duplicate tweets within a group")
     parser.add_argument('--input', '--input_file', dest='input_file', default=DEF_INPUTFILE,
@@ -410,17 +418,33 @@ if __name__ == '__main__':
     msgsDF.sample(False, 0.01, seed=0).limit(5).show()
     print("Raw Data Length:",msgsDF.count())
 
+    dup_field = 'temp_column'
     if not header:
-        #dup_field = '_c' + str(max(message_field, group_field)+1)
-        dup_field = 'temp_column'
         message_field = "_c" + str(message_field)
         group_field = "_c" + str(group_field)
+    else:
+        print("Header specified, using column names")
+        message_field = msgsDF.columns[message_field]
+        group_field = msgsDF.columns[group_field]
 
+    print("Message Field:",message_field)
+    print("Group Field:",group_field)
+
+    # remove all rows that have null values in either message or group field
+    print("Dropping None values...")
+    msgsDF = msgsDF.dropna(subset=[message_field, group_field])
+
+    # Strip leading and trailing quotes from message field
+    print("Stripping quotes...")
+    msgsDF = msgsDF.withColumn(message_field, F.regexp_replace(message_field, '^\"', '')).\
+                    withColumn(message_field, F.regexp_replace(message_field, '\"$', ''))
+
+    print("Beginning deduplication...")
     # does the deduplication
     dedupDF = msgsDF.withColumn(dup_field, udf(parsed_message, StringType())(message_field)).\
               dropDuplicates([group_field, dup_field]).drop(dup_field)
     print("Deduped Data Length:",dedupDF.count())
-    #dedupDF.sample(False, 0.01, seed=0).limit(5).show()
+    dedupDF.sample(False, 0.0001, seed=0).limit(5).show()
 
     # Clear memory
     msgsDF.unpersist(blocking = True)
@@ -431,20 +455,21 @@ if __name__ == '__main__':
 
     # drop messages starting with "RT", modify rttext(message)
     filter_rt_udf = udf(filterRT, BooleanType())
-    #dedupDF = dedupDF.filter(filter_rt_udf(message_field))
-    #dedupDF = dedupDF.filter(dedupDF[message_field].startswith("RT "))
 
     # drop messages containing URLs, modify replaceURL()
     filter_url_udf = udf(filterURL, BooleanType())
-    #dedupDF = dedupDF.filter(filter_url_udf(message_field))
 
-    # Combine the two filters
+    # Apply the two filters
     filteredDF = dedupDF.filter(filter_rt_udf(message_field) & filter_url_udf(message_field))
     print("Filtered Data Length:",filteredDF.count())
-    #filteredDF.sample(False, 0.01, seed=0).limit(5).show()
+    filteredDF.sample(False, 0.001, seed=0).limit(20).show()
 
     # Clear memory
     dedupDF.unpersist(blocking = True)
     
-    #filteredDF.coalesce(1).write.csv(output_file)
-    filteredDF.write.csv(output_file)
+    print("Writing to:",output_file)
+    filteredDF.coalesce(1).write.csv(output_file)
+    #filteredDF.write.csv(output_file)
+
+    # print time in a readable format
+    print("Time elapsed (H:M:S):", time.strftime("%H:%M:%S", time.gmtime(time.time() - start_time)))

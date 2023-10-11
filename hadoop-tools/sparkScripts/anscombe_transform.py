@@ -51,7 +51,20 @@ if __name__ == '__main__':
         msgsDF = msgsDF.filter( (msgsDF[group_field] >= "2020_01") & (msgsDF[group_field]  < "2021_01") )
         #msgsDF = msgsDF.dropDuplicates()
 
-    print("Original Data",input_file)
+    if "2019" in input_file:
+        print("Running extra clean up for 2019 data\n")
+        msgsDF = msgsDF.filter( (msgsDF[group_field] >= "2019_01") & (msgsDF[group_field]  < "2020_01") )
+
+    print("Removing user mentions from ngrams")
+    msgsDF = msgsDF.filter( ~msgsDF[feat_field].startswith("@") )
+
+    print("Removing punctuation from ngrams")
+    msgsDF = msgsDF.withColumn(feat_field, F.regexp_replace(F.col(feat_field), '[^\w\s]', ''))
+    
+    print("Removing blank ngrams")
+    msgsDF = msgsDF.filter(msgsDF[feat_field] != "")
+
+    print("Usable ngram Data",input_file)
     msgsDF.show(n=20,truncate=False)
     #print("Original Data Length:",msgsDF.count())
 
@@ -65,9 +78,11 @@ if __name__ == '__main__':
     anscombe_transform_udf = udf(anscombe_transform, FloatType())
 
     # anscombe transformed counts
+    print("Anscombe transform the counts")
     msgsDF = msgsDF.withColumn(count_field_ans, anscombe_transform_udf(count_field))
 
     # Re-base group norms
+    print("Re-basing group norms on new counts")
     w = Window.partitionBy(group_field)
     msgsDF = msgsDF.withColumn(freq_field_ans, F.col(count_field_ans) / F.sum(col(count_field_ans)).over(w))
 
@@ -83,7 +98,8 @@ if __name__ == '__main__':
 
     # write to HDFS
     output_file = input_file.replace('feat.','featANS.') 
-    msgsDF.write.csv(output_file, quoteAll=False) 
+    print("Writing to",output_file)
+    msgsDF.coalesce(1).write.csv(output_file, quoteAll=False) 
 
     # Close spark context
     sc.stop()

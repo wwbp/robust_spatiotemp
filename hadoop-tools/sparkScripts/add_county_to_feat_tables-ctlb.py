@@ -5,7 +5,7 @@ from pyspark import SparkContext
 from pyspark.sql import SparkSession
 
 # Lexicon Experiments
-DEF_WORD_TABLE = "/hadoop_data/ctlb/2019/feats/feat.dd_depAnxLex_ctlb2_nostd.timelines2019_full_1upts.yw_user_id"
+DEF_WORD_TABLE = "/hadoop_data/ctlb/2019/feats/featANS.dd_depAnxLex_ctlb2_nostd.timelines2019_full_1upts.yw_user_id"
 DEF_MAPPING_FILE = "/home/smangalik/user_county_mapping.csv"
 
 parser = argparse.ArgumentParser(description="Add the county column to CTLB2")
@@ -17,7 +17,7 @@ args = parser.parse_args()
 
 # Load args
 feats          = args.word_table
-output_file    = args.word_table.replace("*","") + ".cnty"
+output_file    = feats.replace("*","") + ".cnty"
 county_mapping = args.mapping_file
 
 # Create SparkContext

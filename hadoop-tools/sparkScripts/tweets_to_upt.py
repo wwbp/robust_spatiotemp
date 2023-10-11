@@ -26,21 +26,25 @@ datetime_format = "%Y-%m-%d %H:%M:%S"
 ## Spark Portion:
 
 # get yearweek_userid from datetime and userid
-def make_yearweek_userid(date, date2, user):
+def make_yearweek_userid(date, date2, date3, user):
     if user is None: return "" 
     try:
-        if date is None: return ":" + str(user) 
         d = datetime.strptime(date, datetime_format)
         yw = d.strftime('%Y_%V')
         return yw + ":" + str(user)
-    except ValueError:
+    except:
         pass
     try: # try date2 if date is invalid
-        if date2 is None: return ":" + str(user) 
         d = datetime.strptime(date2, datetime_format)
         yw = d.strftime('%Y_%V')
         return yw + ":" + str(user)
-    except ValueError:
+    except:
+        pass
+    try: # try date3 if date2 is invalid
+        d = datetime.strptime(date3, datetime_format)
+        yw = d.strftime('%Y_%V')
+        return yw + ":" + str(user)
+    except:
         return ":" + str(user)
     
 
@@ -66,7 +70,8 @@ if __name__ == '__main__':
     input_file, output_file, date_field, group_field, anonymize, header = args.input_file, args.output_file, args.date_field, args.group_field, args.anonymize, False
 
     session = SparkSession.builder\
-            .config("spark.driver.memory","8g")\
+            .config("spark.driver.memory","7g")\
+            .config("spark.executor.memory","7g")\
             .appName("countUPTs")\
             .getOrCreate()
     sc = session.sparkContext
@@ -80,21 +85,38 @@ if __name__ == '__main__':
     yw_ui_field = "yearweek_userid"
     if not header:
         date_field_num = date_field
-        dup_field = 'temp_column'
         date_field = "_c" + str(date_field_num)
         date_field_2 = "_c" + str(date_field_num + 1)
+        date_field_3 = "_c" + str(date_field_num + 2)
         group_field = "_c" + str(group_field)
+    else:
+        print("Header specified, using column names")
+        date_field_num = date_field
+        date_field = msgsDF.columns[date_field_num]
+        date_field_2 = msgsDF.columns[date_field_num+1]
+        date_field_3 = msgsDF.columns[date_field_num+2]
+        group_field = msgsDF.columns[group_field]
 
     # Make yearweek_userid column and display a sample
     yearweek_userid_udf = udf(make_yearweek_userid, StringType())
-    msgsDF = msgsDF.withColumn(yw_ui_field, yearweek_userid_udf(date_field, date_field_2, group_field)).drop("_c6").drop("_c7")
+    msgsDF = msgsDF.withColumn(yw_ui_field, yearweek_userid_udf(date_field, date_field_2, date_field_3, group_field)).drop("_c6").drop("_c7")
 
     # View processed data
     print("Data with YearWeek:UserId")
     msgsDF.sample(False, 0.01, seed=0).limit(10).show()
+    
+
+    print("User Post Totals (at least 1)")
+    msgsDF.select([yw_ui_field]+list(msgsDF.columns)[:-1]).write.csv( output_file.replace(".csv","_1upts.csv") ) # must re-order table before saving
+
+    # filter msgsDF on the yearweek_userids in uptCountDF using inner join
 
     # group by yearweek_userid --> | yearweek_userid | count |
     uptCountDF = msgsDF.groupBy(yw_ui_field).count()
+
+    # print("STOPPING EARLY")
+    # sc.stop()
+    # sys.exit()
 
     # Debug print outs
     # print("User Post Totals")
@@ -104,16 +126,7 @@ if __name__ == '__main__':
     # msgsDF.select(countDistinct("_c1")).show()
     # print("Unique Counts (Message ID)")
     # msgsDF.select(countDistinct("_c0")).show()    
-
-    # print("STOPPING EARLY")
-    # sc.stop()
-    # sys.exit()
-
-    # filter msgsDF on the yearweek_userids in uptCountDF using inner join
-
-    # print("User Post Totals (at least 1)")
-    # msgsDF.select([yw_ui_field]+list(msgsDF.columns)[:-1]).write.csv( output_file.replace(".csv","_1upts.csv") ) # must re-order table before saving
-
+    
     # print("User Post Totals (at least 2)")
     # uptCountDF = uptCountDF.where(col("count") >= 2)
     # print("num valid yearweek_userids",uptCountDF.count()) # num unique users

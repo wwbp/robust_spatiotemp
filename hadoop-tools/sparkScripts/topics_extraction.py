@@ -131,8 +131,8 @@ if __name__ == '__main__':
                 help='Weighted lexicon csv file in hadoopPERMA/permaLexicon. Default: %s' % (DEF_LEX_FILE))
     parser.add_argument('--word_table', dest='word_table', default=DEF_WORD_TABLE,
                 help='Path to HDFS location of one gram table to run over. Default: %s' % (DEF_WORD_TABLE))
-    parser.add_argument('--output_file', dest='output_file', default=DEF_OUTPUTFILE,
-                help='HDFS location to store results Default: %s' % (DEF_OUTPUTFILE))
+    parser.add_argument('--output_file', dest='output_file', default=None,
+                help='HDFS location to store results Default: %s' % (None))
     parser.add_argument('--no_header', action='store_false', dest='lex_csv_header', default=DEF_HEADER,
                 help='If lex CSV does not contain a header')
     args = parser.parse_args()
