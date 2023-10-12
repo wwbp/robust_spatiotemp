@@ -137,7 +137,7 @@ if __name__ == '__main__':
     ym_cnty_field = "yearmonth_cnty"
     yw_supercnty_field = "yearweek_supercnty"
     year_cnty_field = "year_cnty"
-    group_field = yw_supercnty_field # TODO PICK: yw_cnty_field / yw_supercnty_field / user_field / county_field / ym_cnty_field / yearweek_field
+    group_field = yw_cnty_field # TODO PICK: yw_cnty_field / yw_supercnty_field / user_field / county_field / ym_cnty_field / yearweek_field
     msgsDF = msgsDF.withColumnRenamed("_c0",yearweek_userid_field)
     msgsDF = msgsDF.withColumnRenamed("_c1",feat_field)
     msgsDF = msgsDF.withColumnRenamed("_c2",field_count_field)
