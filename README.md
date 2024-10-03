@@ -1,5 +1,5 @@
 # Robust language-based mental health assessments in time and space through social media
-Code for generating robust spatial and temporal measurements of well-being. 
+Code for generating robust spatial and temporal measurements of well-being as described in [Mangalik et al., 2024](https://www.nature.com/articles/s41746-024-01100-0). 
 
 This system is currently built around aggregation to the account (user) level and the weekly level and then aggregating those results up to the county and week level. The code is generally flexible to other space and time resolutions but has not been thoroughly tested and may need adjustments. When in doubt, please look to [README-advanced.md](./README-advanced.md) for the complete command set.
 
