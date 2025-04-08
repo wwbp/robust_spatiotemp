@@ -3,6 +3,11 @@ Code for generating robust spatial and temporal measurements of well-being as de
 
 This system is currently built around aggregation to the account (user) level and the weekly level and then aggregating those results up to the county and week level. The code is generally flexible to other space and time resolutions but has not been thoroughly tested and may need adjustments. When in doubt, please look to [README-advanced.md](./README-advanced.md) for the complete command set.
 
+Please find a description of the [mental health lexicons](https://aclanthology.org/W14-3214/) used by this work in [hadoop-tools/permaLexicon](hadoop-tools/permaLexicon/README.md).<br>
+Lexica are stored as CSVs with the columns: "word", "measurement", "word's weight towards measurement". <br>
+e.g. `"sunlight","DEP_SCORE","-0.304619412"`.
+
+
 ## Full pipeline for generating scores and running analyses:
 
 ### Prerequisites:
